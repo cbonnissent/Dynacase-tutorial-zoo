@@ -20,7 +20,7 @@ Class WAnimal extends WDoc {
   var $transitions=array(
 			 self::T1=>array(),
 			 self::Tsick=>array("m1"=>"SendMailToVeto",
-				     "ask"=>array("wan_idveto","wan_veto"),
+				     "ask"=>array("wan_veto"),
 				     "nr"=>true),
 			 self::Tconvalescent=>array("m1"=>"toHealthCard"),
 			 self::T3=>array("m1"=>"A2")
