@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZOO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-19 15:19+0100\n"
-"PO-Revision-Date: 2011-05-11 12:10+0200\n"
+"POT-Creation-Date: 2012-03-08 18:10+0100\n"
+"PO-Revision-Date: 2012-03-08 18:19+0100\n"
 "Last-Translator: Eric Brison <eric.brison@anakeen.com>\n"
 "Language-Team: English <distrib@anakeen.com>\n"
 "Language: en\n"
@@ -11,125 +11,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Standard HTML"
-msgstr ""
-
-msgid "New interface"
-msgstr ""
-
-msgid "Colors"
-msgstr ""
-
-msgid "Quality"
-msgstr ""
-
-msgid "Red"
-msgstr ""
-
-msgid "Special Species"
-msgstr ""
-
-msgid "zoo:Species for"
-msgstr ""
-
-msgid "zoo:Search species"
-msgstr ""
-
-msgid "Insert into list !"
-msgstr ""
-
-msgid "zoo:Change capacity"
-msgstr ""
-
-msgid "zoo:Retrieve reference"
-msgstr ""
-
-msgid "zoo:Insert with defined return"
-msgstr ""
-
-msgid "zoo:Day Sales"
-msgstr ""
-
-msgid "Date"
-msgstr ""
-
-msgid "Has been refused by"
-msgstr ""
-
-msgid "zoo:The tatoo is important"
-msgstr ""
-
-msgid "zoo:It is a beautifull name for this animal"
-msgstr ""
-
-msgid "Zoo:Today"
-msgstr ""
-
-msgid "Zoo:The animal"
-msgstr ""
-
-msgid "Zoo:taxo_species"
-msgstr ""
-
-msgid "Zoo:taxo_class"
-msgstr ""
-
-msgid "Zoo:Veterinary"
-msgstr ""
-
-msgid "Set a beautifull name for this animal"
-msgstr ""
-
 msgid "A tatoo"
-msgstr ""
-
-msgid "Entrance"
-msgstr ""
-
-msgid "Name of the zoo"
-msgstr ""
-
-msgid "Zoo"
-msgstr ""
-
-msgid "Zoo formation"
 msgstr ""
 
 msgid "Access to ticket sales"
 msgstr ""
 
-msgid "sum of sales"
-msgstr ""
-
-msgid "text sum of sales"
-msgstr ""
-
-msgid "xml sum of sales"
-msgstr ""
-
-msgid "animal folder"
-msgstr ""
-
-msgid "table colors"
-msgstr ""
-
-msgid "entrance"
+msgid "Adult"
 msgstr ""
 
 #, c-format
-msgid "document %s (%d) is not an animal"
+msgid "All childs of [ADOC %d]"
+msgstr ""
+
+msgid "Child"
 msgstr ""
 
 #, c-format
-msgid "Folder of %s"
+msgid "Childs of %s"
+msgstr ""
+
+msgid "Colors"
 msgstr ""
 
 #, c-format
-msgid "Information about [ADOC %d]"
+msgid "Creation from adoption %s [%d]"
+msgstr ""
+
+msgid "Date"
 msgstr ""
 
 #, c-format
-msgid "Parents of %s"
+msgid "Disease of %s "
+msgstr ""
+
+msgid "Entrance"
+msgstr ""
+
+msgid "Ext interface"
 msgstr ""
 
 #, c-format
@@ -139,384 +58,79 @@ msgid ""
 msgstr ""
 
 #, c-format
-msgid "Childs of %s"
+msgid "Folder of %s"
+msgstr ""
+
+msgid "Has been refused by"
 msgstr ""
 
 #, c-format
-msgid "All childs of [ADOC %d]"
+msgid "Information about [ADOC %d]"
 msgstr ""
 
-#, fuzzy
-msgid "alive"
-msgstr "realised"
-
-msgid "dead"
+msgid "Insert into list !"
 msgstr ""
 
-#, fuzzy
-msgid "transfered"
-msgstr "transmited"
-
-msgid "sick"
+msgid "Name of the zoo"
 msgstr ""
 
-msgid "convalescent"
+msgid "Ng interface"
+msgstr ""
+
+#, c-format
+msgid "Parents of %s"
+msgstr ""
+
+msgid "Quality"
+msgstr ""
+
+msgid "Red"
+msgstr ""
+
+msgid "Set a beautifull name for this animal"
+msgstr ""
+
+msgid "Special Species"
+msgstr ""
+
+msgid "Standard HTML"
 msgstr ""
 
 msgid "T1"
 msgstr ""
 
-msgid "Tsick"
+msgid "T3"
 msgstr ""
 
 msgid "Tconvalescent"
 msgstr ""
 
-msgid "T3"
-msgstr ""
-
-#, c-format
-msgid "Disease of %s "
-msgstr ""
-
-msgid "zoo:the animal document is not found"
-msgstr ""
-
-msgid "zoo:the veto document is not found"
-msgstr ""
-
-msgid "zoo:birthday date must be set before today"
-msgstr ""
-
-msgid "zoo:no enclos"
-msgstr ""
-
-msgid "zoo:no enclos for this species"
-msgstr ""
-
-#, c-format
-msgid "zoo:each enclos are full : %s"
-msgstr ""
-
-msgid "Adult"
-msgstr ""
-
-msgid "Child"
-msgstr ""
-
-msgid "birthday date must be set before today"
-msgstr ""
-
-msgid "zoo_initialised"
-msgstr ""
-
-msgid "zoo_transmited"
-msgstr ""
-
-msgid "zoo_accepted"
-msgstr ""
-
-msgid "zoo_refused"
-msgstr ""
-
-msgid "zoo_realised"
-msgstr ""
-
-msgid "zoo_Ttransmited"
-msgstr ""
-
-msgid "zoo_Taccepted"
-msgstr ""
-
-msgid "zoo_Trefused"
-msgstr ""
-
-msgid "zoo_Tretry"
-msgstr ""
-
-msgid "zoo_Trealised"
-msgstr ""
-
-msgid "zoo_adoption writting"
-msgstr ""
-
-msgid "zoo_adoption verification"
-msgstr ""
-
-msgid "zoo:no validator defined"
-msgstr ""
-
-msgid "zoo:no mail for validator"
-msgstr ""
-
-msgid "no mail template"
-msgstr ""
-
-msgid "no mail for validator"
-msgstr ""
-
-#, c-format
-msgid "adoption %s to validate"
-msgstr "adoption %s to validate"
-
-msgid "no mail for redactor"
-msgstr ""
-
-#, c-format
-msgid "adoption %s to modify"
-msgstr "adoption %s to modify"
-
-msgid "no mail for realisator"
-msgstr ""
-
-#, c-format
-msgid "adoption %s accepted"
-msgstr "adoption %s accepted"
-
-#, c-format
-msgid "adoption %s refused"
-msgstr "adoption %s refused"
-
-#, c-format
-msgid "adoption %s realised"
-msgstr "adoption %s realised"
-
-msgid "zoo:Cannot create animal"
-msgstr ""
-
-#, c-format
-msgid "Creation from adoption %s [%d]"
-msgstr ""
-
-msgid "zoo:Full Area"
-msgstr ""
-
-#, c-format
-msgid "zoo:Maximum Capacity reached %d > %d"
-msgstr ""
-
-msgid "zoo:no class referenced"
-msgstr ""
-
-msgid "zoo:unknown class"
-msgstr ""
-
-msgid "zoo:Capacity not set"
-msgstr ""
-
-msgid "zoo;Capacity not set"
-msgstr ""
-
-msgid "zoo_adoption accepted"
+msgid "Tsick"
 msgstr ""
 
 #, fuzzy
-msgid "ZOO_CLASSE#title"
+msgid "ZOO_ANIMAL#an_carnetsante"
+msgstr "Carnet SantÃ©"
+
+#, fuzzy
+msgid "ZOO_ANIMAL#an_classe"
 msgstr "classe"
 
 #, fuzzy
-msgid "ZOO_CLASSE#cl_identification"
-msgstr "Identification"
+msgid "ZOO_ANIMAL#an_enclos"
+msgstr "Enclos"
 
 #, fuzzy
-msgid "ZOO_CLASSE#cl_nomscientifique"
-msgstr "nom scientifique"
+msgid "ZOO_ANIMAL#an_enfant"
+msgstr "enfant"
 
 #, fuzzy
-msgid "ZOO_CLASSE#cl_nom"
-msgstr "nom"
+msgid "ZOO_ANIMAL#an_enfant_t"
+msgstr "liste enfant"
 
 #, fuzzy
-msgid "ZOO_CLASSE#cl_caracteristique"
-msgstr "caractÃ©ristique"
-
-#, fuzzy
-msgid "ZOO_ESPECE#title"
-msgstr "espÃšce"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_identification"
-msgstr "Identification"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_nom"
-msgstr "nom"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_classe"
-msgstr "classe"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_ordre"
-msgstr "ordre"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_photo"
-msgstr "photo"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_protegee"
-msgstr "protÃ©gÃ©e"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_protegee#0"
-msgstr "Non"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_protegee#1"
-msgstr "Oui"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_caracteristique"
-msgstr "caractÃ©ristique"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_continent"
-msgstr "continents"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_continent#Asia"
-msgstr "Asie"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_continent#Europa"
-msgstr "Europe"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_continent#Africa"
-msgstr "Afrique"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_continent#SouthAmerica"
-msgstr "AmÃ©rique du sud"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_continent#NorthAmerica"
-msgstr "AmÃ©rique du nord"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_continent#Oceania"
-msgstr "OcÃ©anie"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_continent#Antartica"
-msgstr "Antartique"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_poids"
-msgstr "poids"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_repartition"
-msgstr "rÃ©partition"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_alimentation"
-msgstr "alimentation"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_reproduction"
-msgstr "reproduction"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_habitat"
-msgstr "habitat"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_comportement"
-msgstr "comportement"
-
-#, fuzzy
-msgid "ZOO_ESPECE#es_editcontinent"
-msgstr "continents"
-
-msgid "ZOO_ENCLOS#title"
-msgstr "gate"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_identification"
-msgstr "Identification"
-
-msgid "ZOO_ENCLOS#en_nom"
-msgstr "name"
-
-msgid "ZOO_ENCLOS#en_reference"
-msgstr "reference"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_reference#elabel"
-msgstr "PrÃ©ciser la rÃ©fÃ©rence"
-
-msgid "ZOO_ENCLOS#en_t_especes"
-msgstr "species list"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_t_especes#ltitle"
-msgstr "InsÃ©rer des espÃšces"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_espprotected"
-msgstr "protÃ©gÃ©"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_photo"
-msgstr "photo"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_espece"
-msgstr "espÃšce"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_comment"
-msgstr "commentaire"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_capacite"
-msgstr "capacitÃ©"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_localisation"
-msgstr "localisation"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_surface"
-msgstr "surface"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_coordonnees"
-msgstr "CoordonnÃ©es"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_nbre"
-msgstr "nombre d'animaux"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_contenu"
-msgstr "Contenu"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_t_animaux"
-msgstr "liste animaux"
-
-#, fuzzy
-msgid "ZOO_ENCLOS#en_animaux"
-msgstr "animaux"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#title"
-msgstr "animal"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_identification"
-msgstr "Identification"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_nom"
-msgstr "nom"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_tatouage"
-msgstr "tatouage"
+msgid "ZOO_ANIMAL#an_entree"
+msgstr "date entree"
 
 #, fuzzy
 msgid "ZOO_ANIMAL#an_espece"
@@ -527,56 +141,28 @@ msgid "ZOO_ANIMAL#an_espece_title"
 msgstr "espÃšce (titre)"
 
 #, fuzzy
-msgid "ZOO_ANIMAL#an_ordre"
-msgstr "ordre"
+msgid "ZOO_ANIMAL#an_folder"
+msgstr "Dossier"
 
 #, fuzzy
-msgid "ZOO_ANIMAL#an_classe"
-msgstr "classe"
+msgid "ZOO_ANIMAL#an_identification"
+msgstr "Identification"
 
 #, fuzzy
-msgid "ZOO_ANIMAL#an_sexe"
-msgstr "sexe"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_sexe#M"
-msgstr "Masculin"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_sexe#F"
-msgstr "FÃ©minin"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_sexe#H"
-msgstr "Hermaphrodite"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_photo"
-msgstr "photo"
+msgid "ZOO_ANIMAL#an_mere"
+msgstr "mere"
 
 #, fuzzy
 msgid "ZOO_ANIMAL#an_naissance"
 msgstr "date naissance"
 
 #, fuzzy
-msgid "ZOO_ANIMAL#an_entree"
-msgstr "date entree"
+msgid "ZOO_ANIMAL#an_nom"
+msgstr "nom"
 
 #, fuzzy
-msgid "ZOO_ANIMAL#an_enfant_t"
-msgstr "liste enfant"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_enfant"
-msgstr "enfant"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_carnetsante"
-msgstr "Carnet SantÃ©"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_enclos"
-msgstr "Enclos"
+msgid "ZOO_ANIMAL#an_ordre"
+msgstr "ordre"
 
 #, fuzzy
 msgid "ZOO_ANIMAL#an_parent"
@@ -587,36 +173,32 @@ msgid "ZOO_ANIMAL#an_pere"
 msgstr "pere"
 
 #, fuzzy
-msgid "ZOO_ANIMAL#an_mere"
-msgstr "mere"
+msgid "ZOO_ANIMAL#an_photo"
+msgstr "photo"
 
 #, fuzzy
-msgid "ZOO_ANIMAL#an_folder"
-msgstr "Dossier"
+msgid "ZOO_ANIMAL#an_sexe"
+msgstr "sexe"
 
 #, fuzzy
-msgid "ZOO_CARNETSANTE#title"
-msgstr "carnet de sante"
+msgid "ZOO_ANIMAL#an_sexe#F"
+msgstr "FÃ©minin"
 
 #, fuzzy
-msgid "ZOO_CARNETSANTE#ca_identification"
-msgstr "Identification"
+msgid "ZOO_ANIMAL#an_sexe#H"
+msgstr "Hermaphrodite"
 
 #, fuzzy
-msgid "ZOO_CARNETSANTE#ca_nom"
-msgstr "nom de l'animal"
+msgid "ZOO_ANIMAL#an_sexe#M"
+msgstr "Masculin"
 
 #, fuzzy
-msgid "ZOO_CARNETSANTE#ca_idnom"
-msgstr "identifiant de l'animal"
+msgid "ZOO_ANIMAL#an_tatouage"
+msgstr "tatouage"
 
 #, fuzzy
-msgid "ZOO_CARNETSANTE#ca_intervention"
-msgstr "Intervention"
-
-#, fuzzy
-msgid "ZOO_CARNETSANTE#ca_intervention_t"
-msgstr "liste intervention"
+msgid "ZOO_ANIMAL#title"
+msgstr "animal"
 
 #, fuzzy
 msgid "ZOO_CARNETSANTE#ca_date"
@@ -627,347 +209,68 @@ msgid "ZOO_CARNETSANTE#ca_description"
 msgstr "description"
 
 #, fuzzy
+msgid "ZOO_CARNETSANTE#ca_identification"
+msgstr "Identification"
+
+#, fuzzy
+msgid "ZOO_CARNETSANTE#ca_idnom"
+msgstr "identifiant de l'animal"
+
+#, fuzzy
 msgid "ZOO_CARNETSANTE#ca_idveterinaire"
 msgstr "id veterinaire"
 
 #, fuzzy
-msgid "ZOO_CARNETSANTE#ca_veterinaire"
-msgstr "veterinaire"
+msgid "ZOO_CARNETSANTE#ca_intervention"
+msgstr "Intervention"
 
 #, fuzzy
-msgid "ZOO_CARNETSANTE#ca_veterinaire#eltitle"
-msgstr "Ã©diter une ordonnance"
-
-#, fuzzy
-msgid "ZOO_CARNETSANTE#ca_veterinaire#elsymbol"
-msgstr "&hearts ---"
+msgid "ZOO_CARNETSANTE#ca_intervention_t"
+msgstr "liste intervention"
 
 #, fuzzy
 msgid "ZOO_CARNETSANTE#ca_maladie"
 msgstr "maladie"
 
 #, fuzzy
-msgid "ZOO_ENTREE#title"
-msgstr "entrÃ©e"
+msgid "ZOO_CARNETSANTE#ca_nom"
+msgstr "nom de l'animal"
 
 #, fuzzy
-msgid "ZOO_ENTREE#ent_fr_identification"
+msgid "ZOO_CARNETSANTE#ca_veterinaire"
+msgstr "veterinaire"
+
+#, fuzzy
+msgid "ZOO_CARNETSANTE#ca_veterinaire#elsymbol"
+msgstr "&hearts ---"
+
+#, fuzzy
+msgid "ZOO_CARNETSANTE#ca_veterinaire#eltitle"
+msgstr "Ã©diter une ordonnance"
+
+#, fuzzy
+msgid "ZOO_CARNETSANTE#title"
+msgstr "carnet de sante"
+
+#, fuzzy
+msgid "ZOO_CLASSE#cl_caracteristique"
+msgstr "caractÃ©ristique"
+
+#, fuzzy
+msgid "ZOO_CLASSE#cl_identification"
 msgstr "Identification"
 
 #, fuzzy
-msgid "ZOO_ENTREE#ent_idcaissiere"
-msgstr "idcaissiere"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_caissiere"
-msgstr "caissiere"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_date"
-msgstr "date"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_ncaisse"
-msgstr "NÂ°caisse"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_fr_entrees"
-msgstr "EntrÃ©es"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_adulte"
-msgstr "nombre adulte"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_enfant"
-msgstr "nombre enfant"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_prix"
-msgstr "Prix"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_printticket"
-msgstr "Tickets"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_daysales"
-msgstr "Recette"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_todaysales"
-msgstr "Recette du jour"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_fr_prix"
-msgstr "Prix"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_prixenfant"
-msgstr "prix enfant"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_prixadulte"
-msgstr "prix adulte"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_enum1"
-msgstr "Ã©num un"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_enum1#1"
-msgstr "Un"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_enum1#2"
-msgstr "deux"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#title"
-msgstr "demande adoption"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_tab_ident"
-msgstr "Identification"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_reference"
-msgstr "RÃ©fÃ©rence"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_fr_identification"
-msgstr "Identification demandeur"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_idredac"
-msgstr "rÃ©dacteur id"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_iddemand"
-msgstr "demandeur id"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_postaladdress"
-msgstr "Adresse"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_phone"
-msgstr "tÃ©lÃ©phone"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_mobile"
-msgstr "mobile"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_fr_anidentification"
-msgstr "Animal"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_nom"
+msgid "ZOO_CLASSE#cl_nom"
 msgstr "nom"
 
 #, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_espece"
-msgstr "Nom de l'espÃšce"
+msgid "ZOO_CLASSE#cl_nomscientifique"
+msgstr "nom scientifique"
 
 #, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_idespece"
-msgstr "EspÃšce"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_naissance"
-msgstr "date de naissance"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_photo"
-msgstr "photo"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_tab_info"
-msgstr "ComplÃ©ment"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_fr_provenance"
-msgstr "Provenance"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_pays"
-msgstr "pays"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_region"
-msgstr "rÃ©gion"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_proprietaire"
-msgstr "propriÃ©taire actuel"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_idproprietaire"
-msgstr "id propriÃ©taire actuel"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_fr_realisation"
-msgstr "RÃ©alisation"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_date"
-msgstr "date "
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_heure"
-msgstr "heure"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_fr_refus"
-msgstr "Refus"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_motif"
-msgstr "Motif du refus"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_fr_valid"
-msgstr "Validation"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_idval"
-msgstr "Valideur id"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_val"
-msgstr "Valideur"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_idrealised"
-msgstr "rÃ©alisation id"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_realised"
-msgstr "rÃ©alisation"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_fr_pval"
-msgstr "Validation groupe"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_idgdemand"
-msgstr "groupe demandeur id"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_gdemand"
-msgstr "groupe demandeur"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_idgvalid"
-msgstr "groupe valideur id"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_gvalid"
-msgstr "groupe valideur"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_idgreal"
-msgstr "groupe prise en charge id"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_greal"
-msgstr "groupe prise en charge"
-
-#, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#title"
-msgstr "Cycle demande Adoption"
-
-#, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_fr_transition"
-msgstr "ParamÃštre de transition"
-
-#, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_refus"
-msgstr "Motif de Refus"
-
-#, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_fr_mail"
-msgstr "ModÃšle de courriels"
-
-#, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_mailsecure"
-msgstr "EspÃšce protÃ©gÃ©e"
-
-#, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_mailcurrent"
-msgstr "EspÃšce commune"
-
-#, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_pfile"
-msgstr "fichier param"
-
-#, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_dmul"
-msgstr "mul"
-
-#, fuzzy
-msgid "ZOO_WANIMAL#title"
-msgstr "Cycle Animal"
-
-#, fuzzy
-msgid "ZOO_WANIMAL#wan_fr_transition"
-msgstr "ParamÃštre de transition"
-
-#, fuzzy
-msgid "ZOO_WANIMAL#wan_veto"
-msgstr "vÃ©tÃ©rinaire"
-
-#, fuzzy
-msgid "ZOO_GARDIEN#title"
-msgstr "Gardien"
-
-#, fuzzy
-msgid "ZOO_GARDIEN#gar_fr_garde"
-msgstr "garde"
-
-#, fuzzy
-msgid "ZOO_GARDIEN#gar_debgarde"
-msgstr "DÃ©but Heure Garde"
-
-#, fuzzy
-msgid "ZOO_GARDIEN#gar_fingarde"
-msgstr "Fin Heure Garde"
-
-msgid "ZOO_GARDIEN#us_secr"
-msgstr ""
-
-#, fuzzy
-msgid "ZOO_GARDIEN#gar_enclos_t"
-msgstr "Enclos"
-
-#, fuzzy
-msgid "ZOO_GARDIEN#gar_idenclos"
-msgstr "Enclos"
-
-#, fuzzy
-msgid "ZOO_VETERINAIRE#title"
-msgstr "Veterinaire"
-
-#, fuzzy
-msgid "ZOO_VETERINAIRE#us_fr_garde"
-msgstr "garde"
-
-#, fuzzy
-msgid "ZOO_VETERINAIRE#us_debgarde"
-msgstr "DÃ©but Heure Garde"
-
-#, fuzzy
-msgid "ZOO_VETERINAIRE#us_fingarde"
-msgstr "Fin Heure Garde"
-
-#, fuzzy
-msgid "ZOO_VETERINAIRE#us_specialite_t"
-msgstr "SpÃ©cialite"
-
-#, fuzzy
-msgid "ZOO_VETERINAIRE#us_specialite"
-msgstr "SpÃ©cialitÃ©"
+msgid "ZOO_CLASSE#title"
+msgstr "classe"
 
 #, fuzzy
 msgid "ZOO_CUISINIER#title"
@@ -976,14 +279,6 @@ msgstr "Cuisinier"
 #, fuzzy
 msgid "ZOO_CUISINIER#us_fr_nourriture"
 msgstr "nourriture"
-
-#, fuzzy
-msgid "ZOO_CUISINIER#us_specialite_t"
-msgstr "SpÃ©cialite"
-
-#, fuzzy
-msgid "ZOO_CUISINIER#us_specialite"
-msgstr "SpÃ©cialitÃ©"
 
 #, fuzzy
 msgid "ZOO_CUISINIER#us_lion"
@@ -998,166 +293,1113 @@ msgid "ZOO_CUISINIER#us_lion_pdf"
 msgstr "Lions Pdf"
 
 #, fuzzy
-#~ msgid "ZOO_DEMANDEADOPTION#de_redac"
-#~ msgstr "rÃ©dacteur"
+msgid "ZOO_CUISINIER#us_specialite"
+msgstr "SpÃ©cialitÃ©"
 
 #, fuzzy
-#~ msgid "ZOO_DEMANDEADOPTION#de_demand"
-#~ msgstr "demandeur"
-
-#~ msgid "initialised"
-#~ msgstr "initialised"
-
-#~ msgid "transmited"
-#~ msgstr "transmited"
-
-#~ msgid "accepted"
-#~ msgstr "accepted"
-
-#~ msgid "refused"
-#~ msgstr "refused"
-
-#~ msgid "realised"
-#~ msgstr "realised"
-
-#~ msgid "Ttransmited"
-#~ msgstr "Ttransmited"
-
-#~ msgid "Taccepted"
-#~ msgstr "Taccepted"
-
-#~ msgid "Trefused"
-#~ msgstr "Trefused"
-
-#~ msgid "Tretry"
-#~ msgstr "Tretry"
-
-#~ msgid "Trealised"
-#~ msgstr "Trealised"
+msgid "ZOO_CUISINIER#us_specialite_t"
+msgstr "SpÃ©cialite"
 
 #, fuzzy
-#~ msgid "ZOO:CLASSE#title"
+msgid "ZOO_DEMANDEADOPTION#de_date"
+msgstr "date "
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_espece"
+msgstr "Nom de l'espÃšce"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_fr_anidentification"
+msgstr "Animal"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_fr_identification"
+msgstr "Identification demandeur"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_fr_provenance"
+msgstr "Provenance"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_fr_pval"
+msgstr "Validation groupe"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_fr_realisation"
+msgstr "RÃ©alisation"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_fr_reference"
+msgstr "Référence"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_fr_refus"
+msgstr "Refus"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_fr_valid"
+msgstr "Validation"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_gdemand"
+msgstr "groupe demandeur"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_greal"
+msgstr "groupe prise en charge"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_gvalid"
+msgstr "groupe valideur"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_heure"
+msgstr "heure"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_iddemand"
+msgstr "demandeur id"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_idespece"
+msgstr "EspÃšce"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_idgdemand"
+msgstr "groupe demandeur id"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_idgreal"
+msgstr "groupe prise en charge id"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_idgvalid"
+msgstr "groupe valideur id"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_idrealised"
+msgstr "rÃ©alisation id"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_idredac"
+msgstr "rÃ©dacteur id"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_idval"
+msgstr "Valideur id"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_mobile"
+msgstr "mobile"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_motif"
+msgstr "Motif du refus"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_naissance"
+msgstr "date de naissance"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_nom"
+msgstr "nom"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_pays"
+msgstr "pays"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_phone"
+msgstr "tÃ©lÃ©phone"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_photo"
+msgstr "photo"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_postaladdress"
+msgstr "Adresse"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_proprietaire"
+msgstr "propriÃ©taire actuel"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_reference"
+msgstr "RÃ©fÃ©rence"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_region"
+msgstr "rÃ©gion"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_tab_ident"
+msgstr "Identification"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_tab_info"
+msgstr "ComplÃ©ment"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#title"
+msgstr "demande adoption"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_animaux"
+msgstr "animaux"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_capacite"
+msgstr "capacitÃ©"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_comment"
+msgstr "commentaire"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_contenu"
+msgstr "Contenu"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_coordonnees"
+msgstr "CoordonnÃ©es"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_espece"
+msgstr "espÃšce"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_espprotected"
+msgstr "protÃ©gÃ©"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_identification"
+msgstr "Identification"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_localisation"
+msgstr "localisation"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_nbre"
+msgstr "nombre d'animaux"
+
+msgid "ZOO_ENCLOS#en_nom"
+msgstr "name"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_photo"
+msgstr "photo"
+
+msgid "ZOO_ENCLOS#en_reference"
+msgstr "reference"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_reference#elabel"
+msgstr "PrÃ©ciser la rÃ©fÃ©rence"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_surface"
+msgstr "surface"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_t_animaux"
+msgstr "liste animaux"
+
+msgid "ZOO_ENCLOS#en_t_especes"
+msgstr "species list"
+
+#, fuzzy
+msgid "ZOO_ENCLOS#en_t_especes#ltitle"
+msgstr "InsÃ©rer des espÃšces"
+
+msgid "ZOO_ENCLOS#title"
+msgstr "gate"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_adulte"
+msgstr "nombre adulte"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_caissiere"
+msgstr "caissiere"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_date"
+msgstr "date"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_daysales"
+msgstr "Recette"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_enfant"
+msgstr "nombre enfant"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_enum1"
+msgstr "Ã©num un"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_enum1#1"
+msgstr "Un"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_enum1#2"
+msgstr "deux"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_fr_entrees"
+msgstr "EntrÃ©es"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_fr_identification"
+msgstr "Identification"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_fr_prix"
+msgstr "Prix"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_idcaissiere"
+msgstr "idcaissiere"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_ncaisse"
+msgstr "NÂ°caisse"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_printticket"
+msgstr "Tickets"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_prix"
+msgstr "Prix"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_prixadulte"
+msgstr "prix adulte"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_prixenfant"
+msgstr "prix enfant"
+
+#, fuzzy
+msgid "ZOO_ENTREE#ent_todaysales"
+msgstr "Recette du jour"
+
+#, fuzzy
+msgid "ZOO_ENTREE#title"
+msgstr "entrÃ©e"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_alimentation"
+msgstr "alimentation"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_caracteristique"
+msgstr "caractÃ©ristique"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_classe"
+msgstr "classe"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_comportement"
+msgstr "comportement"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_continent"
+msgstr "continents"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_continent#Africa"
+msgstr "Afrique"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_continent#Antartica"
+msgstr "Antartique"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_continent#Asia"
+msgstr "Asie"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_continent#Europa"
+msgstr "Europe"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_continent#NorthAmerica"
+msgstr "AmÃ©rique du nord"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_continent#Oceania"
+msgstr "OcÃ©anie"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_continent#SouthAmerica"
+msgstr "AmÃ©rique du sud"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_editcontinent"
+msgstr "continents"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_habitat"
+msgstr "habitat"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_identification"
+msgstr "Identification"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_nom"
+msgstr "nom"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_ordre"
+msgstr "ordre"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_photo"
+msgstr "photo"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_poids"
+msgstr "poids"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_protegee"
+msgstr "protÃ©gÃ©e"
+
+msgid "ZOO_ESPECE#es_protegee#0"
+msgstr "No"
+
+msgid "ZOO_ESPECE#es_protegee#1"
+msgstr "Yes it is protected"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_repartition"
+msgstr "rÃ©partition"
+
+#, fuzzy
+msgid "ZOO_ESPECE#es_reproduction"
+msgstr "reproduction"
+
+msgid "ZOO_ESPECE#title"
+msgstr "Species"
+
+#, fuzzy
+msgid "ZOO_GARDIEN#gar_debgarde"
+msgstr "DÃ©but Heure Garde"
+
+#, fuzzy
+msgid "ZOO_GARDIEN#gar_enclos_t"
+msgstr "Enclos"
+
+#, fuzzy
+msgid "ZOO_GARDIEN#gar_fingarde"
+msgstr "Fin Heure Garde"
+
+#, fuzzy
+msgid "ZOO_GARDIEN#gar_fr_garde"
+msgstr "garde"
+
+#, fuzzy
+msgid "ZOO_GARDIEN#gar_idenclos"
+msgstr "Enclos"
+
+#, fuzzy
+msgid "ZOO_GARDIEN#title"
+msgstr "Gardien"
+
+msgid "ZOO_GARDIEN#us_secr"
+msgstr ""
+
+#, fuzzy
+msgid "ZOO_VETERINAIRE#title"
+msgstr "Veterinaire"
+
+#, fuzzy
+msgid "ZOO_VETERINAIRE#us_debgarde"
+msgstr "DÃ©but Heure Garde"
+
+#, fuzzy
+msgid "ZOO_VETERINAIRE#us_fingarde"
+msgstr "Fin Heure Garde"
+
+#, fuzzy
+msgid "ZOO_VETERINAIRE#us_fr_garde"
+msgstr "garde"
+
+#, fuzzy
+msgid "ZOO_VETERINAIRE#us_specialite"
+msgstr "SpÃ©cialitÃ©"
+
+#, fuzzy
+msgid "ZOO_VETERINAIRE#us_specialite_t"
+msgstr "SpÃ©cialite"
+
+#, fuzzy
+msgid "ZOO_WANIMAL#title"
+msgstr "Cycle Animal"
+
+#, fuzzy
+msgid "ZOO_WANIMAL#wan_fr_transition"
+msgstr "ParamÃštre de transition"
+
+#, fuzzy
+msgid "ZOO_WANIMAL#wan_veto"
+msgstr "vÃ©tÃ©rinaire"
+
+#, fuzzy
+msgid "ZOO_WDEMANDEADOPTION#title"
+msgstr "Cycle demande Adoption"
+
+#, fuzzy
+msgid "ZOO_WDEMANDEADOPTION#wad_dmul"
+msgstr "mul"
+
+#, fuzzy
+msgid "ZOO_WDEMANDEADOPTION#wad_fr_mail"
+msgstr "ModÃšle de courriels"
+
+#, fuzzy
+msgid "ZOO_WDEMANDEADOPTION#wad_fr_transition"
+msgstr "ParamÃštre de transition"
+
+#, fuzzy
+msgid "ZOO_WDEMANDEADOPTION#wad_mailcurrent"
+msgstr "EspÃšce commune"
+
+#, fuzzy
+msgid "ZOO_WDEMANDEADOPTION#wad_mailsecure"
+msgstr "EspÃšce protÃ©gÃ©e"
+
+#, fuzzy
+msgid "ZOO_WDEMANDEADOPTION#wad_pfile"
+msgstr "fichier param"
+
+#, fuzzy
+msgid "ZOO_WDEMANDEADOPTION#wad_refus"
+msgstr "Motif de Refus"
+
+msgid "Zoo"
+msgstr ""
+
+msgid "Zoo formation"
+msgstr ""
+
+msgid "Zoo:The animal"
+msgstr ""
+
+msgid "Zoo:Today"
+msgstr ""
+
+msgid "Zoo:Veterinary"
+msgstr ""
+
+msgid "Zoo:taxo_class"
+msgstr ""
+
+msgid "Zoo:taxo_species"
+msgstr ""
+
+#, c-format
+msgid "adoption %s accepted"
+msgstr "adoption %s accepted"
+
+#, c-format
+msgid "adoption %s realised"
+msgstr "adoption %s realised"
+
+#, c-format
+msgid "adoption %s refused"
+msgstr "adoption %s refused"
+
+#, c-format
+msgid "adoption %s to modify"
+msgstr "adoption %s to modify"
+
+#, c-format
+msgid "adoption %s to validate"
+msgstr "adoption %s to validate"
+
+#, fuzzy
+msgid "alive"
+msgstr "realised"
+
+msgid "animal folder"
+msgstr ""
+
+msgid "birthday date must be set before today"
+msgstr ""
+
+msgid "convalescent"
+msgstr ""
+
+msgid "dead"
+msgstr ""
+
+#, c-format
+msgid "document %s (%d) is not an animal"
+msgstr ""
+
+msgid "entrance"
+msgstr ""
+
+msgid "no mail for realisator"
+msgstr ""
+
+msgid "no mail for redactor"
+msgstr ""
+
+msgid "no mail for validator"
+msgstr ""
+
+msgid "no mail template"
+msgstr ""
+
+msgid "sick"
+msgstr ""
+
+msgid "sum of sales"
+msgstr ""
+
+msgid "table colors"
+msgstr ""
+
+msgid "text sum of sales"
+msgstr ""
+
+#, fuzzy
+msgid "transfered"
+msgstr "transmited"
+
+msgid "xml sum of sales"
+msgstr ""
+
+msgid "zoo:Cannot create animal"
+msgstr ""
+
+msgid "zoo:Capacity not set"
+msgstr ""
+
+msgid "zoo:Change capacity"
+msgstr ""
+
+msgid "zoo:Day Sales"
+msgstr ""
+
+msgid "zoo:Full Area"
+msgstr ""
+
+msgid "zoo:Insert with defined return"
+msgstr ""
+
+msgid "zoo:It is a beautifull name for this animal"
+msgstr ""
+
+#, c-format
+msgid "zoo:Maximum Capacity reached %d > %d"
+msgstr ""
+
+msgid "zoo:Retrieve reference"
+msgstr ""
+
+msgid "zoo:Search species"
+msgstr ""
+
+msgid "zoo:Species for"
+msgstr ""
+
+msgid "zoo:The tatoo is important"
+msgstr ""
+
+msgid "zoo:birthday date must be set before today"
+msgstr ""
+
+#, c-format
+msgid "zoo:each enclos are full : %s"
+msgstr ""
+
+msgid "zoo:no class referenced"
+msgstr ""
+
+msgid "zoo:no enclos"
+msgstr ""
+
+msgid "zoo:no enclos for this species"
+msgstr ""
+
+msgid "zoo:no mail for validator"
+msgstr ""
+
+msgid "zoo:no validator defined"
+msgstr ""
+
+msgid "zoo:the animal document is not found"
+msgstr ""
+
+msgid "zoo:the veto document is not found"
+msgstr ""
+
+msgid "zoo:unknown class"
+msgstr ""
+
+msgid "zoo;Capacity not set"
+msgstr ""
+
+msgid "zoo_Taccepted"
+msgstr ""
+
+msgid "zoo_Trealised"
+msgstr ""
+
+msgid "zoo_Trefused"
+msgstr ""
+
+msgid "zoo_Tretry"
+msgstr ""
+
+msgid "zoo_Ttransmited"
+msgstr ""
+
+msgid "zoo_accepted"
+msgstr ""
+
+msgid "zoo_adoption accepted"
+msgstr ""
+
+msgid "zoo_adoption verification"
+msgstr ""
+
+msgid "zoo_adoption writting"
+msgstr ""
+
+msgid "zoo_initialised"
+msgstr ""
+
+msgid "zoo_realised"
+msgstr ""
+
+msgid "zoo_refused"
+msgstr ""
+
+msgid "zoo_transmited"
+msgstr ""
+
+#, fuzzy
+#~ msgid "ANIMAL#an_carnetsante"
+#~ msgstr "Carnet Santé"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_classe"
 #~ msgstr "classe"
 
 #, fuzzy
-#~ msgid "ZOO:CLASSE#cl_identification"
-#~ msgstr "Identification"
+#~ msgid "ANIMAL#an_enclos"
+#~ msgstr "Enclos"
 
 #, fuzzy
-#~ msgid "ZOO:CLASSE#cl_nomscientifique"
-#~ msgstr "nom scientifique"
+#~ msgid "ANIMAL#an_enfant"
+#~ msgstr "enfant"
 
 #, fuzzy
-#~ msgid "ZOO:CLASSE#cl_nom"
-#~ msgstr "nom"
+#~ msgid "ANIMAL#an_enfant_t"
+#~ msgstr "liste enfant"
 
 #, fuzzy
-#~ msgid "ZOO:CLASSE#cl_caracteristique"
-#~ msgstr "caractÃ©ristique"
+#~ msgid "ANIMAL#an_entree"
+#~ msgstr "date entree"
 
 #, fuzzy
-#~ msgid "ESPECE#title"
+#~ msgid "ANIMAL#an_espece"
 #~ msgstr "espèce"
 
 #, fuzzy
-#~ msgid "ESPECE#es_identification"
+#~ msgid "ANIMAL#an_espece_title"
+#~ msgstr "espÃšce (titre)"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_folder"
+#~ msgstr "Dossier"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_idclasse"
+#~ msgstr "id classe"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_idenfant"
+#~ msgstr "id enfant"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_identification"
 #~ msgstr "Identification"
 
 #, fuzzy
-#~ msgid "ESPECE#es_nom"
+#~ msgid "ANIMAL#an_idespece"
+#~ msgstr "id espèce"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_idmere"
+#~ msgstr "id mere"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_idpere"
+#~ msgstr "id pere"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_mere"
+#~ msgstr "mere"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_naissance"
+#~ msgstr "date naissance"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_nom"
 #~ msgstr "nom"
 
 #, fuzzy
-#~ msgid "ESPECE#es_classe"
-#~ msgstr "classe"
-
-#, fuzzy
-#~ msgid "ESPECE#es_ordre"
+#~ msgid "ANIMAL#an_ordre"
 #~ msgstr "ordre"
 
 #, fuzzy
-#~ msgid "ESPECE#es_protegee"
-#~ msgstr "protÃ©gÃ©e"
+#~ msgid "ANIMAL#an_parent"
+#~ msgstr "Parents"
 
 #, fuzzy
-#~ msgid "ESPECE#es_protegee#0"
-#~ msgstr "Non"
+#~ msgid "ANIMAL#an_pere"
+#~ msgstr "pere"
 
 #, fuzzy
-#~ msgid "ESPECE#es_protegee#1"
-#~ msgstr "Oui"
+#~ msgid "ANIMAL#an_photo"
+#~ msgstr "photo"
 
 #, fuzzy
-#~ msgid "ESPECE#es_caracteristique"
+#~ msgid "ANIMAL#an_sexe"
+#~ msgstr "sexe"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_sexe#F"
+#~ msgstr "Féminin"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_sexe#H"
+#~ msgstr "Hermaphrodite"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_sexe#M"
+#~ msgstr "Masculin"
+
+#, fuzzy
+#~ msgid "ANIMAL#an_tatouage"
+#~ msgstr "tatouage"
+
+#, fuzzy
+#~ msgid "ANIMAL#title"
+#~ msgstr "animal"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_date"
+#~ msgstr "date"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_description"
+#~ msgstr "description"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_identification"
+#~ msgstr "Identification"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_idnom"
+#~ msgstr "id nom"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_idveterinaire"
+#~ msgstr "id veterinaire"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_intervention"
+#~ msgstr "Intervention"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_intervention_t"
+#~ msgstr "liste intervention"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_maladie"
+#~ msgstr "maladie"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_nom"
+#~ msgstr "nom"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_veterinaire"
+#~ msgstr "veterinaire"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_veterinaire#elsymbol"
+#~ msgstr "&hearts --- "
+
+#, fuzzy
+#~ msgid "CARNETSANTE#ca_veterinaire#eltitle"
+#~ msgstr "éditer une ordonnance"
+
+#, fuzzy
+#~ msgid "CARNETSANTE#title"
+#~ msgstr "carnet de sante"
+
+#, fuzzy
+#~ msgid "CLASSE#cl_caracteristique"
 #~ msgstr "caractéristique"
 
 #, fuzzy
-#~ msgid "ESPECE#es_continent"
-#~ msgstr "continents"
+#~ msgid "CLASSE#cl_identification"
+#~ msgstr "Identification"
 
 #, fuzzy
-#~ msgid "ESPECE#es_continent#Asia"
-#~ msgstr "Asie"
+#~ msgid "CLASSE#cl_nom"
+#~ msgstr "nom"
 
 #, fuzzy
-#~ msgid "ESPECE#es_continent#Europa"
-#~ msgstr "Europe"
+#~ msgid "CLASSE#cl_nomscientifique"
+#~ msgstr "nom scientifique"
 
 #, fuzzy
-#~ msgid "ESPECE#es_continent#Africa"
-#~ msgstr "Afrique"
+#~ msgid "CLASSE#title"
+#~ msgstr "classe"
 
 #, fuzzy
-#~ msgid "ESPECE#es_continent#SouthAmerica"
-#~ msgstr "Amérique du sud"
+#~ msgid "CUISINIER#title"
+#~ msgstr "Cuisinier"
 
 #, fuzzy
-#~ msgid "ESPECE#es_continent#NorthAmerica"
-#~ msgstr "Amérique du nord"
+#~ msgid "CUISINIER#us_fr_nourriture"
+#~ msgstr "nourriture"
 
 #, fuzzy
-#~ msgid "ESPECE#es_continent#Oceania"
-#~ msgstr "Océanie"
+#~ msgid "CUISINIER#us_idspecialite"
+#~ msgstr "id spécialite"
 
 #, fuzzy
-#~ msgid "ESPECE#es_continent#Antartica"
-#~ msgstr "Antartique"
+#~ msgid "CUISINIER#us_lion"
+#~ msgstr "Lions HTML"
 
 #, fuzzy
-#~ msgid "ESPECE#es_poids"
-#~ msgstr "poids"
+#~ msgid "CUISINIER#us_lion_odt"
+#~ msgstr "Lions Odt"
 
 #, fuzzy
-#~ msgid "ESPECE#es_repartition"
-#~ msgstr "répartition"
+#~ msgid "CUISINIER#us_specialite"
+#~ msgstr "Spécialite"
 
 #, fuzzy
-#~ msgid "ESPECE#es_alimentation"
-#~ msgstr "alimentation"
+#~ msgid "CUISINIER#us_specialite_t"
+#~ msgstr "Spécialite"
 
 #, fuzzy
-#~ msgid "ESPECE#es_reproduction"
-#~ msgstr "reproduction"
+#~ msgid "DEMANDEADOPTION#de_date"
+#~ msgstr "date "
 
 #, fuzzy
-#~ msgid "ESPECE#es_habitat"
-#~ msgstr "habitat"
+#~ msgid "DEMANDEADOPTION#de_demand"
+#~ msgstr "demandeur"
 
 #, fuzzy
-#~ msgid "ESPECE#es_comportement"
-#~ msgstr "comportement"
+#~ msgid "DEMANDEADOPTION#de_espece"
+#~ msgstr "espèce"
 
 #, fuzzy
-#~ msgid "ESPECE#es_editcontinent"
-#~ msgstr "continents"
+#~ msgid "DEMANDEADOPTION#de_fr_anidentification"
+#~ msgstr "Animal"
 
 #, fuzzy
-#~ msgid "ENCLOS#title"
-#~ msgstr "enclos"
+#~ msgid "DEMANDEADOPTION#de_fr_identification"
+#~ msgstr "Identification demandeur"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_fr_provenance"
+#~ msgstr "Provenance"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_fr_pval"
+#~ msgstr "Validation groupe"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_fr_realisation"
+#~ msgstr "Réalisation"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_fr_refus"
+#~ msgstr "Refus"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_fr_valid"
+#~ msgstr "Validation"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_gdemand"
+#~ msgstr "groupe demandeur"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_greal"
+#~ msgstr "groupe prise en charge"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_gvalid"
+#~ msgstr "groupe valideur"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_heure"
+#~ msgstr "heure"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_iddemand"
+#~ msgstr "demandeur id"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_idespece"
+#~ msgstr "id espèce"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_idgdemand"
+#~ msgstr "groupe demandeur id"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_idgreal"
+#~ msgstr "groupe prise en charge id"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_idgvalid"
+#~ msgstr "groupe valideur id"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_idproprietaire"
+#~ msgstr "id propriétaire actuel"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_idrealised"
+#~ msgstr "réalisation id"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_idredac"
+#~ msgstr "rédacteur id"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_idval"
+#~ msgstr "Valideur id"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_mobile"
+#~ msgstr "mobile"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_motif"
+#~ msgstr "Motif du refus"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_naissance"
+#~ msgstr "date de naissance"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_nom"
+#~ msgstr "nom"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_pays"
+#~ msgstr "pays"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_phone"
+#~ msgstr "téléphone"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_photo"
+#~ msgstr "photo"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_postaladdress"
+#~ msgstr "Adresse"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_proprietaire"
+#~ msgstr "propriétaire actuel"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_realised"
+#~ msgstr "réalisation"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_redac"
+#~ msgstr "rédacteur"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_reference"
+#~ msgstr "Référence"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_region"
+#~ msgstr "région"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_tab_ident"
+#~ msgstr "Identification"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_tab_info"
+#~ msgstr "Complément"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#de_val"
+#~ msgstr "Valideur"
+
+#, fuzzy
+#~ msgid "DEMANDEADOPTION#title"
+#~ msgstr "demande adoption"
+
+#, fuzzy
+#~ msgid "ENCLOS#en_animaux"
+#~ msgstr "animaux"
+
+#, fuzzy
+#~ msgid "ENCLOS#en_capacite"
+#~ msgstr "capacité"
+
+#, fuzzy
+#~ msgid "ENCLOS#en_contenu"
+#~ msgstr "Contenu"
+
+#, fuzzy
+#~ msgid "ENCLOS#en_coordonnees"
+#~ msgstr "Coordonnées"
+
+#, fuzzy
+#~ msgid "ENCLOS#en_espece"
+#~ msgstr "espèce"
+
+#, fuzzy
+#~ msgid "ENCLOS#en_idanimaux"
+#~ msgstr "id animaux"
 
 #, fuzzy
 #~ msgid "ENCLOS#en_identification"
 #~ msgstr "Identification"
+
+#, fuzzy
+#~ msgid "ENCLOS#en_idespece"
+#~ msgstr "id espèce"
+
+#, fuzzy
+#~ msgid "ENCLOS#en_localisation"
+#~ msgstr "localisation"
+
+#, fuzzy
+#~ msgid "ENCLOS#en_nbre"
+#~ msgstr "nombre d'animaux"
 
 #, fuzzy
 #~ msgid "ENCLOS#en_nom"
@@ -1172,200 +1414,24 @@ msgstr "Lions Pdf"
 #~ msgstr "Préciser la référence"
 
 #, fuzzy
-#~ msgid "ENCLOS#en_t_especes"
-#~ msgstr "liste espèce"
-
-#, fuzzy
-#~ msgid "ENCLOS#en_espece"
-#~ msgstr "espèce"
-
-#, fuzzy
-#~ msgid "ENCLOS#en_capacite"
-#~ msgstr "capacité"
-
-#, fuzzy
-#~ msgid "ENCLOS#en_localisation"
-#~ msgstr "localisation"
-
-#, fuzzy
 #~ msgid "ENCLOS#en_surface"
 #~ msgstr "surface"
-
-#, fuzzy
-#~ msgid "ENCLOS#en_coordonnees"
-#~ msgstr "Coordonnées"
-
-#, fuzzy
-#~ msgid "ENCLOS#en_nbre"
-#~ msgstr "nombre d'animaux"
-
-#, fuzzy
-#~ msgid "ENCLOS#en_contenu"
-#~ msgstr "Contenu"
 
 #, fuzzy
 #~ msgid "ENCLOS#en_t_animaux"
 #~ msgstr "liste animaux"
 
 #, fuzzy
-#~ msgid "ENCLOS#en_animaux"
-#~ msgstr "animaux"
+#~ msgid "ENCLOS#en_t_especes"
+#~ msgstr "liste espèce"
 
 #, fuzzy
-#~ msgid "ANIMAL#title"
-#~ msgstr "animal"
+#~ msgid "ENCLOS#title"
+#~ msgstr "enclos"
 
 #, fuzzy
-#~ msgid "ANIMAL#an_identification"
-#~ msgstr "Identification"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_nom"
-#~ msgstr "nom"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_tatouage"
-#~ msgstr "tatouage"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_espece"
-#~ msgstr "espèce"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_espece_title"
-#~ msgstr "espÃšce (titre)"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_ordre"
-#~ msgstr "ordre"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_classe"
-#~ msgstr "classe"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_sexe"
-#~ msgstr "sexe"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_sexe#M"
-#~ msgstr "Masculin"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_sexe#F"
-#~ msgstr "Féminin"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_sexe#H"
-#~ msgstr "Hermaphrodite"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_photo"
-#~ msgstr "photo"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_naissance"
-#~ msgstr "date naissance"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_entree"
-#~ msgstr "date entree"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_enfant_t"
-#~ msgstr "liste enfant"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_enfant"
-#~ msgstr "enfant"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_carnetsante"
-#~ msgstr "Carnet Santé"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_enclos"
-#~ msgstr "Enclos"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_parent"
-#~ msgstr "Parents"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_pere"
-#~ msgstr "pere"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_mere"
-#~ msgstr "mere"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_folder"
-#~ msgstr "Dossier"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#title"
-#~ msgstr "carnet de sante"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_identification"
-#~ msgstr "Identification"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_nom"
-#~ msgstr "nom"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_idnom"
-#~ msgstr "id nom"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_intervention"
-#~ msgstr "Intervention"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_intervention_t"
-#~ msgstr "liste intervention"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_date"
-#~ msgstr "date"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_description"
-#~ msgstr "description"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_idveterinaire"
-#~ msgstr "id veterinaire"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_veterinaire"
-#~ msgstr "veterinaire"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_veterinaire#eltitle"
-#~ msgstr "éditer une ordonnance"
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_veterinaire#elsymbol"
-#~ msgstr "&hearts --- "
-
-#, fuzzy
-#~ msgid "CARNETSANTE#ca_maladie"
-#~ msgstr "maladie"
-
-#, fuzzy
-#~ msgid "ENTREE#title"
-#~ msgstr "entrée"
-
-#, fuzzy
-#~ msgid "ENTREE#ent_fr_identification"
-#~ msgstr "Identification"
-
-#, fuzzy
-#~ msgid "ENTREE#ent_idcaissiere"
-#~ msgstr "idcaissiere"
+#~ msgid "ENTREE#ent_adulte"
+#~ msgstr "nombre adulte"
 
 #, fuzzy
 #~ msgid "ENTREE#ent_caissiere"
@@ -1376,272 +1442,199 @@ msgstr "Lions Pdf"
 #~ msgstr "date"
 
 #, fuzzy
-#~ msgid "ENTREE#ent_ncaisse"
-#~ msgstr "N°caisse"
-
-#, fuzzy
-#~ msgid "ENTREE#ent_fr_entrees"
-#~ msgstr "Entrées"
-
-#, fuzzy
-#~ msgid "ENTREE#ent_adulte"
-#~ msgstr "nombre adulte"
+#~ msgid "ENTREE#ent_daysales"
+#~ msgstr "Recette"
 
 #, fuzzy
 #~ msgid "ENTREE#ent_enfant"
 #~ msgstr "nombre enfant"
 
 #, fuzzy
-#~ msgid "ENTREE#ent_prix"
-#~ msgstr "Prix"
+#~ msgid "ENTREE#ent_fr_entrees"
+#~ msgstr "Entrées"
 
 #, fuzzy
-#~ msgid "ENTREE#ent_printticket"
-#~ msgstr "Tickets"
-
-#, fuzzy
-#~ msgid "ENTREE#ent_daysales"
-#~ msgstr "Recette"
+#~ msgid "ENTREE#ent_fr_identification"
+#~ msgstr "Identification"
 
 #, fuzzy
 #~ msgid "ENTREE#ent_fr_prix"
 #~ msgstr "Prix"
 
 #, fuzzy
-#~ msgid "ENTREE#ent_prixenfant"
-#~ msgstr "prix enfant"
+#~ msgid "ENTREE#ent_idcaissiere"
+#~ msgstr "idcaissiere"
+
+#, fuzzy
+#~ msgid "ENTREE#ent_ncaisse"
+#~ msgstr "N°caisse"
+
+#, fuzzy
+#~ msgid "ENTREE#ent_printticket"
+#~ msgstr "Tickets"
+
+#, fuzzy
+#~ msgid "ENTREE#ent_prix"
+#~ msgstr "Prix"
 
 #, fuzzy
 #~ msgid "ENTREE#ent_prixadulte"
 #~ msgstr "prix adulte"
 
 #, fuzzy
-#~ msgid "DEMANDEADOPTION#title"
-#~ msgstr "demande adoption"
+#~ msgid "ENTREE#ent_prixenfant"
+#~ msgstr "prix enfant"
 
 #, fuzzy
-#~ msgid "DEMANDEADOPTION#de_tab_ident"
+#~ msgid "ENTREE#title"
+#~ msgstr "entrée"
+
+#, fuzzy
+#~ msgid "ESPECE#es_alimentation"
+#~ msgstr "alimentation"
+
+#, fuzzy
+#~ msgid "ESPECE#es_caracteristique"
+#~ msgstr "caractéristique"
+
+#, fuzzy
+#~ msgid "ESPECE#es_classe"
+#~ msgstr "classe"
+
+#, fuzzy
+#~ msgid "ESPECE#es_comportement"
+#~ msgstr "comportement"
+
+#, fuzzy
+#~ msgid "ESPECE#es_continent"
+#~ msgstr "continents"
+
+#, fuzzy
+#~ msgid "ESPECE#es_continent#Africa"
+#~ msgstr "Afrique"
+
+#, fuzzy
+#~ msgid "ESPECE#es_continent#Antartica"
+#~ msgstr "Antartique"
+
+#, fuzzy
+#~ msgid "ESPECE#es_continent#Asia"
+#~ msgstr "Asie"
+
+#, fuzzy
+#~ msgid "ESPECE#es_continent#Europa"
+#~ msgstr "Europe"
+
+#, fuzzy
+#~ msgid "ESPECE#es_continent#NorthAmerica"
+#~ msgstr "Amérique du nord"
+
+#, fuzzy
+#~ msgid "ESPECE#es_continent#Oceania"
+#~ msgstr "Océanie"
+
+#, fuzzy
+#~ msgid "ESPECE#es_continent#SouthAmerica"
+#~ msgstr "Amérique du sud"
+
+#, fuzzy
+#~ msgid "ESPECE#es_editcontinent"
+#~ msgstr "continents"
+
+#, fuzzy
+#~ msgid "ESPECE#es_habitat"
+#~ msgstr "habitat"
+
+#, fuzzy
+#~ msgid "ESPECE#es_idclasse"
+#~ msgstr "idclasse"
+
+#, fuzzy
+#~ msgid "ESPECE#es_identification"
 #~ msgstr "Identification"
 
 #, fuzzy
-#~ msgid "DEMANDEADOPTION#de_reference"
-#~ msgstr "Référence"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_fr_identification"
-#~ msgstr "Identification demandeur"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_idredac"
-#~ msgstr "rédacteur id"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_redac"
-#~ msgstr "rédacteur"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_iddemand"
-#~ msgstr "demandeur id"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_demand"
-#~ msgstr "demandeur"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_postaladdress"
-#~ msgstr "Adresse"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_phone"
-#~ msgstr "téléphone"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_mobile"
-#~ msgstr "mobile"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_fr_anidentification"
-#~ msgstr "Animal"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_nom"
+#~ msgid "ESPECE#es_nom"
 #~ msgstr "nom"
 
 #, fuzzy
-#~ msgid "DEMANDEADOPTION#de_espece"
+#~ msgid "ESPECE#es_ordre"
+#~ msgstr "ordre"
+
+#, fuzzy
+#~ msgid "ESPECE#es_poids"
+#~ msgstr "poids"
+
+#, fuzzy
+#~ msgid "ESPECE#es_protegee"
+#~ msgstr "protÃ©gÃ©e"
+
+#, fuzzy
+#~ msgid "ESPECE#es_protegee#0"
+#~ msgstr "Non"
+
+#, fuzzy
+#~ msgid "ESPECE#es_protegee#1"
+#~ msgstr "Oui"
+
+#, fuzzy
+#~ msgid "ESPECE#es_repartition"
+#~ msgstr "répartition"
+
+#, fuzzy
+#~ msgid "ESPECE#es_reproduction"
+#~ msgstr "reproduction"
+
+#, fuzzy
+#~ msgid "ESPECE#title"
 #~ msgstr "espèce"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_idespece"
-#~ msgstr "id espèce"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_naissance"
-#~ msgstr "date de naissance"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_photo"
-#~ msgstr "photo"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_tab_info"
-#~ msgstr "Complément"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_fr_provenance"
-#~ msgstr "Provenance"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_pays"
-#~ msgstr "pays"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_region"
-#~ msgstr "région"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_proprietaire"
-#~ msgstr "propriétaire actuel"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_idproprietaire"
-#~ msgstr "id propriétaire actuel"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_fr_realisation"
-#~ msgstr "Réalisation"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_date"
-#~ msgstr "date "
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_heure"
-#~ msgstr "heure"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_fr_refus"
-#~ msgstr "Refus"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_motif"
-#~ msgstr "Motif du refus"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_fr_valid"
-#~ msgstr "Validation"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_idval"
-#~ msgstr "Valideur id"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_val"
-#~ msgstr "Valideur"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_idrealised"
-#~ msgstr "réalisation id"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_realised"
-#~ msgstr "réalisation"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_fr_pval"
-#~ msgstr "Validation groupe"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_idgdemand"
-#~ msgstr "groupe demandeur id"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_gdemand"
-#~ msgstr "groupe demandeur"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_idgvalid"
-#~ msgstr "groupe valideur id"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_gvalid"
-#~ msgstr "groupe valideur"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_idgreal"
-#~ msgstr "groupe prise en charge id"
-
-#, fuzzy
-#~ msgid "DEMANDEADOPTION#de_greal"
-#~ msgstr "groupe prise en charge"
-
-#, fuzzy
-#~ msgid "WDEMANDEADOPTION#title"
-#~ msgstr "cycle workflow demande Adoption"
-
-#, fuzzy
-#~ msgid "WDEMANDEADOPTION#wad_fr_transition"
-#~ msgstr "Paramètre de transition"
-
-#, fuzzy
-#~ msgid "WDEMANDEADOPTION#wad_refus"
-#~ msgstr "Motif de Refus"
-
-#, fuzzy
-#~ msgid "WDEMANDEADOPTION#wad_fr_mail"
-#~ msgstr "ModÃšle de courriels"
-
-#, fuzzy
-#~ msgid "WDEMANDEADOPTION#wad_mailsecure"
-#~ msgstr "EspÃšce protÃ©gÃ©e"
-
-#, fuzzy
-#~ msgid "WDEMANDEADOPTION#wad_mailcurrent"
-#~ msgstr "EspÃšce commune"
-
-#, fuzzy
-#~ msgid "WANIMAL#title"
-#~ msgstr "cycle workflow Animal"
-
-#, fuzzy
-#~ msgid "WANIMAL#wan_fr_transition"
-#~ msgstr "Paramètre de transition"
-
-#, fuzzy
-#~ msgid "WANIMAL#wan_veto"
-#~ msgstr "vétérinaire"
-
-#, fuzzy
-#~ msgid "GARDIEN#title"
-#~ msgstr "Gardien"
-
-#, fuzzy
-#~ msgid "GARDIEN#gar_fr_garde"
-#~ msgstr "garde"
 
 #, fuzzy
 #~ msgid "GARDIEN#gar_debgarde"
 #~ msgstr "Début Heure Garde"
 
 #, fuzzy
-#~ msgid "GARDIEN#gar_fingarde"
-#~ msgstr "Fin Heure Garde"
+#~ msgid "GARDIEN#gar_enclos"
+#~ msgstr "Enclos"
 
 #, fuzzy
 #~ msgid "GARDIEN#gar_enclos_t"
 #~ msgstr "Enclos"
 
 #, fuzzy
+#~ msgid "GARDIEN#gar_fingarde"
+#~ msgstr "Fin Heure Garde"
+
+#, fuzzy
+#~ msgid "GARDIEN#gar_fr_garde"
+#~ msgstr "garde"
+
+#, fuzzy
 #~ msgid "GARDIEN#gar_idenclos"
 #~ msgstr "id enclos"
 
 #, fuzzy
-#~ msgid "VETERINAIRE#title"
-#~ msgstr "Veterinaire"
+#~ msgid "GARDIEN#title"
+#~ msgstr "Gardien"
+
+#~ msgid "Taccepted"
+#~ msgstr "Taccepted"
+
+#~ msgid "Trealised"
+#~ msgstr "Trealised"
+
+#~ msgid "Trefused"
+#~ msgstr "Trefused"
+
+#~ msgid "Tretry"
+#~ msgstr "Tretry"
+
+#~ msgid "Ttransmited"
+#~ msgstr "Ttransmited"
 
 #, fuzzy
-#~ msgid "VETERINAIRE#us_fr_garde"
-#~ msgstr "garde"
+#~ msgid "VETERINAIRE#title"
+#~ msgstr "Veterinaire"
 
 #, fuzzy
 #~ msgid "VETERINAIRE#us_debgarde"
@@ -1652,104 +1645,115 @@ msgstr "Lions Pdf"
 #~ msgstr "Fin Heure Garde"
 
 #, fuzzy
-#~ msgid "VETERINAIRE#us_specialite_t"
-#~ msgstr "Spécialite"
-
-#, fuzzy
-#~ msgid "VETERINAIRE#us_specialite"
-#~ msgstr "Spécialite"
-
-#, fuzzy
-#~ msgid "CUISINIER#title"
-#~ msgstr "Cuisinier"
-
-#, fuzzy
-#~ msgid "CUISINIER#us_fr_nourriture"
-#~ msgstr "nourriture"
-
-#, fuzzy
-#~ msgid "CUISINIER#us_specialite_t"
-#~ msgstr "Spécialite"
-
-#, fuzzy
-#~ msgid "CUISINIER#us_specialite"
-#~ msgstr "Spécialite"
-
-#, fuzzy
-#~ msgid "CUISINIER#us_lion"
-#~ msgstr "Lions HTML"
-
-#, fuzzy
-#~ msgid "CUISINIER#us_lion_odt"
-#~ msgstr "Lions Odt"
-
-#, fuzzy
-#~ msgid "CLASSE#title"
-#~ msgstr "classe"
-
-#, fuzzy
-#~ msgid "CLASSE#cl_identification"
-#~ msgstr "Identification"
-
-#, fuzzy
-#~ msgid "CLASSE#cl_nomscientifique"
-#~ msgstr "nom scientifique"
-
-#, fuzzy
-#~ msgid "CLASSE#cl_nom"
-#~ msgstr "nom"
-
-#, fuzzy
-#~ msgid "CLASSE#cl_caracteristique"
-#~ msgstr "caractéristique"
-
-#, fuzzy
-#~ msgid "ESPECE#es_idclasse"
-#~ msgstr "idclasse"
-
-#, fuzzy
-#~ msgid "ENCLOS#en_idespece"
-#~ msgstr "id espèce"
-
-#, fuzzy
-#~ msgid "ENCLOS#en_idanimaux"
-#~ msgstr "id animaux"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_idespece"
-#~ msgstr "id espèce"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_idclasse"
-#~ msgstr "id classe"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_idenfant"
-#~ msgstr "id enfant"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_idpere"
-#~ msgstr "id pere"
-
-#, fuzzy
-#~ msgid "ANIMAL#an_idmere"
-#~ msgstr "id mere"
-
-#, fuzzy
-#~ msgid "WANIMAL#wan_idveto"
-#~ msgstr "id vétérinaire"
-
-#, fuzzy
-#~ msgid "GARDIEN#gar_enclos"
-#~ msgstr "Enclos"
+#~ msgid "VETERINAIRE#us_fr_garde"
+#~ msgstr "garde"
 
 #, fuzzy
 #~ msgid "VETERINAIRE#us_idspecialite"
 #~ msgstr "id spécialite"
 
 #, fuzzy
-#~ msgid "CUISINIER#us_idspecialite"
-#~ msgstr "id spécialite"
+#~ msgid "VETERINAIRE#us_specialite"
+#~ msgstr "Spécialite"
+
+#, fuzzy
+#~ msgid "VETERINAIRE#us_specialite_t"
+#~ msgstr "Spécialite"
+
+#, fuzzy
+#~ msgid "WANIMAL#title"
+#~ msgstr "cycle workflow Animal"
+
+#, fuzzy
+#~ msgid "WANIMAL#wan_fr_transition"
+#~ msgstr "Paramètre de transition"
+
+#, fuzzy
+#~ msgid "WANIMAL#wan_idveto"
+#~ msgstr "id vétérinaire"
+
+#, fuzzy
+#~ msgid "WANIMAL#wan_veto"
+#~ msgstr "vétérinaire"
+
+#, fuzzy
+#~ msgid "WDEMANDEADOPTION#title"
+#~ msgstr "cycle workflow demande Adoption"
+
+#, fuzzy
+#~ msgid "WDEMANDEADOPTION#wad_fr_mail"
+#~ msgstr "ModÃšle de courriels"
+
+#, fuzzy
+#~ msgid "WDEMANDEADOPTION#wad_fr_transition"
+#~ msgstr "Paramètre de transition"
+
+#, fuzzy
+#~ msgid "WDEMANDEADOPTION#wad_mailcurrent"
+#~ msgstr "EspÃšce commune"
+
+#, fuzzy
+#~ msgid "WDEMANDEADOPTION#wad_mailsecure"
+#~ msgstr "EspÃšce protÃ©gÃ©e"
+
+#, fuzzy
+#~ msgid "WDEMANDEADOPTION#wad_refus"
+#~ msgstr "Motif de Refus"
+
+#, fuzzy
+#~ msgid "ZOO:CLASSE#cl_caracteristique"
+#~ msgstr "caractÃ©ristique"
+
+#, fuzzy
+#~ msgid "ZOO:CLASSE#cl_identification"
+#~ msgstr "Identification"
+
+#, fuzzy
+#~ msgid "ZOO:CLASSE#cl_nom"
+#~ msgstr "nom"
+
+#, fuzzy
+#~ msgid "ZOO:CLASSE#cl_nomscientifique"
+#~ msgstr "nom scientifique"
+
+#, fuzzy
+#~ msgid "ZOO:CLASSE#title"
+#~ msgstr "classe"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_demand"
+#~ msgstr "demandeur"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_idproprietaire"
+#~ msgstr "id propriÃ©taire actuel"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_realised"
+#~ msgstr "rÃ©alisation"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_redac"
+#~ msgstr "rÃ©dacteur"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_val"
+#~ msgstr "Valideur"
+
+#~ msgid "accepted"
+#~ msgstr "accepted"
+
+#~ msgid "initialised"
+#~ msgstr "initialised"
+
+#~ msgid "realised"
+#~ msgstr "realised"
+
+#~ msgid "refused"
+#~ msgstr "refused"
 
 #~ msgid "retry"
 #~ msgstr "retry"
+
+#~ msgid "transmited"
+#~ msgstr "transmited"

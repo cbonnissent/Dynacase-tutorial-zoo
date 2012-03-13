@@ -27,7 +27,7 @@ Class _ANIMAL extends Doc {
         include_once("FDL/Class.SearchDoc.php");
 	$resultat=" ";
         $s=new SearchDoc($this->dbaccess,$this->getProperty('fromid'));
-        $s->addFilter("an_enfant ~ '\\\\y%d\\\\y'",$this->getProperty('initid'));
+        $s->addFilter("an_enfant ~ E'\\\\y%d\\\\y'",$this->getProperty('initid'));
         $s->slice=3;
         $tdoc=$s->search();
         if (count($tdoc)==0) return " ";
@@ -43,7 +43,7 @@ Class _ANIMAL extends Doc {
         include_once("FDL/Class.SearchDoc.php");
 
         $s=new SearchDoc($this->dbaccess,$this->getProperty('fromid'));
-        $s->addFilter("an_enfant ~ '\\\\y%d\\\\y'",$this->getProperty('initid'));
+        $s->addFilter("an_enfant ~ E'\\\\y%d\\\\y'",$this->getProperty('initid'));
         $s->addFilter("an_sexe = '%s'",$sexeVar);
 	$s->setObjectReturn();
         $s->slice=1;
@@ -105,7 +105,7 @@ Class _ANIMAL extends Doc {
 
         $s=new SearchDoc($this->dbaccess,"ZOO_ENCLOS");
         $idespece=$this->getValue("an_espece");
-        $s->addFilter("en_espece ~ '\\\\y%d\\\\y'",$idespece);
+        $s->addFilter("en_espece ~ E'\\\\y%d\\\\y'",$idespece);
         $s->addFilter("en_nbre < en_capacite");
         $s->noViewControl(); // no test view acl
         $s->setObjectReturn();
@@ -128,11 +128,10 @@ Class _ANIMAL extends Doc {
 
         $err="";
         $s=new SearchDoc($this->dbaccess,"ZOO_ENCLOS");
-        $s->addFilter("en_espece ~ '\\\\y%d\\\\y'",$this->getValue("an_espece"));
+        $s->addFilter("en_espece ~ E'\\\\y%d\\\\y'",$this->getValue("an_espece"));
         $s->noViewControl(); // no test view acl
         $s->setObjectReturn();
         $s->search();
-
         $nbdoc=$s->count();
 
         if ($nbdoc==0) $err=_("zoo:no enclos for this species");
