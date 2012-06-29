@@ -1,4 +1,9 @@
 <?php
+/*
+ * @author Anakeen
+ * @license http://www.fsf.org/licensing/licenses/agpl-3.0.html GNU Affero General Public License
+ * @package FDL
+*/
 /**
  * Species comportment
  *
@@ -9,31 +14,29 @@
  */
 /**
  */
-
 /**
  * @begin-method-ignore
  * this part will be deleted when construct document class until end-method-ignore
  */
-Class _ESPECE extends Doc {
-	/*
-	 * @end-method-ignore
-	 */
-
-	/**
-	 * special edit view
-	 * @return void
-	 */
-	function editcontinent() {
-		$this->editAttr();
-	}
-
-	/**
-	 * @begin-method-ignore
-	 * this part will be deleted when construct document class until end-method-ignore
-	 */
+Class _ZOO_ESPECE extends Doc
+{
+    /*
+     * @end-method-ignore
+    */
+    /**
+     * special edit view
+     * @return void
+     */
+    function editcontinent()
+    {
+        $this->editAttr();
+    }
+    /**
+     * @begin-method-ignore
+     * this part will be deleted when construct document class until end-method-ignore
+     */
 }
 /*
  * @end-method-ignore
- */
-
+*/
 ?>

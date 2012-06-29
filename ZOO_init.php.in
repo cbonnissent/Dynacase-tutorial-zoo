@@ -1,19 +1,149 @@
 <?php
+/*
+ * @author Anakeen
+ * @license http://www.fsf.org/licensing/licenses/agpl-3.0.html GNU Affero General Public License
+ * @package FDL
+*/
 // ---------------------------------------------------------------
 // $Id: ZOO_init.php.in,v 1.3 2010-04-02 14:49:04 eric Exp $
 // $Source: /home/cvsroot/anakeen/addons/zoo3/ZOO_init.php.in,v $
 // ---------------------------------------------------------------
-
-
 global $app_const;
 
-$app_const= array(
-		  "INIT" => "yes",
-		  "VERSION" => "@VERSION@-@RELEASE@",
-		  "ONEFAM_MIDS"=>"ZOO_ANIMAL,ZOO_ENCLOS,ZOO_ESPECE,ZOO_CLASSE,ZOO_CARNETSANTE,ZOO_ENTREE,ZOO_DEMANDEADOPTION",
-		  "ZOO_NAME"    =>array("val"=>"Zoo Land",
-					"descr"=>N_("Name of the zoo"),
-					"global"=>"N",
-					"user"=>"N"));
+$menuconf = array(
+    "families" => array(
+        "ZOO_ANIMAL" => array(
+            "standardMenu" => array(
+                "tools" => array(
+                    "deleted" => array(
+                        'folders',
+                        'memosearch',
+                        'newreport',
+                        'newsearch'
+                    ),
+                    "custom" => array(
+                        "my0" => array(
+                            "label" => "Custom tools",
+                            "class" => "ui-widget-header"
+                        ),
+                        "my1" => array(
+                            "label" => "My Google",
+                            "url" => "http://www.google.fr/",
+                            "target" => "google"
+                        ),
+                        "my2" => array(
+                            "label" => "My Wiki",
+                            "url" => "http://www.wikipedia.fr/",
+                            "target" => "wiki"
+                        ),
+                        "my3" => array(
+                            "label" => "My alert",
+                            "url" => "javascript:alert('toto')"
+                        ),
+                    )
+                )
+            ),
+            "customMenu" => array(
+                "my4" => array(
+                    "before" => "tools",
+                    "label" => "My Custom Menu",
+                    "items" => array(
+                        "my5" => array(
+                            "label" => "My Custom Google",
+                            "url" => "http://www.google.fr/",
+                            "target" => "google"
+                        ),
+                        "my6" => array(
+                            "label" => "My Custom Wiki",
+                            "url" => "http://www.wikipedia.fr/",
+                            "target" => "wiki"
+                        ),
+                        "my7" => array(
+                            "target" => "_self",
+                            "label" => "My custom alert",
+                            "url" => "javascript:alert('custom')"
+                        )
+                    )
+                ),
 
+                "my5" => array(
+                    "before" => "create",
+                    "label" => "My Wiki Button 1",
+                    "href" => "http://www.wikipedia.fr/",
+                    "target" => "wiki"
+
+                ),
+
+                "my6" => array(
+                    "label" => "My Wiki Button 2",
+                    "url" => "javascript:alert('pas touche')",
+                    "target" => "_self"
+
+                )
+            )
+        ),
+
+        "ZOO_ESPECE" => array(
+            "standardMenu" => array(
+                "sort" => array(
+                    "deleted" => "all"
+                ),
+                "tools" => array(
+                    "deleted" => 'all',
+
+                    "custom" => array(
+                        "my1" => array(
+                            "label" => "My Google",
+                            "url" => "http://www.google.fr/",
+                            "target" => "google"
+                        ),
+                        "my2" => array(
+                            "label" => "My Wiki",
+                            "url" => "http://www.wikipedia.fr/",
+                            "target" => "wiki"
+                        ),
+                        "my3" => array(
+                            "label" => "My alert",
+                            "url" => "javascript:alert('toto')"
+                        ),
+                    )
+                )
+            ),
+            "customMenu" => array(
+                "my4" => array(
+                    "label" => "My Espece Menu",
+                    "items" => array(
+                        "my5" => array(
+                            "label" => "My Custom Google",
+                            "url" => "http://www.google.fr/",
+                            "target" => "google"
+                        ),
+                        "my6" => array(
+                            "label" => "My Custom Wiki",
+                            "url" => "http://www.wikipedia.fr/",
+                            "target" => "wiki"
+                        ),
+                        "my7" => array(
+                            "target" => "_self",
+                            "label" => "My custom alert",
+                            "url" => "javascript:alert('custom')"
+                        )
+                    )
+                )
+            )
+        )
+    )
+);
+$app_const = array(
+    "INIT" => "yes",
+    "VERSION" => "@VERSION@-@RELEASE@",
+    "ONEFAM_MIDS" => "ZOO_ANIMAL,ZOO_ENCLOS,ZOO_ESPECE,ZOO_CLASSE,ZOO_CARNETSANTE,ZOO_ENTREE,ZOO_DEMANDEADOPTION",
+    "ONEFAM_MENU" => json_encode($menuconf),
+    "ZOO_NAME" => array(
+        "val" => "Zoo Land",
+        "descr" => N_("Name of the zoo"),
+        "global" => "N",
+        "user" => "N"
+    )
+);
 ?>

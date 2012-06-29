@@ -22,7 +22,7 @@
                         for (var i in content) {
                                 var doc=content[i];
                                 if (doc && doc.isAlive()) {
-                                        var o = new Option(doc.getTitle(),doc.getProperty('id'));
+                                        var o = new Option(doc.getTitle(),doc.getProperty('initid'));
                                       //  sel.options[sel.options.length]=o; 
                                                 try {
                                          sel.add(o, null); // standards compliant; doesn't work in IE
