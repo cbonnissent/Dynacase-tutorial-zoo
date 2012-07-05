@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZOO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-08 18:10+0100\n"
-"PO-Revision-Date: 2010-11-18 12:11+0100\n"
+"POT-Creation-Date: 2012-07-03 10:55+0200\n"
+"PO-Revision-Date: 2012-07-03 10:02+0200\n"
 "Last-Translator: Eric Brison <eric.brison@anakeen.com>\n"
 "Language-Team: French <distrib@anakeen.com>\n"
 "Language: fr\n"
@@ -147,6 +147,14 @@ msgid "ZOO_ANIMAL#an_folder"
 msgstr "Dossier"
 
 #, fuzzy
+msgid "ZOO_ANIMAL#an_friend"
+msgstr "copains"
+
+#, fuzzy
+msgid "ZOO_ANIMAL#an_gardien"
+msgstr "gardien responsable"
+
+#, fuzzy
 msgid "ZOO_ANIMAL#an_identification"
 msgstr "Identification"
 
@@ -161,6 +169,10 @@ msgstr "date naissance"
 #, fuzzy
 msgid "ZOO_ANIMAL#an_nom"
 msgstr "nom"
+
+#, fuzzy
+msgid "ZOO_ANIMAL#an_ofr"
+msgstr "autres potes"
 
 #, fuzzy
 msgid "ZOO_ANIMAL#an_ordre"
@@ -957,25 +969,25 @@ msgid "zoo;Capacity not set"
 msgstr ""
 
 msgid "zoo_Taccepted"
-msgstr "Acceptation"
+msgstr "Accepter le dossier"
 
 msgid "zoo_Trealised"
-msgstr "Réalisation"
+msgstr "Fin de traitement"
 
 msgid "zoo_Trefused"
-msgstr "Refus"
+msgstr "Refuser le dossier"
 
 msgid "zoo_Tretry"
 msgstr "À corriger"
 
 msgid "zoo_Ttransmited"
-msgstr "Transmission"
+msgstr "Transmettre le dossier"
 
 msgid "zoo_accepted"
 msgstr "Accepté"
 
 msgid "zoo_adoption accepted"
-msgstr "Acceptation"
+msgstr "Préparation de l'accueil"
 
 msgid "zoo_adoption verification"
 msgstr "Vérification de l'adoption"

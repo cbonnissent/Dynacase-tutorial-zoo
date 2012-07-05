@@ -76,17 +76,7 @@ class WAdoption extends WDoc
             "e1" => self::transmited,
             "e2" => self::initialised,
             "t" => self::Tretry
-        ) ,
-        array(
-            "e1" => self::transmited,
-            "e2" => "test",
-            "t" => self::Ttransmited
-        ) ,
-        array(
-            "e1" => "test",
-            "e2" => self::transmited,
-            "t" => self::Ttransmited
-        )
+        ) 
     );
     
     public $stateactivity = array(
