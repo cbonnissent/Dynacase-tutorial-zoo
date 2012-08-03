@@ -16,6 +16,9 @@
     <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-init.ods">
 			<label lang="en">Importing zoo somes species</label>
 		</process>
+    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/Layout/zoo-initanimals.xml">
+			<label lang="en">Importing zoo somes animals</label>
+		</process>
     
   </post-install>
 

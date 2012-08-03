@@ -28,17 +28,18 @@ $menuconf = array(
                         ),
                         "my1" => array(
                             "label" => "My Google",
-                            "url" => "http://www.google.fr/",
+                            "url" => "http://www.google.fr/search?q=animal",
                             "target" => "google"
                         ),
                         "my2" => array(
                             "label" => "My Wiki",
-                            "url" => "http://www.wikipedia.fr/",
+                            "url" => "http://fr.wikipedia.org/wiki/Animal",
                             "target" => "wiki"
                         ),
                         "my3" => array(
                             "label" => "My alert",
-                            "url" => "javascript:alert('toto')"
+                            "target" => "_self",
+                            "url" => "javascript:alert('animal alert')"
                         ),
                     )
                 )
@@ -49,89 +50,28 @@ $menuconf = array(
                     "label" => "My Custom Menu",
                     "items" => array(
                         "my5" => array(
-                            "label" => "My Custom Google",
-                            "url" => "http://www.google.fr/",
-                            "target" => "google"
+                            "label" => "Wiki Espèce",
+                            "url" => "http://fr.wikipedia.org/wiki/Esp%C3%A8ce",
+                            "target" => "finfo"
                         ),
                         "my6" => array(
-                            "label" => "My Custom Wiki",
-                            "url" => "http://www.wikipedia.fr/",
-                            "target" => "wiki"
-                        ),
-                        "my7" => array(
-                            "target" => "_self",
-                            "label" => "My custom alert",
-                            "url" => "javascript:alert('custom')"
+                            "label" => "Wiki Animal",
+                            "url" => "http://fr.wikipedia.org/wiki/Animal",
+                            "target" => "finfo"
                         )
                     )
                 ),
 
-                "my5" => array(
-                    "before" => "create",
-                    "label" => "My Wiki Button 1",
-                    "href" => "http://www.wikipedia.fr/",
-                    "target" => "wiki"
-
-                ),
-
                 "my6" => array(
-                    "label" => "My Wiki Button 2",
-                    "url" => "javascript:alert('pas touche')",
+                    "label" => "Ne pas toucher",
+                    "url" => "javascript:alert('j&rsquo;ai dit de ne pas toucher !')",
                     "target" => "_self"
 
                 )
             )
-        ),
-
-        "ZOO_ESPECE" => array(
-            "standardMenu" => array(
-                "sort" => array(
-                    "deleted" => "all"
-                ),
-                "tools" => array(
-                    "deleted" => 'all',
-
-                    "custom" => array(
-                        "my1" => array(
-                            "label" => "My Google",
-                            "url" => "http://www.google.fr/",
-                            "target" => "google"
-                        ),
-                        "my2" => array(
-                            "label" => "My Wiki",
-                            "url" => "http://www.wikipedia.fr/",
-                            "target" => "wiki"
-                        ),
-                        "my3" => array(
-                            "label" => "My alert",
-                            "url" => "javascript:alert('toto')"
-                        ),
-                    )
-                )
-            ),
-            "customMenu" => array(
-                "my4" => array(
-                    "label" => "My Espece Menu",
-                    "items" => array(
-                        "my5" => array(
-                            "label" => "My Custom Google",
-                            "url" => "http://www.google.fr/",
-                            "target" => "google"
-                        ),
-                        "my6" => array(
-                            "label" => "My Custom Wiki",
-                            "url" => "http://www.wikipedia.fr/",
-                            "target" => "wiki"
-                        ),
-                        "my7" => array(
-                            "target" => "_self",
-                            "label" => "My custom alert",
-                            "url" => "javascript:alert('custom')"
-                        )
-                    )
-                )
-            )
         )
+
+
     )
 );
 $app_const = array(
