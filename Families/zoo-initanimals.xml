@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <documents date="2012-08-03T13:42:56" author="Default Master" name="recherche_animal">
-<zoo_animal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="zoo_animal.xsd"    title="Rotor" revision="0" modification-date="2012-08-03T13:42:07" version="" state=""> 
+<zoo_animal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="zoo_animal.xsd"  name="aliRotor"  title="Rotor" revision="0" modification-date="2012-08-03T13:42:07" version="" state=""> 
 <an_identification><an_nom>Rotor</an_nom>
 <an_tatouage xsi:nil="true"/>
 <an_espece name="ZOO_ESP_ALLI">Alligator</an_espece>
@@ -16,10 +16,7 @@
 <an_naissance>2012-08-03</an_naissance>
 <an_entree xsi:nil="true"/>
 
-<an_pere>Théodor</an_pere>
-<!--autotitle an_pere_title Théodor -->
-<an_mere>Éléonore</an_mere>
-<!--autotitle an_mere_title Éléonore --></an_identification>
+</an_identification>
 
 </zoo_animal>
 <zoo_animal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="zoo_animal.xsd"    title="Théodor" revision="0" modification-date="2012-08-03T13:41:44" version="" state=""> 
@@ -37,7 +34,7 @@
 <an_ofr xsi:nil="true"/>
 <an_naissance>2011-08-10</an_naissance>
 <an_entree xsi:nil="true"/>
-<an_enfant_t><an_enfant>Rotor</an_enfant></an_enfant_t>
+<an_enfant_t><an_enfant name="aliRotor">Rotor</an_enfant></an_enfant_t>
 <an_pere xsi:nil="true"/>
 <!--autotitle an_pere_title  -->
 <an_mere xsi:nil="true"/>
@@ -59,7 +56,7 @@
 <an_ofr xsi:nil="true"/>
 <an_naissance>2011-09-08</an_naissance>
 <an_entree xsi:nil="true"/>
-<an_enfant_t><an_enfant>Rotor</an_enfant></an_enfant_t>
+<an_enfant_t><an_enfant name="aliRotor">Rotor</an_enfant></an_enfant_t>
 <an_pere xsi:nil="true"/>
 <!--autotitle an_pere_title  -->
 <an_mere xsi:nil="true"/>
