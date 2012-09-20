@@ -76,7 +76,7 @@ function getAddress($dbaccess, $name = "")
 {
     include_once ("FDL/Class.SearchDoc.php");
     
-    $s = new SearchDoc($dbaccess, "USER");
+    $s = new SearchDoc($dbaccess, "ZOO_CONTACT");
     if ($name != "") { // add optionnal filter on title
         $s->addFilter("title ~* '%s'", $name);
     }
@@ -86,11 +86,11 @@ function getAddress($dbaccess, $name = "")
     
     $tr = array();
     while ($doc = $s->nextDoc()) {
-        $mobile = $doc->getValue("us_mobile");
-        $phone = $doc->getValue("us_phone");
-        $postalcode = sprintf("%s\n%s %s", $doc->getValue("us_workaddr") , $doc->getValue("us_workpostalcode") , $doc->getValue("us_worktown"));
+        $mobile = $doc->getValue("zct_mobile");
+        $phone = $doc->getValue("zct_phone");
+        $postalcode = sprintf("%s\n%s %s", $doc->getValue("zct_workaddr") , $doc->getValue("zct_workpostalcode") , $doc->getValue("us_worktown"));
         $tr[] = array(
-            $doc->getTitle() . ' (' . $doc->getValue("us_society") . ')',
+            $doc->getHtmlTitle(),
             $doc->getProperty('initid') ,
             $doc->getTitle() ,
             $postalcode,
