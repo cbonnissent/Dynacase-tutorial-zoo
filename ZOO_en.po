@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZOO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-03 10:55+0200\n"
+"POT-Creation-Date: 2012-10-15 14:42+0200\n"
 "PO-Revision-Date: 2012-03-08 18:19+0100\n"
 "Last-Translator: Eric Brison <eric.brison@anakeen.com>\n"
 "Language-Team: English <distrib@anakeen.com>\n"
@@ -145,10 +145,6 @@ msgid "ZOO_ANIMAL#an_folder"
 msgstr "Dossier"
 
 #, fuzzy
-msgid "ZOO_ANIMAL#an_friend"
-msgstr "copains"
-
-#, fuzzy
 msgid "ZOO_ANIMAL#an_gardien"
 msgstr "gardien responsable"
 
@@ -167,10 +163,6 @@ msgstr "date naissance"
 #, fuzzy
 msgid "ZOO_ANIMAL#an_nom"
 msgstr "nom"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_ofr"
-msgstr "autres potes"
 
 #, fuzzy
 msgid "ZOO_ANIMAL#an_ordre"
@@ -249,18 +241,6 @@ msgid "ZOO_CARNETSANTE#ca_nom"
 msgstr "nom de l'animal"
 
 #, fuzzy
-msgid "ZOO_CARNETSANTE#ca_veterinaire"
-msgstr "veterinaire"
-
-#, fuzzy
-msgid "ZOO_CARNETSANTE#ca_veterinaire#elsymbol"
-msgstr "&hearts ---"
-
-#, fuzzy
-msgid "ZOO_CARNETSANTE#ca_veterinaire#eltitle"
-msgstr "Ã©diter une ordonnance"
-
-#, fuzzy
 msgid "ZOO_CARNETSANTE#title"
 msgstr "carnet de sante"
 
@@ -283,6 +263,82 @@ msgstr "nom scientifique"
 #, fuzzy
 msgid "ZOO_CLASSE#title"
 msgstr "classe"
+
+#, fuzzy
+msgid "ZOO_CONTACT#title"
+msgstr "Contact"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility"
+msgstr "civilité"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#"
+msgstr " "
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#Docteur"
+msgstr "Docteur"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#Madame"
+msgstr "Madame"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#Mademoiselle"
+msgstr "Mademoiselle"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#Monsieur"
+msgstr "Monsieur"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#Professeur"
+msgstr "Professeur"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_fname"
+msgstr "prénom"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_fr_coord"
+msgstr "Informations professionnelles"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_fr_ident"
+msgstr "État civil"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_lname"
+msgstr "nom"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_mail"
+msgstr "mail"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_mobile"
+msgstr "mobile"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_phone"
+msgstr "téléphone"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_photo"
+msgstr "photographie"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_workaddr"
+msgstr "adresse"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_workpostalcode"
+msgstr "code postal"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_worktown"
+msgstr "ville"
 
 #, fuzzy
 msgid "ZOO_CUISINIER#title"
@@ -351,18 +407,6 @@ msgstr "Refus"
 #, fuzzy
 msgid "ZOO_DEMANDEADOPTION#de_fr_valid"
 msgstr "Validation"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_gdemand"
-msgstr "groupe demandeur"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_greal"
-msgstr "groupe prise en charge"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_gvalid"
-msgstr "groupe valideur"
 
 #, fuzzy
 msgid "ZOO_DEMANDEADOPTION#de_heure"
@@ -725,9 +769,6 @@ msgstr "Enclos"
 msgid "ZOO_GARDIEN#title"
 msgstr "Gardien"
 
-msgid "ZOO_GARDIEN#us_secr"
-msgstr ""
-
 #, fuzzy
 msgid "ZOO_VETERINAIRE#title"
 msgstr "Veterinaire"
@@ -769,10 +810,6 @@ msgid "ZOO_WDEMANDEADOPTION#title"
 msgstr "Cycle demande Adoption"
 
 #, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_dmul"
-msgstr "mul"
-
-#, fuzzy
 msgid "ZOO_WDEMANDEADOPTION#wad_fr_mail"
 msgstr "ModÃšle de courriels"
 
@@ -787,10 +824,6 @@ msgstr "EspÃšce commune"
 #, fuzzy
 msgid "ZOO_WDEMANDEADOPTION#wad_mailsecure"
 msgstr "EspÃšce protÃ©gÃ©e"
-
-#, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_pfile"
-msgstr "fichier param"
 
 #, fuzzy
 msgid "ZOO_WDEMANDEADOPTION#wad_refus"
@@ -860,6 +893,14 @@ msgstr ""
 msgid "entrance"
 msgstr ""
 
+#, c-format
+msgid "group %s has no login"
+msgstr ""
+
+#, c-format
+msgid "group %s not found"
+msgstr ""
+
 msgid "no mail for realisator"
 msgstr ""
 
@@ -888,6 +929,51 @@ msgstr ""
 msgid "transfered"
 msgstr "transmited"
 
+msgid "wdt_accept"
+msgstr ""
+
+msgid "wdt_accepted"
+msgstr ""
+
+msgid "wdt_archive"
+msgstr ""
+
+msgid "wdt_initialised"
+msgstr ""
+
+msgid "wdt_outdated"
+msgstr ""
+
+msgid "wdt_published"
+msgstr ""
+
+msgid "wdt_realisation"
+msgstr ""
+
+msgid "wdt_realise"
+msgstr ""
+
+msgid "wdt_redaction"
+msgstr ""
+
+msgid "wdt_refuse"
+msgstr ""
+
+msgid "wdt_refused"
+msgstr ""
+
+msgid "wdt_retry"
+msgstr ""
+
+msgid "wdt_transmited"
+msgstr ""
+
+msgid "wdt_transmition"
+msgstr ""
+
+msgid "wdt_verification"
+msgstr ""
+
 msgid "xml sum of sales"
 msgstr ""
 
@@ -907,9 +993,6 @@ msgid "zoo:Full Area"
 msgstr ""
 
 msgid "zoo:Insert with defined return"
-msgstr ""
-
-msgid "zoo:It is a beautifull name for this animal"
 msgstr ""
 
 #, c-format
@@ -1733,8 +1816,40 @@ msgstr ""
 #~ msgstr "classe"
 
 #, fuzzy
+#~ msgid "ZOO_ANIMAL#an_friend"
+#~ msgstr "copains"
+
+#, fuzzy
+#~ msgid "ZOO_ANIMAL#an_ofr"
+#~ msgstr "autres potes"
+
+#, fuzzy
+#~ msgid "ZOO_CARNETSANTE#ca_veterinaire"
+#~ msgstr "veterinaire"
+
+#, fuzzy
+#~ msgid "ZOO_CARNETSANTE#ca_veterinaire#elsymbol"
+#~ msgstr "&hearts ---"
+
+#, fuzzy
+#~ msgid "ZOO_CARNETSANTE#ca_veterinaire#eltitle"
+#~ msgstr "Ã©diter une ordonnance"
+
+#, fuzzy
 #~ msgid "ZOO_DEMANDEADOPTION#de_demand"
 #~ msgstr "demandeur"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_gdemand"
+#~ msgstr "groupe demandeur"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_greal"
+#~ msgstr "groupe prise en charge"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_gvalid"
+#~ msgstr "groupe valideur"
 
 #, fuzzy
 #~ msgid "ZOO_DEMANDEADOPTION#de_idproprietaire"
@@ -1751,6 +1866,14 @@ msgstr ""
 #, fuzzy
 #~ msgid "ZOO_DEMANDEADOPTION#de_val"
 #~ msgstr "Valideur"
+
+#, fuzzy
+#~ msgid "ZOO_WDEMANDEADOPTION#wad_dmul"
+#~ msgstr "mul"
+
+#, fuzzy
+#~ msgid "ZOO_WDEMANDEADOPTION#wad_pfile"
+#~ msgstr "fichier param"
 
 #~ msgid "accepted"
 #~ msgstr "accepted"

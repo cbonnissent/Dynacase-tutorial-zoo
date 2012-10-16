@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZOO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-03 10:55+0200\n"
-"PO-Revision-Date: 2012-08-03 13:12+0200\n"
+"POT-Creation-Date: 2012-10-15 14:42+0200\n"
+"PO-Revision-Date: 2012-10-11 11:29+0200\n"
 "Last-Translator: Eric Brison <eric.brison@anakeen.com>\n"
 "Language-Team: French <distrib@anakeen.com>\n"
 "Language: fr\n"
@@ -147,10 +147,6 @@ msgid "ZOO_ANIMAL#an_folder"
 msgstr "Dossier"
 
 #, fuzzy
-msgid "ZOO_ANIMAL#an_friend"
-msgstr "copains"
-
-#, fuzzy
 msgid "ZOO_ANIMAL#an_gardien"
 msgstr "gardien responsable"
 
@@ -169,10 +165,6 @@ msgstr "date naissance"
 #, fuzzy
 msgid "ZOO_ANIMAL#an_nom"
 msgstr "nom"
-
-#, fuzzy
-msgid "ZOO_ANIMAL#an_ofr"
-msgstr "autres potes"
 
 #, fuzzy
 msgid "ZOO_ANIMAL#an_ordre"
@@ -251,18 +243,6 @@ msgid "ZOO_CARNETSANTE#ca_nom"
 msgstr "nom de l'animal"
 
 #, fuzzy
-msgid "ZOO_CARNETSANTE#ca_veterinaire"
-msgstr "veterinaire"
-
-#, fuzzy
-msgid "ZOO_CARNETSANTE#ca_veterinaire#elsymbol"
-msgstr "&hearts ---"
-
-#, fuzzy
-msgid "ZOO_CARNETSANTE#ca_veterinaire#eltitle"
-msgstr "éditer une ordonnance"
-
-#, fuzzy
 msgid "ZOO_CARNETSANTE#title"
 msgstr "carnet de sante"
 
@@ -284,6 +264,82 @@ msgstr "nom scientifique"
 
 msgid "ZOO_CLASSE#title"
 msgstr "classe d'espèce"
+
+#, fuzzy
+msgid "ZOO_CONTACT#title"
+msgstr "Contact"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility"
+msgstr "civilité"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#"
+msgstr " "
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#Docteur"
+msgstr "Docteur"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#Madame"
+msgstr "Madame"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#Mademoiselle"
+msgstr "Mademoiselle"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#Monsieur"
+msgstr "Monsieur"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_civility#Professeur"
+msgstr "Professeur"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_fname"
+msgstr "prénom"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_fr_coord"
+msgstr "Informations professionnelles"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_fr_ident"
+msgstr "État civil"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_lname"
+msgstr "nom"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_mail"
+msgstr "mail"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_mobile"
+msgstr "mobile"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_phone"
+msgstr "téléphone"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_photo"
+msgstr "photographie"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_workaddr"
+msgstr "adresse"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_workpostalcode"
+msgstr "code postal"
+
+#, fuzzy
+msgid "ZOO_CONTACT#zct_worktown"
+msgstr "ville"
 
 #, fuzzy
 msgid "ZOO_CUISINIER#title"
@@ -352,18 +408,6 @@ msgstr "Refus"
 #, fuzzy
 msgid "ZOO_DEMANDEADOPTION#de_fr_valid"
 msgstr "Validation"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_gdemand"
-msgstr "groupe demandeur"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_greal"
-msgstr "groupe prise en charge"
-
-#, fuzzy
-msgid "ZOO_DEMANDEADOPTION#de_gvalid"
-msgstr "groupe valideur"
 
 #, fuzzy
 msgid "ZOO_DEMANDEADOPTION#de_heure"
@@ -733,9 +777,6 @@ msgstr "Enclos"
 msgid "ZOO_GARDIEN#title"
 msgstr "Gardien"
 
-msgid "ZOO_GARDIEN#us_secr"
-msgstr ""
-
 #, fuzzy
 msgid "ZOO_VETERINAIRE#title"
 msgstr "Veterinaire"
@@ -777,10 +818,6 @@ msgid "ZOO_WDEMANDEADOPTION#title"
 msgstr "Cycle demande Adoption"
 
 #, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_dmul"
-msgstr "mul"
-
-#, fuzzy
 msgid "ZOO_WDEMANDEADOPTION#wad_fr_mail"
 msgstr "Modèle de courriels"
 
@@ -795,10 +832,6 @@ msgstr "Espèce commune"
 #, fuzzy
 msgid "ZOO_WDEMANDEADOPTION#wad_mailsecure"
 msgstr "Espèce protégée"
-
-#, fuzzy
-msgid "ZOO_WDEMANDEADOPTION#wad_pfile"
-msgstr "fichier param"
 
 #, fuzzy
 msgid "ZOO_WDEMANDEADOPTION#wad_refus"
@@ -867,6 +900,14 @@ msgstr ""
 msgid "entrance"
 msgstr "entrée"
 
+#, c-format
+msgid "group %s has no login"
+msgstr ""
+
+#, c-format
+msgid "group %s not found"
+msgstr ""
+
 msgid "no mail for realisator"
 msgstr "Le réalisateur n'a pas d'adresse mail"
 
@@ -894,6 +935,51 @@ msgstr ""
 msgid "transfered"
 msgstr "transféré"
 
+msgid "wdt_accept"
+msgstr "Accorder"
+
+msgid "wdt_accepted"
+msgstr "Accepté"
+
+msgid "wdt_archive"
+msgstr ""
+
+msgid "wdt_initialised"
+msgstr "Initialisé"
+
+msgid "wdt_outdated"
+msgstr ""
+
+msgid "wdt_published"
+msgstr "Publié"
+
+msgid "wdt_realisation"
+msgstr "Réalisation"
+
+msgid "wdt_realise"
+msgstr "Réaliser la publication"
+
+msgid "wdt_redaction"
+msgstr "Rédaction"
+
+msgid "wdt_refuse"
+msgstr "Refuser"
+
+msgid "wdt_refused"
+msgstr "Refusé"
+
+msgid "wdt_retry"
+msgstr "Retourner"
+
+msgid "wdt_transmited"
+msgstr "Transmis"
+
+msgid "wdt_transmition"
+msgstr "Transmettre"
+
+msgid "wdt_verification"
+msgstr "Vérification"
+
 msgid "xml sum of sales"
 msgstr ""
 
@@ -914,9 +1000,6 @@ msgstr "L'enclos est plein"
 
 msgid "zoo:Insert with defined return"
 msgstr ""
-
-msgid "zoo:It is a beautifull name for this animal"
-msgstr "C'est un joli nom pour cet animal"
 
 #, c-format
 msgid "zoo:Maximum Capacity reached %d > %d"
@@ -1008,8 +1091,40 @@ msgid "zoo_transmited"
 msgstr "Transmis"
 
 #, fuzzy
+#~ msgid "ZOO_ANIMAL#an_friend"
+#~ msgstr "copains"
+
+#, fuzzy
+#~ msgid "ZOO_ANIMAL#an_ofr"
+#~ msgstr "autres potes"
+
+#, fuzzy
+#~ msgid "ZOO_CARNETSANTE#ca_veterinaire"
+#~ msgstr "veterinaire"
+
+#, fuzzy
+#~ msgid "ZOO_CARNETSANTE#ca_veterinaire#elsymbol"
+#~ msgstr "&hearts ---"
+
+#, fuzzy
+#~ msgid "ZOO_CARNETSANTE#ca_veterinaire#eltitle"
+#~ msgstr "éditer une ordonnance"
+
+#, fuzzy
 #~ msgid "ZOO_DEMANDEADOPTION#de_demand"
 #~ msgstr "demandeur"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_gdemand"
+#~ msgstr "groupe demandeur"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_greal"
+#~ msgstr "groupe prise en charge"
+
+#, fuzzy
+#~ msgid "ZOO_DEMANDEADOPTION#de_gvalid"
+#~ msgstr "groupe valideur"
 
 #, fuzzy
 #~ msgid "ZOO_DEMANDEADOPTION#de_idproprietaire"
@@ -1026,3 +1141,17 @@ msgstr "Transmis"
 #, fuzzy
 #~ msgid "ZOO_DEMANDEADOPTION#de_val"
 #~ msgstr "Valideur"
+
+#, fuzzy
+#~ msgid "ZOO_WDEMANDEADOPTION#wad_dmul"
+#~ msgstr "mul"
+
+#, fuzzy
+#~ msgid "ZOO_WDEMANDEADOPTION#wad_pfile"
+#~ msgstr "fichier param"
+
+#~ msgid "wdt_realised"
+#~ msgstr "Réalisé"
+
+#~ msgid "zoo:It is a beautifull name for this animal"
+#~ msgstr "C'est un joli nom pour cet animal"
