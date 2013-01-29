@@ -14,6 +14,9 @@
     <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-families.ods">
 			<label lang="en">Importing zoo families</label>
 		</process>
+    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-profiling.ods">
+			<label lang="en">Record family security profiling</label>
+		</process>
     <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-init.ods">
 			<label lang="en">Importing zoo somes species</label>
 		</process>
