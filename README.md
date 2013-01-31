@@ -8,18 +8,21 @@ Dynacase Platform is an open source development platform, with core functionalit
 Getting Help
 ------------
 
+### Site
+
+[Dynacase](http://dynacase.org)
+
 ### Forum 
 
-[Dynacase Forum](http://forum.dynacase.org/) is our forum.  
+[Dynacase Forum](http://forum.dynacase.org/)
 
 ### Twitter
 
 Please consider following the [@anakeen Twitter](http://www.twitter.com/anakeen)
-for news.
+for commercial news.
 
-### Blog
-
-The Anakeen corporate blog is [Blog](http://anakeen.com/category/blog/nouvelles) (in french). 
+Please consider following the [@DynacaseLabs Twitter](http://www.twitter.com/DynacaseLabs)
+for technical news.
 
 ### Commercial Support, Licensing
 
