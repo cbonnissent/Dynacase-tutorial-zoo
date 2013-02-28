@@ -1,11 +1,390 @@
-[ZONE FDL:HTMLHEAD]
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Le Dynacase Flying Circus Zoo</title>
+    <style>
+html, body {
+  background: #73c783;
+  width: 100%;
+  height: 100%;
+  padding : 0;
+  margin : 0;
+}
+.container {
+   position : relative;
+   width: 100%;
+   height : 100%;
+   overflow : hidden;
+   text-align: center;
+}
+.titleWrapper {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+.linksWrapper a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #050505;
+    padding: 10px 20px;
+    background: -moz-linear-gradient(
+        top,
+        #f7ff00 0%,
+        #ffbf00);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#f7ff00),
+        to(#ffbf00));
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    border: 5px solid #000000;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.7);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.7);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.4),
+        0px 1px 0px rgba(255,255,255,0.3);
+}
 
-<div style="text-align:center">
-<h1 >[ZOO_NAME]</h1>
+.linksWrapper {
+    padding-bottom: 20px;
+}
 
-<img src="[IMG:accueil.gif]"><br/>
-<a style="font-size:120%" href="?app=ZOO&action=ONEFAM_ROOT&mode=html">[TEXT:Standard HTML]</a>
-<a style="font-size:120%" href="?app=ZOO&action=ONEFAM_EXT">[TEXT:Ext interface]</a>
-<a  target⁼"colors" href="?app=ZOO&action=ZOO_COLOR">[TEXT:Colors]</a>
-</div>
-[ZONE FDL:HTMLFOOT]
+h1.loader{
+  width : 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-size: 4.6875em;
+  color: transparent;
+  letter-spacing: 0.01em;
+}
+.loader span{
+  text-shadow:
+    0 0 2px rgba(204, 208, 212,0.9),
+    0 15px 25px rgba(0, 0, 0, 0.3),
+    0 -2px 3px rgba(0, 0, 0, 0.1),
+    0 -5px 10px rgba(255, 255, 255, 0.5),
+    0 5px 10px rgba(0, 0, 0, 0.3),
+    0 3px 4px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.45);
+
+    -webkit-animation: loading 0.85s ease-in-out infinite alternate;
+    -moz-animation: loading 0.85s ease-in-out infinite alternate;
+    -ms-animation: loading 0.85s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes loading {
+    to {text-shadow:
+    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 3px rgba(0, 0, 0, 0.02),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(255, 255, 255, 0);}
+}
+
+@-moz-keyframes loading {
+    to {text-shadow:
+    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 3px rgba(0, 0, 0, 0.02),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(255, 255, 255, 0);}
+}
+
+@-ms-keyframes loading {
+    to {text-shadow:
+    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 3px rgba(0, 0, 0, 0.02),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(255, 255, 255, 0);}
+}
+
+.loader span:nth-child(2){
+  -webkit-animation-delay:0.15s;
+  -moz-animation-delay:0.15s;
+  -ms-animation-delay:0.15s;
+}
+.loader span:nth-child(3){
+  -webkit-animation-delay:0.30s;
+  -moz-animation-delay:0.30s;
+  -ms-animation-delay:0.30s;
+}
+.loader span:nth-child(4){
+  -webkit-animation-delay:0.45s;
+  -moz-animation-delay:0.45s;
+  -ms-animation-delay:0.45s;
+}
+.loader span:nth-child(5){
+  -webkit-animation-delay:0.60s;
+  -moz-animation-delay:0.60s;
+  -ms-animation-delay:0.60s;
+}
+.loader span:nth-child(6){
+  -webkit-animation-delay:0.75s;
+  -moz-animation-delay:0.75s;
+  -ms-animation-delay:0.75s;
+}
+.loader span:nth-child(7){
+  -webkit-animation-delay:0.90s;
+  -moz-animation-delay:0.90s;
+  -ms-animation-delay:0.90s;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index : 0;
+}
+.sun {
+  -webkit-animation: rotating 60s linear infinite;
+  -moz-animation: rotating 60s linear infinite;
+  -webkit-animation: rotating 60s linear infinite;
+  -o-animation: rotating 60s linear infinite;
+}
+.ray,
+.rayClip {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+}
+.ray {
+  z-index: 0;
+  width: 2000px;
+  height: 1000px;
+  background-color: #73c783;
+}
+.ray.odd {
+  background-color: #8bdd9b;
+}
+.rayClip {
+  width: 10000px;
+  height: 2000px;
+  top: -2000px;
+  overflow: hidden;
+}
+.ray1 {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+.ray2 {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+}
+.ray3 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.ray4 {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+}
+.ray5 {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+}
+.ray6 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.ray7 {
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  -moz-transform: rotate(210deg);
+  -webkit-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
+}
+.ray8 {
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -webkit-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+}
+.ray9 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+.ray10 {
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -webkit-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+}
+.ray11 {
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  -moz-transform: rotate(330deg);
+  -webkit-transform: rotate(330deg);
+  -o-transform: rotate(330deg);
+}
+.rayClip .ray {
+  top: 2000px;
+}</style>
+</head>
+<body>
+    <div class="container">
+        <div class="titleWrapper">
+            <h1 class="loader">
+                <span>D</span>
+                <span>Y</span>
+                <span>N</span>
+                <span>A</span>
+                <span>C</span>
+                <span>A</span>
+                <span>S</span>
+                <span>E</span>
+                <span>&nbsp;</span>
+                <span>Z</span>
+                <span>O</span>
+                <span>O</span>
+            </h1>
+            <div class="linksWrapper">
+                <a href="?app=ZOO&amp;action=ONEFAM_ROOT&amp;mode=html">[TEXT:Standard HTML]</a>
+                <a href="?app=ZOO&amp;action=ONEFAM_EXT">[TEXT:Ext interface]</a>
+                <a href="?app=ZOO&amp;action=ZOO_COLOR">[TEXT:Colors]</a>
+            </div>
+            <img src="[IMG:accueil.gif]"/>
+        </div>
+        <div class="sun">
+            <div class="ray ray1 odd"></div>
+            <div class="ray ray2 "></div>
+            <div class="ray ray3 odd"></div>
+            <div class="ray ray4 "></div>
+            <div class="ray ray5 odd"></div>
+            <div class="ray ray6 "></div>
+            <div class="ray ray7 odd"></div>
+            <div class="ray ray8 "></div>
+            <div class="rayClip">
+                <div class="ray ray9 odd"></div>
+                <div class="ray ray10 "></div>
+                <div class="ray ray11 odd"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
