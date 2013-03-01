@@ -5,7 +5,7 @@
     <title>Le Dynacase Flying Circus Zoo</title>
     <style>
 html, body {
-  background: #73c783;
+  background: #f7ff00;
   width: 100%;
   height: 100%;
   padding : 0;
@@ -78,14 +78,14 @@ h1.loader{
     0 3px 4px rgba(255, 255, 255, 0.2),
     0 0 20px rgba(255, 255, 255, 0.45);
 
-    -webkit-animation: loading 0.85s ease-in-out infinite alternate;
-    -moz-animation: loading 0.85s ease-in-out infinite alternate;
-    -ms-animation: loading 0.85s ease-in-out infinite alternate;
+    -webkit-animation: loading 2s ease-in-out infinite alternate;
+    -moz-animation: loading 2s ease-in-out infinite alternate;
+    -ms-animation: loading 2s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes loading {
     to {text-shadow:
-    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 2px rgba(204, 208, 212,0.5),
     0 0 3px rgba(0, 0, 0, 0.02),
     0 0 0 rgba(0, 0, 0, 0),
     0 0 0 rgba(255, 255, 255, 0),
@@ -96,7 +96,7 @@ h1.loader{
 
 @-moz-keyframes loading {
     to {text-shadow:
-    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 2px rgba(204, 208, 212,0.5),
     0 0 3px rgba(0, 0, 0, 0.02),
     0 0 0 rgba(0, 0, 0, 0),
     0 0 0 rgba(255, 255, 255, 0),
@@ -107,44 +107,13 @@ h1.loader{
 
 @-ms-keyframes loading {
     to {text-shadow:
-    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 2px rgba(204, 208, 212,0.5),
     0 0 3px rgba(0, 0, 0, 0.02),
     0 0 0 rgba(0, 0, 0, 0),
     0 0 0 rgba(255, 255, 255, 0),
     0 0 0 rgba(0, 0, 0, 0),
     0 0 0 rgba(255, 255, 255, 0),
     0 0 0 rgba(255, 255, 255, 0);}
-}
-
-.loader span:nth-child(2){
-  -webkit-animation-delay:0.15s;
-  -moz-animation-delay:0.15s;
-  -ms-animation-delay:0.15s;
-}
-.loader span:nth-child(3){
-  -webkit-animation-delay:0.30s;
-  -moz-animation-delay:0.30s;
-  -ms-animation-delay:0.30s;
-}
-.loader span:nth-child(4){
-  -webkit-animation-delay:0.45s;
-  -moz-animation-delay:0.45s;
-  -ms-animation-delay:0.45s;
-}
-.loader span:nth-child(5){
-  -webkit-animation-delay:0.60s;
-  -moz-animation-delay:0.60s;
-  -ms-animation-delay:0.60s;
-}
-.loader span:nth-child(6){
-  -webkit-animation-delay:0.75s;
-  -moz-animation-delay:0.75s;
-  -ms-animation-delay:0.75s;
-}
-.loader span:nth-child(7){
-  -webkit-animation-delay:0.90s;
-  -moz-animation-delay:0.90s;
-  -ms-animation-delay:0.90s;
 }
 
 @-webkit-keyframes rotating {
@@ -254,10 +223,10 @@ h1.loader{
   z-index: 0;
   width: 2000px;
   height: 1000px;
-  background-color: #73c783;
+  background-color: #f7ff00;
 }
 .ray.odd {
-  background-color: #8bdd9b;
+  background-color: #ffbf00;
 }
 .rayClip {
   width: 10000px;
@@ -350,18 +319,7 @@ h1.loader{
     <div class="container">
         <div class="titleWrapper">
             <h1 class="loader">
-                <span>D</span>
-                <span>Y</span>
-                <span>N</span>
-                <span>A</span>
-                <span>C</span>
-                <span>A</span>
-                <span>S</span>
-                <span>E</span>
-                <span>&nbsp;</span>
-                <span>Z</span>
-                <span>O</span>
-                <span>O</span>
+                <span>[ZOO_NAME]</span>
             </h1>
             <div class="linksWrapper">
                 <a href="?app=ZOO&amp;action=ONEFAM_ROOT&amp;mode=html">[TEXT:Standard HTML]</a>
