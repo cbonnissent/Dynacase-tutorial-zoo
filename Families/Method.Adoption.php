@@ -25,6 +25,7 @@ Class _ZOO_ADOPTION extends Doc
     */
     function postCreated()
     {
+        $err='';
         if ($this->revision == 0) {
             $err = $this->setReference();
         }
@@ -45,6 +46,8 @@ Class _ZOO_ADOPTION extends Doc
      */
     function verifyDate($date)
     {
+        $err='';
+        $sug=array();
         $t1 = stringDateToJD($date);
         
         if ($t1 > stringDateToJD($this->getDate())) $err = _("birthday date must be set before today");
