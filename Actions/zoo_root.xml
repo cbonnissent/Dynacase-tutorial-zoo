@@ -5,7 +5,7 @@
     <title>Le Dynacase Flying Circus Zoo</title>
     <style>
 html, body {
-  background: #f7ff00;
+  background: #ffbf00;
   width: 100%;
   height: 100%;
   padding : 0;
@@ -22,41 +22,6 @@ html, body {
     position: absolute;
     z-index: 999;
     width: 100%;
-}
-.linksWrapper a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    text-decoration: none;
-    color: #050505;
-    padding: 10px 20px;
-    background: -moz-linear-gradient(
-        top,
-        #f7ff00 0%,
-        #ffbf00);
-    background: -webkit-gradient(
-        linear, left top, left bottom,
-        from(#f7ff00),
-        to(#ffbf00));
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-    border: 5px solid #000000;
-    -moz-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 1px rgba(255,255,255,0.7);
-    -webkit-box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 1px rgba(255,255,255,0.7);
-    box-shadow:
-        0px 1px 3px rgba(000,000,000,0.5),
-        inset 0px 0px 1px rgba(255,255,255,0.7);
-    text-shadow:
-        0px -1px 0px rgba(000,000,000,0.4),
-        0px 1px 0px rgba(255,255,255,0.3);
-}
-
-.linksWrapper {
-    padding-bottom: 20px;
 }
 
 h1.loader{
@@ -223,10 +188,10 @@ h1.loader{
   z-index: 0;
   width: 2000px;
   height: 1000px;
-  background-color: #f7ff00;
+  background-color: #ffbf00;
 }
 .ray.odd {
-  background-color: #ffbf00;
+  background-color: #f7ff00;
 }
 .rayClip {
   width: 10000px;
@@ -314,6 +279,46 @@ h1.loader{
 .rayClip .ray {
   top: 2000px;
 }</style>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<style>
+.linksWrapper a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #050505;
+    padding: 10px 20px;
+    background: -moz-linear-gradient(
+        top,
+        #f7ff00 0%,
+        #ffbf00);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#f7ff00),
+        to(#ffbf00));
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    border: 5px solid #000000;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.7);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.7);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.4),
+        0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.linksWrapper {
+    padding-bottom: 20px;
+}
+</style>
+<!--<![endif]-->
+
 </head>
 <body>
     <div class="container">
