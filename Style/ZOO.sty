@@ -1,0 +1,51 @@
+<?php
+/*
+ * @author Anakeen
+ * @license http://www.fsf.org/licensing/licenses/agpl-3.0.html GNU Affero General Public License
+ * @package FDL
+*/
+// ---------------------------------------------------------------
+// $Id: DEFAULT.sty,v 1.10 2008/02/25 17:23:21 eric Exp $
+// $Source: /home/cvsroot/anakeen/freedom/core/Style/Default/DEFAULT.sty,v $
+// ---------------------------------------------------------------
+//  O   Anakeen - 2006
+// O*O  Anakeen development team
+//  O   dev@anakeen.com
+// ---------------------------------------------------------------
+//global $sty_desc, $sty_const;
+$sty_desc = array(
+    "name" => "ZOO", //Name
+    "description" => N_("ZOO Style") , //long description
+    //  "parsable" => "Y"
+    //If Y, dynacase will parse the CSS. Note: in this case, relative urls start from CORE_URL position (defaults to N)
+    
+);
+
+$sty_inherit = "STYLE/MODERN/MODERN.sty";
+// global parameters which can be use for other css
+
+
+
+$sty_rules = array(
+    'css' => array(
+        'dcp/jquery-ui.css' => array(
+            "src" => array(
+                "lib/jquery-ui/css/smoothness/jquery-ui.css",
+                "STYLE/ZOO/Layout/jquery-blue.css"
+            )
+        ),  'dcp/main.css' => array(
+                    "src" => array(
+                        "CORE/Layout/core.css",
+                        "FDL/Layout/freedom.css",
+                        "WHAT/Layout/size-normal.css",
+                        "STYLE/MODERN/Layout/MODERN.css",
+                "STYLE/ZOO/Layout/jquery-blue-devel.css"
+                    ) ,
+                    "flags" => Style::RULE_FLAG_PARSE_ON_RUNTIME,
+                    "deploy_parser" => array(
+                        "className" => '\Dcp\Style\dcpCssTemplateParser'
+                    )
+                )
+    )
+);
+?>
