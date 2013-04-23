@@ -32,8 +32,8 @@ Class _ZOO_ANIMAL extends Doc
     {
         include_once ("FDL/Class.SearchDoc.php");
         $resultat = " ";
-        $s = new SearchDoc($this->dbaccess, $this->getProperty('fromid'));
-        $s->addFilter("an_enfant ~ E'\\\\y%d\\\\y'", $this->getProperty('initid'));
+        $s = new SearchDoc($this->dbaccess, $this->getPropertyValue('fromid'));
+        $s->addFilter("an_enfant ~ E'\\\\y%d\\\\y'", $this->getPropertyValue('initid'));
         $s->slice = 3;
         $tdoc = $s->search();
         if (count($tdoc) == 0) return " ";
@@ -49,17 +49,17 @@ Class _ZOO_ANIMAL extends Doc
     {
         include_once ("FDL/Class.SearchDoc.php");
         
-        $s = new SearchDoc($this->dbaccess, $this->getProperty('fromid'));
-        $s->addFilter("an_enfant ~ E'\\\\y%d\\\\y'", $this->getProperty('initid'));
+        $s = new SearchDoc($this->dbaccess, $this->getPropertyValue('fromid'));
+        $s->addFilter("an_enfant ~ E'\\\\y%d\\\\y'", $this->getPropertyValue('initid'));
         $s->addFilter("an_sexe = '%s'", $sexeVar);
         $s->setObjectReturn();
         $s->slice = 1;
         $s->search();
         if ($s->count() == 0) return " ";
-        $ani = $s->nextDoc();
-        return $ani->getProperty('initid');
+        $ani = $s->getNextDoc();
+        return $ani->getPropertyValue('initid');
     }
-    public function postModify()
+    public function postStore()
     {
         return $this->refreshChilds();
     }
@@ -84,7 +84,7 @@ Class _ZOO_ANIMAL extends Doc
         if ($enclosId > 0) {
             $enclos = new_doc($this->dbaccess, $enclosId);
             if ($enclos->isAlive()) {
-                $animals = $enclos->getTValue("en_animaux");
+                $animals = $enclos->getMultipleRawValues("en_animaux");
                 array_push($animals, $this->id);
                 $err = $enclos->setValue("en_animaux", $animals);
                 if ($err == "") $err = $enclos->modify();
@@ -117,10 +117,10 @@ Class _ZOO_ANIMAL extends Doc
         include_once ("FDL/Class.SearchDoc.php");
         
         $s = new SearchDoc($this->dbaccess, "ZOO_ENCLOS");
-        $idespece = $this->getValue("an_espece");
+        $idespece = $this->getRawValue("an_espece");
         $s->addFilter("en_espece ~ E'\\\\y%d\\\\y'", $idespece);
         $s->addFilter("en_nbre < en_capacite");
-        $s->noViewControl(); // no test view acl
+        $s->overrideViewControl(); // no test view acl
         $s->setObjectReturn();
         $s->search();
         
@@ -128,8 +128,8 @@ Class _ZOO_ANIMAL extends Doc
         
         if ($nbdoc == 0) $err = _("zoo:no enclos");
         else {
-            while ($enclos = $s->nextDoc()) {
-                return $enclos->getProperty('initid'); // first found
+            while ($enclos = $s->getNextDoc()) {
+                return $enclos->getPropertyValue('initid'); // first found
                 
             }
         }
@@ -142,8 +142,8 @@ Class _ZOO_ANIMAL extends Doc
         
         $err = "";
         $s = new SearchDoc($this->dbaccess, "ZOO_ENCLOS");
-        $s->addFilter("en_espece ~ E'\\\\y%d\\\\y'", $this->getValue("an_espece"));
-        $s->noViewControl(); // no test view acl
+        $s->addFilter("en_espece ~ E'\\\\y%d\\\\y'", $this->getRawValue("an_espece"));
+        $s->overrideViewControl(); // no test view acl
         $s->setObjectReturn();
         $s->search();
         $nbdoc = $s->count();
@@ -153,7 +153,7 @@ Class _ZOO_ANIMAL extends Doc
             /**
              * @var _ZOO_ENCLOS $enclos
              */
-            while ($enclos = $s->nextDoc()) {
+            while ($enclos = $s->getNextDoc()) {
                 $err = $enclos->detectMaxCapacity();
                 if ($err == "") {
                     break; // first found
@@ -170,8 +170,8 @@ Class _ZOO_ANIMAL extends Doc
     public function refreshChilds()
     {
         $err = "";
-        $idchild = $this->getTValue("an_enfant");
-        $oldidchild = $this->_val2array($this->getOldValue("an_enfant"));
+        $idchild = $this->getMultipleRawValues("an_enfant");
+        $oldidchild = $this->_val2array($this->getOldRawValue("an_enfant"));
         // union unique of old and new values
         $childs = array();
         foreach ($idchild as $child) if ($child) $childs[$child] = $child;
@@ -180,7 +180,7 @@ Class _ZOO_ANIMAL extends Doc
         if (count($childs) > 0) {
             include_once ("FDL/Class.SearchDoc.php");
             $it = new DocumentList();
-            $it->addDocumentIdentificators($childs);
+            $it->addDocumentIdentifiers($childs);
             /**
              * @var Doc $doc
              */
@@ -200,7 +200,7 @@ Class _ZOO_ANIMAL extends Doc
         
         $s = new SearchDoc($this->dbaccess, "ZOO_CARNETSANTE");
         $s->addFilter("ca_idnom =" . $this->initid);
-        $s->noViewControl(); // no test view acl
+        $s->overrideViewControl(); // no test view acl
         $s->slice = 3;
         $tdoc = $s->search();
         

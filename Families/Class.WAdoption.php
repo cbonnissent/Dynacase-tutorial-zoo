@@ -76,7 +76,7 @@ class WAdoption extends WDoc
             "e1" => self::transmited,
             "e2" => self::initialised,
             "t" => self::Tretry
-        ) 
+        )
     );
     
     public $stateactivity = array(
@@ -92,7 +92,7 @@ class WAdoption extends WDoc
     
     public function verifyvalidator()
     {
-        $idval = $this->doc->getValue("DE_IDVAL");
+        $idval = $this->doc->getRawValue("DE_IDVAL");
         if (!$idval) return sprintf(_("zoo:no validator defined"));
         
         return "";
@@ -100,7 +100,7 @@ class WAdoption extends WDoc
     
     public function verifyvalidatormail()
     {
-        $idval = $this->doc->getValue("DE_IDVAL");
+        $idval = $this->doc->getRawValue("DE_IDVAL");
         if (!$idval) return sprintf(_("zoo:no validator defined"));
         $to = $this->doc->getRValue("DE_IDVAL:US_MAIL");
         if (!$to) return sprintf(_("zoo:no mail for validator"));
@@ -120,14 +120,14 @@ class WAdoption extends WDoc
             // get others animals
             include_once ("FDL/Class.SearchDoc.php");
             $s = new SearchDoc($this->dbaccess, "ZOO_ANIMAL");
-            $s->addFilter("an_espece ='%d'", $this->doc->getValue("de_idespece"));
+            $s->addFilter("an_espece ='%d'", $this->doc->getRawValue("de_idespece"));
             $t = $s->search();
             $tanimal = array();
             foreach ($t as $animal) $tanimal[] = $this->getDocAnchor($animal["id"], "mail");
             $tkeys["animals"] = implode(", ", $tanimal);
-            $mt = new_doc($this->dbaccess, $this->getParamValue("WAD_MAILSECURE"));
+            $mt = new_doc($this->dbaccess, $this->getFamilyParameterValue("WAD_MAILSECURE"));
         } else {
-            $mt = new_doc($this->dbaccess, $this->getParamValue("WAD_MAILCURRENT"));
+            $mt = new_doc($this->dbaccess, $this->getFamilyParameterValue("WAD_MAILCURRENT"));
             // $this->sendTransmitedMail_detail($newstate);
             
         }
@@ -179,7 +179,7 @@ class WAdoption extends WDoc
     
     public function notifyReject()
     {
-        $reason = $this->getValue("wad_refus");
+        $reason = $this->getRawValue("wad_refus");
         
         $this->doc->disableEditControl(); // no control here
         $this->doc->setValue("de_motif", $reason);
@@ -214,10 +214,14 @@ class WAdoption extends WDoc
     
     public function verifyEnclosDispo()
     {
-        $this->nouvelAnimal = createDoc($this->dbaccess, "ZOO_ANIMAL", false);
+        /**
+         * @var _ZOO_ANIMAL $nAnimal
+         */
+        $nAnimal = createDoc($this->dbaccess, "ZOO_ANIMAL", false);
+        $this->nouvelAnimal = $nAnimal;
         $err = "";
         if ($this->nouvelAnimal) {
-            $this->nouvelAnimal->setValue("an_espece", $this->doc->getValue("de_idespece"));
+            $this->nouvelAnimal->setValue("an_espece", $this->doc->getRawValue("de_idespece"));
             $err = $this->nouvelAnimal->verifyCapacity();
         } else {
             return _("zoo:Cannot create animal");
@@ -229,15 +233,15 @@ class WAdoption extends WDoc
     {
         $ani = $this->nouvelAnimal;
         if ($ani) {
-            $ani->setValue("an_nom", $this->doc->getValue("de_nom"));
-            $ani->setValue("an_espece", $this->doc->getValue("de_idespece"));
-            $ani->setValue("an_naissance", $this->doc->getValue("de_naissance"));
-            $ani->setValue("an_photo", $this->doc->getValue("de_photo"));
+            $ani->setValue("an_nom", $this->doc->getRawValue("de_nom"));
+            $ani->setValue("an_espece", $this->doc->getRawValue("de_idespece"));
+            $ani->setValue("an_naissance", $this->doc->getRawValue("de_naissance"));
+            $ani->setValue("an_photo", $this->doc->getRawValue("de_photo"));
             $err = $ani->add();
             if ($err == "") {
                 $ani->postModify();
                 $ani->refresh();
-                $ani->addComment(sprintf(_("Creation from adoption %s [%d]") , $this->doc->getTitle() , $this->doc->id));
+                $ani->addHistoryEntry(sprintf(_("Creation from adoption %s [%d]") , $this->doc->getTitle() , $this->doc->id));
                 
                 SetHttpVar("redirect_app", "FDL");
                 SetHttpVar("redirect_act", "FDL_CARD&id=" . $ani->id);

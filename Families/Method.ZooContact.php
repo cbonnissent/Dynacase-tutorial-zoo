@@ -22,18 +22,15 @@ Class _ZOO_CONTACT extends Doc implements IMailRecipient
 {
     /**
      * @end-method-ignore
-    */
-
-
+     */
     /**
      * return a RFC822-compliant mail address like "john" <john@example.net>
      * @return string
      */
     public function getMail()
     {
-        return sprintf('"%s" <%s>',str_replace('"','',$this->getTitle()),$this->getValue("zct_mail"));
+        return sprintf('"%s" <%s>', str_replace('"', '', $this->getTitle()) , $this->getRawValue("zct_mail"));
     }
-
     /**
      * return a mail address in a user-friendly representation, which
      * might not be RFC822-compliant.
@@ -44,7 +41,6 @@ Class _ZOO_CONTACT extends Doc implements IMailRecipient
     {
         return $this->getMail();
     }
-
     /**
      * return attribute used to filter from keyword
      * @return string
@@ -54,9 +50,9 @@ Class _ZOO_CONTACT extends Doc implements IMailRecipient
         return "zct_mail";
     }
     /**
-        * @begin-method-ignore
-        * this part will be deleted when construct document class until end-method-ignore
-        */
+     * @begin-method-ignore
+     * this part will be deleted when construct document class until end-method-ignore
+     */
 }
 /*
  * @end-method-ignore

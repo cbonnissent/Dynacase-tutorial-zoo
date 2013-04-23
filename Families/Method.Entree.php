@@ -24,9 +24,9 @@ Class _ZOO__ENTREE extends Doc
      * @end-method-ignore
     */
     
-    public function postModify()
+    public function postStore()
     {
-        $err = parent::postModify();
+        $err = parent::postStore();
         if ($err == "") $err = $this->setValue("ent_prix", $this->getCost());
         return $err;
     }
@@ -36,10 +36,10 @@ Class _ZOO__ENTREE extends Doc
      */
     public function getCost()
     {
-        $nb_adulte = intval($this->getValue("ent_adulte"));
-        $nb_enfant = intval($this->getValue("ent_enfant"));
-        $prix_adulte = floatval($this->getParamValue("ent_prixadulte"));
-        $prix_enfant = floatval($this->getParamValue("ent_prixenfant"));
+        $nb_adulte = intval($this->getRawValue("ent_adulte"));
+        $nb_enfant = intval($this->getRawValue("ent_enfant"));
+        $prix_adulte = floatval($this->getFamilyParameterValue("ent_prixadulte"));
+        $prix_enfant = floatval($this->getFamilyParameterValue("ent_prixenfant"));
         
         $resultat = ($nb_adulte * $prix_adulte) + ($nb_enfant * $prix_enfant);
         
@@ -51,8 +51,8 @@ Class _ZOO__ENTREE extends Doc
     function viewtickets($target = "_self", $ulink = true, $abstract = false)
     {
         
-        $nb_adulte = intval($this->getValue("ent_adulte"));
-        $nb_enfant = intval($this->getValue("ent_enfant"));
+        $nb_adulte = intval($this->getRawValue("ent_adulte"));
+        $nb_enfant = intval($this->getRawValue("ent_enfant"));
         $t = array();
         for ($i = 0; $i < $nb_adulte; $i++) {
             $t[] = array(
@@ -67,7 +67,7 @@ Class _ZOO__ENTREE extends Doc
             );
         }
         
-        $this->lay->set("today", $this->getValue("ent_date", $this->getDate()));
+        $this->lay->set("today", $this->getRawValue("ent_date", $this->getDate()));
         
         $this->lay->set("n", $nb_adulte + $nb_enfant);
         $this->lay->setBlockData("TICKET", $t);

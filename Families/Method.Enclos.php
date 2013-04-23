@@ -25,7 +25,7 @@ Class _ZOO_ENCLOS extends Doc
     */
     public $defaultview = "ZOO:VIEWENCLOS";
     
-    public function specRefresh()
+    public function preRefresh()
     {
         $msg = $this->detectMaxCapacity();
         return $msg;
@@ -37,8 +37,9 @@ Class _ZOO_ENCLOS extends Doc
     public function detectMaxCapacity()
     {
         $nb = $this->getNbreAnimaux();
-        if ($nb == intval($this->getValue("en_capacite"))) return _("zoo:Full Area");
-        elseif ($nb > intval($this->getValue("en_capacite"))) return (sprintf(_("zoo:Maximum Capacity reached %d > %d") , $nb, intval($this->getValue("en_capacite"))));
+        if ($nb == intval($this->getRawValue("en_capacite"))) return _("zoo:Full Area");
+        elseif ($nb > intval($this->getRawValue("en_capacite"))) return (sprintf(_("zoo:Maximum Capacity reached %d > %d") , $nb, intval($this->getRawValue("en_capacite"))));
+        return '';
     }
     /**
      * return count of animals
@@ -46,7 +47,7 @@ Class _ZOO_ENCLOS extends Doc
      */
     public function getNbreAnimaux()
     {
-        return count($this->getTValue("en_animaux"));
+        return count($this->getMultipleRawValues("en_animaux"));
     }
     /**
      * default view for enclos to see animal's photo
@@ -57,7 +58,7 @@ Class _ZOO_ENCLOS extends Doc
     {
         $this->viewdefaultcard($target, $ulink, $abstract);
         
-        $anidT = $this->getTValue("en_animaux");
+        $anidT = $this->getMultipleRawValues("en_animaux");
         $anid = array();
         foreach ($anidT as $cle => $val) {
             $anid[] = array(

@@ -27,7 +27,7 @@ Class _ZOO_CARNET extends Doc
         "ZOO:VIEWORDONNANCE"
     );
     //test de code
-    function getTime()
+    public function getTime()
     {
         return strftime("%T", time());
     }
@@ -35,7 +35,7 @@ Class _ZOO_CARNET extends Doc
      * carnet de sante
      * display new ordonnance
      */
-    function viewordonnance($target = "_self", $ulink = true, $abstract = false)
+    public function viewordonnance($target = "_self", $ulink = true, $abstract = false)
     {
         $idveto = Action::getArgument('ca_idveterinaire');
         $idanimal = Action::getArgument('ca_idnom');
@@ -43,39 +43,39 @@ Class _ZOO_CARNET extends Doc
         $desc = Action::getArgument('ca_description');
         
         $doc = new_Doc($this->dbaccess, $idveto);
-        $this->lay->set("us_lname", $doc->getValue("us_lname"));
-        $this->lay->set("us_fname", $doc->getValue("us_fname"));
+        $this->lay->set("us_lname", $doc->getRawValue("us_lname"));
+        $this->lay->set("us_fname", $doc->getRawValue("us_fname"));
         
         $this->lay->set("dateveto", $dateveto);
         $this->lay->set("v_desc", $desc);
         $docAnimal = new_Doc($this->dbaccess, $idanimal);
-        $this->lay->set("an_nom", $docAnimal->getValue("an_nom"));
+        $this->lay->set("an_nom", $docAnimal->getRawValue("an_nom"));
     }
     /**
      * carnet de sante
      * view resume of diseases
      */
-    function maladie($target = "_self", $ulink = true, $abstract = false)
+    public function maladie($target = "_self", $ulink = true, $abstract = false)
     {
         
         $this->lay->set("today", $this->getDate());
-        $animal = new_doc($this->dbaccess, $this->getValue("ca_idnom"));
+        $animal = new_doc($this->dbaccess, $this->getRawValue("ca_idnom"));
         if ($animal->isAlive()) {
-            $this->lay->set("animal_name", $animal->getValue("an_nom"));
+            $this->lay->set("animal_name", $animal->getRawValue("an_nom"));
             $this->lay->set("espece", $animal->getHTMLAttrValue("an_espece") , $target, $ulink);
             $this->lay->set("classe", $animal->getHTMLAttrValue("an_classe") , $target, $ulink);
-            $this->lay->set("tatouage", $animal->getValue("an_tatouage"));
-            $this->lay->set("n", count($this->getTValue("ca_date")));
+            $this->lay->set("tatouage", $animal->getRawValue("an_tatouage"));
+            $this->lay->set("n", count($this->getMultipleRawValues("ca_date")));
         } else {
             addWarningMsg(_("zoo:the animal document is not found"));
         }
         
-        $vetos = $this->getTValue("ca_idveterinaire");
+        $vetos = $this->getMultipleRawValues("ca_idveterinaire");
         if (count($vetos) > 0) {
             $vetoid = $vetos[0];
             $veto = new_doc($this->dbaccess, $vetoid);
             if ($veto->isAlive()) {
-                $this->lay->set("vetoname", $veto->getValue("us_fname") . ' ' . $veto->getValue("us_lname"));
+                $this->lay->set("vetoname", $veto->getRawValue("us_fname") . ' ' . $veto->getRawValue("us_lname"));
             } else {
                 addWarningMsg(_("zoo:the veto document is not found"));
             }

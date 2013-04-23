@@ -25,7 +25,7 @@ Class _ZOO_ADOPTION extends Doc
     */
     function postCreated()
     {
-        $err='';
+        $err = '';
         if ($this->revision == 0) {
             $err = $this->setReference();
         }
@@ -46,8 +46,8 @@ Class _ZOO_ADOPTION extends Doc
      */
     function verifyDate($date)
     {
-        $err='';
-        $sug=array();
+        $err = '';
+        $sug = array();
         $t1 = stringDateToJD($date);
         
         if ($t1 > stringDateToJD($this->getDate())) $err = _("birthday date must be set before today");
@@ -63,7 +63,7 @@ Class _ZOO_ADOPTION extends Doc
         include_once ("FDL/Class.SearchDoc.php");
         
         $s = new SearchDoc($this->dbaccess, "ZOO_ANIMAL");
-        $s->addFilter(sprintf("an_espece = '%d'", $this->getValue("de_idespece")));
+        $s->addFilter(sprintf("an_espece = '%d'", $this->getRawValue("de_idespece")));
         $t = $s->search();
         
         $this->lay->setBlockData("ANIMALS", $t);
