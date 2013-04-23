@@ -11,3 +11,25 @@
     background: #DFE8F6 ! important;
     color: black;
 }
+
+
+.header-title {
+  /*  background: none repeat-x scroll 50% 50% green;*/
+    border: 1px solid #99BBE8;
+    color : #222;
+    background: url("../../STYLE/ZOO/Images/white-top-bottom.gif") #DFE8F6;
+}
+
+
+.ui-state-hover {
+    background: #CFD8FF !important;
+
+}
+.ui-state-active, .ui-state-highlight {
+    background: #99BBE8 !important;
+
+}
+.ui-state-focus {
+    background: #DFE8F6 !important;
+
+}

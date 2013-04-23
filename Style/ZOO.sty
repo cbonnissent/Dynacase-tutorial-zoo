@@ -23,9 +23,6 @@ $sty_desc = array(
 
 $sty_inherit = "STYLE/MODERN/MODERN.sty";
 // global parameters which can be use for other css
-
-
-
 $sty_rules = array(
     'css' => array(
         'dcp/jquery-ui.css' => array(
@@ -33,19 +30,20 @@ $sty_rules = array(
                 "lib/jquery-ui/css/smoothness/jquery-ui.css",
                 "STYLE/ZOO/Layout/jquery-blue.css"
             )
-        ),  'dcp/main.css' => array(
-                    "src" => array(
-                        "CORE/Layout/core.css",
-                        "FDL/Layout/freedom.css",
-                        "WHAT/Layout/size-normal.css",
-                        "STYLE/MODERN/Layout/MODERN.css",
+        ) ,
+        'dcp/main.css' => array(
+            "src" => array(
+                "CORE/Layout/core.css",
+                "FDL/Layout/freedom.css",
+                "WHAT/Layout/size-normal.css",
+                "STYLE/MODERN/Layout/MODERN.css",
                 "STYLE/ZOO/Layout/jquery-blue-devel.css"
-                    ) ,
-                    "flags" => Style::RULE_FLAG_PARSE_ON_RUNTIME,
-                    "deploy_parser" => array(
-                        "className" => '\Dcp\Style\dcpCssTemplateParser'
-                    )
-                )
+            ) ,
+            "flags" => Style::RULE_FLAG_PARSE_ON_RUNTIME,
+            "deploy_parser" => array(
+                "className" => '\Dcp\Style\dcpCssTemplateParser'
+            )
+        )
     )
 );
 ?>
