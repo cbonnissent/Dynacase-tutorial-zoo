@@ -1,42 +1,23 @@
 <?xml version="1.0"?>
-<module name="@PACKAGE@" disabled="no" version="@VERSION@" release="@RELEASE@">
+<module name="@PACKAGE@-style" disabled="no" version="@VERSION@" release="@RELEASE@">
 
-  <description>Zoo application sample.</description>
+  <description>Zoo blue style.</description>
 
   <requires>
-    <module name="dynacase-core" version="3.2.5" comp="ge"/>
-    <module name="dynacase-onefam-ext" version="3.2.5" comp="ge"/>
+    <module name="dynacase-core" version="3.2.6" comp="ge"/>
   </requires>
 
   <post-install>
-    <process command="programs/record_application @APPNAME@" />
-    <process command="programs/update_catalog" />
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-families.ods">
-      <label lang="en">Importing zoo families</label>
-    </process>
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-profiling.ods">
-      <label lang="en">Record family security profiling</label>
-    </process>
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-init.ods">
-      <label lang="en">Importing zoo somes species</label>
-    </process>
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/Layout/zoo-initanimals.xml">
-      <label lang="en">Importing zoo somes animals</label>
-    </process>
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-initcontacts.ods">
-      <label lang="en">Importing zoo somes contacts</label>
+
+    <process command="./wsh.php --api=setStyle --style=STYLE/@APPNAME@/@APPNAME@.sty">
+      <label lang="en">Set blue style</label>
     </process>
   </post-install>
 
   <post-upgrade>
-    <process command="programs/pre_migration @APPNAME@" />
-    <process command="programs/record_application @APPNAME@" />
-    <process command="programs/update_catalog" />
-    <process command="./wsh.php --api=importDocuments --reinitattr=no --file=./@APPNAME@/zoo-families.ods">
-      <label lang="en">Update zoo families</label>
-    </process>
-
-    <process command="programs/post_migration @APPNAME@" />
+      <process command="./wsh.php --api=setStyle --style=STYLE/@APPNAME@/@APPNAME@.sty">
+        <label lang="en">Reset blue style</label>
+      </process>
   </post-upgrade>
 
 

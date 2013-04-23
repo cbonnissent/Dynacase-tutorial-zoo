@@ -25,6 +25,15 @@ DISTFILES += $(SUBDIR)  $(wildcard *.ods)\
             VERSION RELEASE  \
 	    $(PACKAGE)_en.po $(PACKAGE)_fr.po 
 
+webinst-style:
+	make -C Style webinst RELEASE=$(RELEASE) PACKAGE=$(PACKAGE)-style VERSION=$(VERSION) dirname=@APPNAME@
+	mv Style/*webinst .
+
+publish-style:
+	make -C Style publish  RELEASE=$(RELEASE) PACKAGE=$(PACKAGE)-style VERSION=$(VERSION) dirname=@APPNAME@
+
+webinst: webinst-style
+
 clean:
 	/bin/rm -f *.*~ config.* Makefile configure $(appname)_init.php info.xml $(PACKAGE)-*webinst
 	/bin/rm -fr autom4te.cache
