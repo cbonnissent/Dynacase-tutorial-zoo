@@ -32,7 +32,7 @@ webinst-style:
 publish-style:
 	make -C Style publish  RELEASE=$(RELEASE) PACKAGE=$(PACKAGE)-style VERSION=$(VERSION) dirname=@APPNAME@
 
-webinst: webinst-style
+#webinst: webinst-style
 
 clean:
 	/bin/rm -f *.*~ config.* Makefile configure $(appname)_init.php info.xml $(PACKAGE)-*webinst
