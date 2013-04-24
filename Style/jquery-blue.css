@@ -11,7 +11,10 @@
     background: #DFE8F6 ! important;
     color: black;
 }
+.appHeader {
+    background: url("../../STYLE/ZOO/Images/white-top-bottom.gif") #DFE8F6;
 
+}
 
 .header-title {
   /*  background: none repeat-x scroll 50% 50% green;*/
