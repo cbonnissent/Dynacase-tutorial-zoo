@@ -75,6 +75,7 @@ $app_const = array(
     "INIT" => "yes",
     "VERSION" => "@VERSION@-@RELEASE@",
     "ONEFAM_MIDS" => "ZOO_ANIMAL,ZOO_ENCLOS,ZOO_ESPECE,ZOO_CLASSE,ZOO_CARNETSANTE,ZOO_ENTREE,ZOO_DEMANDEADOPTION,ZOO_CONTACT",
+    "ONEFAM_FAMOPEN"=>"ZOO_ANIMAL",
     "ONEFAM_MENU" => json_encode($menuconf) ,
     "ZOO_NAME" => array(
         "val" => "Zoo Land",

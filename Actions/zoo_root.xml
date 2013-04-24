@@ -331,7 +331,8 @@ h1.loader{
                 <a href="?app=ZOO&amp;action=ONEFAM_EXT">[TEXT:Ext interface]</a>
                 <a href="?app=ZOO&amp;action=ZOO_COLOR">[TEXT:Colors]</a>
             </div>
-            <img src="[IMG:accueil.gif]"/>
+            <img src="[IMG:Elephant-icon.png|256]"/>  <img src="[IMG:Giraffe-icon.png|256]"/>
+
         </div>
         <div class="sun">
             <div class="ray ray1 odd"></div>
