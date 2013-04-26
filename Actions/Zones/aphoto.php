@@ -21,6 +21,10 @@ function aphoto(Action &$action) {
   $doc= new_Doc($dbaccess,$idanimal);
   $photo=$doc->getHtmlAttrValue("AN_PHOTO");
 
+  if (strpos($photo,'?')!==false) {
+      $photo.='&width=70';
+  }
+
   $action->lay->set("anid",$idanimal);
   $action->lay->set("photo",$photo);
   $action->lay->set("aname",$doc->getHTMLTitle());

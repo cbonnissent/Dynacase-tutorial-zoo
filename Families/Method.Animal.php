@@ -84,10 +84,11 @@ Class _ZOO_ANIMAL extends Doc
         if ($enclosId > 0) {
             $enclos = new_doc($this->dbaccess, $enclosId);
             if ($enclos->isAlive()) {
+                $enclos->disableEditControl();
                 $animals = $enclos->getMultipleRawValues("en_animaux");
                 array_push($animals, $this->id);
                 $err = $enclos->setValue("en_animaux", $animals);
-                if ($err == "") $err = $enclos->modify();
+                if ($err == "") $err = $enclos->store();
             }
         }
         return $err;
