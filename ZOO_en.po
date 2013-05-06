@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZOO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-15 14:42+0200\n"
+"POT-Creation-Date: 2013-04-26 16:44+0200\n"
 "PO-Revision-Date: 2012-03-08 18:19+0100\n"
 "Last-Translator: Eric Brison <eric.brison@anakeen.com>\n"
 "Language-Team: English <distrib@anakeen.com>\n"
@@ -11,100 +11,129 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ZOO_init.php:26
+msgid "%p%n%t%br-%er species of %nd"
+msgstr ""
+
+#: tempCatalog.php:9
 msgid "A tatoo"
 msgstr ""
 
+#: ZOO.app:22
 msgid "Access to ticket sales"
 msgstr ""
 
+#: Families/Method.Entree.php:59
 msgid "Adult"
 msgstr ""
 
+#: Actions/zoo_animalfolder.php:84
 #, c-format
 msgid "All childs of [ADOC %d]"
 msgstr ""
 
+#: Families/Method.Entree.php:65
 msgid "Child"
 msgstr ""
 
+#: Actions/zoo_animalfolder.php:83
 #, c-format
 msgid "Childs of %s"
 msgstr ""
 
+#: tempCatalog.php:25
 msgid "Colors"
 msgstr ""
 
+#: Families/Class.WAdoption.php:244
 #, c-format
 msgid "Creation from adoption %s [%d]"
 msgstr ""
 
+#: tempCatalog.php:20 tempCatalog.php:22
 msgid "Date"
 msgstr ""
 
+#: Families/Class.WAnimal.php:63
 #, c-format
 msgid "Disease of %s "
 msgstr ""
 
+#: tempCatalog.php:1
 msgid "Entrance"
 msgstr ""
 
+#: tempCatalog.php:24
 msgid "Ext interface"
 msgstr ""
 
+#: Actions/zoo_animalfolder.php:61
 #, c-format
 msgid ""
 "Father [ADOC %d]\n"
 "Mother [ADOC %d]"
 msgstr ""
 
+#: Actions/zoo_animalfolder.php:39
 #, c-format
 msgid "Folder of %s"
 msgstr ""
 
+#: tempCatalog.php:7
 msgid "Has been refused by"
 msgstr ""
 
+#: Actions/zoo_animalfolder.php:40
 #, c-format
 msgid "Information about [ADOC %d]"
 msgstr ""
 
+#: tempCatalog.php:16
 msgid "Insert into list !"
 msgstr ""
 
+#: ZOO_init.php:103
 msgid "Name of the zoo"
 msgstr ""
 
-msgid "Ng interface"
-msgstr ""
-
+#: Actions/zoo_animalfolder.php:60
 #, c-format
 msgid "Parents of %s"
 msgstr ""
 
+#: tempCatalog.php:11
 msgid "Quality"
 msgstr ""
 
+#: tempCatalog.php:12
 msgid "Red"
 msgstr ""
 
+#: tempCatalog.php:8
 msgid "Set a beautifull name for this animal"
 msgstr ""
 
+#: tempCatalog.php:13
 msgid "Special Species"
 msgstr ""
 
+#: tempCatalog.php:23
 msgid "Standard HTML"
 msgstr ""
 
+#: Families/Class.WAnimal.php:14
 msgid "T1"
 msgstr ""
 
+#: Families/Class.WAnimal.php:17
 msgid "T3"
 msgstr ""
 
+#: Families/Class.WAnimal.php:16
 msgid "Tconvalescent"
 msgstr ""
 
+#: Families/Class.WAnimal.php:15
 msgid "Tsick"
 msgstr ""
 
@@ -179,6 +208,10 @@ msgstr "pere"
 #, fuzzy
 msgid "ZOO_ANIMAL#an_photo"
 msgstr "photo"
+
+#, fuzzy
+msgid "ZOO_ANIMAL#an_photo#showempty"
+msgstr "noanimalphoto.png"
 
 #, fuzzy
 msgid "ZOO_ANIMAL#an_sexe"
@@ -443,6 +476,10 @@ msgstr "rÃ©dacteur id"
 #, fuzzy
 msgid "ZOO_DEMANDEADOPTION#de_idval"
 msgstr "Valideur id"
+
+#, fuzzy
+msgid "ZOO_DEMANDEADOPTION#de_info"
+msgstr "Remarques"
 
 #, fuzzy
 msgid "ZOO_DEMANDEADOPTION#de_mobile"
@@ -766,6 +803,10 @@ msgid "ZOO_GARDIEN#gar_idenclos"
 msgstr "Enclos"
 
 #, fuzzy
+msgid "ZOO_GARDIEN#gar_tab_garde"
+msgstr "Gardien"
+
+#, fuzzy
 msgid "ZOO_GARDIEN#title"
 msgstr "Gardien"
 
@@ -829,258 +870,339 @@ msgstr "EspÃšce protÃ©gÃ©e"
 msgid "ZOO_WDEMANDEADOPTION#wad_refus"
 msgstr "Motif de Refus"
 
+#: ZOO.app:9
 msgid "Zoo"
 msgstr ""
 
+#: ZOO.app:10
 msgid "Zoo formation"
 msgstr ""
 
+#: tempCatalog.php:3
 msgid "Zoo:The animal"
 msgstr ""
 
+#: tempCatalog.php:2
 msgid "Zoo:Today"
 msgstr ""
 
+#: tempCatalog.php:6
 msgid "Zoo:Veterinary"
 msgstr ""
 
+#: tempCatalog.php:5
 msgid "Zoo:taxo_class"
 msgstr ""
 
+#: tempCatalog.php:4
 msgid "Zoo:taxo_species"
 msgstr ""
 
+#: Families/Class.WAdoption.php:175
 #, c-format
 msgid "adoption %s accepted"
 msgstr "adoption %s accepted"
 
+#: Families/Class.WAdoption.php:210
 #, c-format
 msgid "adoption %s realised"
 msgstr "adoption %s realised"
 
+#: Families/Class.WAdoption.php:196
 #, c-format
 msgid "adoption %s refused"
 msgstr "adoption %s refused"
 
+#: Families/Class.WAdoption.php:163
 #, c-format
 msgid "adoption %s to modify"
 msgstr "adoption %s to modify"
 
+#: Families/Class.WAdoption.php:151
 #, c-format
 msgid "adoption %s to validate"
 msgstr "adoption %s to validate"
 
+#: Families/Class.WAnimal.php:8
 #, fuzzy
 msgid "alive"
 msgstr "realised"
 
+#: ZOO.app:46
 msgid "animal folder"
 msgstr ""
 
+#: Families/Method.Adoption.php:53
 msgid "birthday date must be set before today"
 msgstr ""
 
+#: Families/Class.WAnimal.php:12
 msgid "convalescent"
 msgstr ""
 
+#: Families/Class.WAnimal.php:9
 msgid "dead"
 msgstr ""
 
+#: Actions/zoo_animalfolder.php:27
 #, c-format
 msgid "document %s (%d) is not an animal"
 msgstr ""
 
+#: ZOO.app:54
 msgid "entrance"
 msgstr ""
 
+#: Families/Externals/zoo.php:66
 #, c-format
 msgid "group %s has no login"
 msgstr ""
 
+#: Families/Externals/zoo.php:64
 #, c-format
 msgid "group %s not found"
 msgstr ""
 
+#: Families/Class.WAdoption.php:173
 msgid "no mail for realisator"
 msgstr ""
 
+#: Families/Class.WAdoption.php:162
 msgid "no mail for redactor"
 msgstr ""
 
+#: Families/Class.WAdoption.php:149 Families/Class.WAdoption.php:208
 msgid "no mail for validator"
 msgstr ""
 
+#: Families/Class.WAdoption.php:139
 msgid "no mail template"
 msgstr ""
 
+#: Families/Class.WAnimal.php:11
 msgid "sick"
 msgstr ""
 
+#: ZOO.app:29
 msgid "sum of sales"
 msgstr ""
 
+#: ZOO.app:50
 msgid "table colors"
 msgstr ""
 
+#: ZOO.app:33
 msgid "text sum of sales"
 msgstr ""
 
+#: Families/Class.WAnimal.php:10
 #, fuzzy
 msgid "transfered"
 msgstr "transmited"
 
+#: Families/Class.WBasicTest.php:31
 msgid "wdt_accept"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:22
 msgid "wdt_accepted"
 msgstr ""
 
+#: Families/Class.WSimpleTest.php:13
 msgid "wdt_archive"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:18
 msgid "wdt_initialised"
 msgstr ""
 
+#: Families/Class.WSimpleTest.php:12
 msgid "wdt_outdated"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:26
 msgid "wdt_published"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:44
 msgid "wdt_realisation"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:37
 msgid "wdt_realise"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:40
 msgid "wdt_redaction"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:33
 msgid "wdt_refuse"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:24
 msgid "wdt_refused"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:35
 msgid "wdt_retry"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:20
 msgid "wdt_transmited"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:29
 msgid "wdt_transmition"
 msgstr ""
 
+#: Families/Class.WBasicTest.php:42
 msgid "wdt_verification"
 msgstr ""
 
+#: ZOO.app:39
 msgid "xml sum of sales"
 msgstr ""
 
+#: Families/Class.WAdoption.php:227
 msgid "zoo:Cannot create animal"
 msgstr ""
 
+#: Families/Externals/zoo.php:111
 msgid "zoo:Capacity not set"
 msgstr ""
 
+#: tempCatalog.php:17
 msgid "zoo:Change capacity"
 msgstr ""
 
+#: tempCatalog.php:21
 msgid "zoo:Day Sales"
 msgstr ""
 
+#: Families/Method.Enclos.php:40
 msgid "zoo:Full Area"
 msgstr ""
 
+#: tempCatalog.php:19
 msgid "zoo:Insert with defined return"
 msgstr ""
 
+#: Families/Method.Enclos.php:41
 #, c-format
 msgid "zoo:Maximum Capacity reached %d > %d"
 msgstr ""
 
+#: tempCatalog.php:18
 msgid "zoo:Retrieve reference"
 msgstr ""
 
+#: tempCatalog.php:15
 msgid "zoo:Search species"
 msgstr ""
 
+#: tempCatalog.php:14
 msgid "zoo:Species for"
 msgstr ""
 
+#: tempCatalog.php:10
 msgid "zoo:The tatoo is important"
 msgstr ""
 
+#: Families/Method.Animal.php:105
 msgid "zoo:birthday date must be set before today"
 msgstr ""
 
+#: Families/Method.Animal.php:164
 #, c-format
 msgid "zoo:each enclos are full : %s"
 msgstr ""
 
+#: Families/Externals/zoo.php:56
 msgid "zoo:no class referenced"
 msgstr ""
 
+#: Families/Method.Animal.php:130
 msgid "zoo:no enclos"
 msgstr ""
 
+#: Families/Method.Animal.php:152
 msgid "zoo:no enclos for this species"
 msgstr ""
 
+#: Families/Class.WAdoption.php:106
 msgid "zoo:no mail for validator"
 msgstr ""
 
+#: Families/Class.WAdoption.php:96 Families/Class.WAdoption.php:104
 msgid "zoo:no validator defined"
 msgstr ""
 
+#: Families/Method.Carnet.php:70
 msgid "zoo:the animal document is not found"
 msgstr ""
 
+#: Families/Method.Carnet.php:80
 msgid "zoo:the veto document is not found"
 msgstr ""
 
+#: Families/Externals/zoo.php:58
 msgid "zoo:unknown class"
 msgstr ""
 
+#: Families/Externals/zoo.php:113
 msgid "zoo;Capacity not set"
 msgstr ""
 
+#: Families/Class.WAdoption.php:19
 msgid "zoo_Taccepted"
 msgstr ""
 
+#: Families/Class.WAdoption.php:22
 msgid "zoo_Trealised"
 msgstr ""
 
+#: Families/Class.WAdoption.php:20
 msgid "zoo_Trefused"
 msgstr ""
 
+#: Families/Class.WAdoption.php:21
 msgid "zoo_Tretry"
 msgstr ""
 
+#: Families/Class.WAdoption.php:18
 msgid "zoo_Ttransmited"
 msgstr ""
 
+#: Families/Class.WAdoption.php:15
 msgid "zoo_accepted"
 msgstr ""
 
+#: Families/Class.WAdoption.php:84
 msgid "zoo_adoption accepted"
 msgstr ""
 
+#: Families/Class.WAdoption.php:86
 msgid "zoo_adoption verification"
 msgstr ""
 
+#: Families/Class.WAdoption.php:86
 msgid "zoo_adoption writting"
 msgstr ""
 
+#: Families/Class.WAdoption.php:13
 msgid "zoo_initialised"
 msgstr ""
 
+#: Families/Class.WAdoption.php:17
 msgid "zoo_realised"
 msgstr ""
 
+#: Families/Class.WAdoption.php:16
 msgid "zoo_refused"
 msgstr ""
 
+#: Families/Class.WAdoption.php:14
 msgid "zoo_transmited"
 msgstr ""
 

@@ -10,13 +10,22 @@
 // ---------------------------------------------------------------
 global $app_const;
 
-
-
+/*
+n : next page : bouton >
+p : previous page : bouton <
+l : last page : bouton >>
+f : first page : bouton <<
+np : number of page
+cp : page number
+nd : number of documents
+br-er : document range number "20-29"
+t : tabulation
+*/
 $familyConfiguration=array(
-        "ZOO_ANIMAL"=>array("paginationType"=>"none"),
-        "ZOO_ESPECE"=>array("paginationType"=>"basic"),
+        "ZOO_ANIMAL"=>array("paginationType"=>""),
+        "ZOO_ESPECE"=>array("paginationType"=>N_("%p%n%t%br-%er species of %nd")),
         "ZOO_CLASSE"=>array("paginationType"=>"pageNumber"),
-        "ZOO_ENCLOS"=>array("paginationType"=>"np "), // default
+        "ZOO_ENCLOS"=>array("paginationType"=>""), // default
         "ZOO_CONTACT"=>array("paginationType"=>"documentNumber")
 );
 
