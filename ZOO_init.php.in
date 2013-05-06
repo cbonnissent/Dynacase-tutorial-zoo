@@ -97,7 +97,6 @@ $app_const = array(
     "ONEFAM_FAMOPEN"=>"ZOO_ANIMAL",
     "ONEFAM_MENU" => json_encode($menuconf) ,
     "ONEFAM_FAMCONFIG"=>json_encode($familyConfiguration),
-    "ONEFAM_PAGINATIONTYPE"=>"basic",
     "ZOO_NAME" => array(
         "val" => "Zoo Land",
         "descr" => N_("Name of the zoo") ,
