@@ -47,6 +47,7 @@ Class _ZOO__ENTREE extends Doc
     }
     /**
      * view tickets one by personn
+     * @templateController view tickets one by personn
      */
     function viewtickets($target = "_self", $ulink = true, $abstract = false)
     {
@@ -71,6 +72,21 @@ Class _ZOO__ENTREE extends Doc
         
         $this->lay->set("n", $nb_adulte + $nb_enfant);
         $this->lay->setBlockData("TICKET", $t);
+    }
+    
+    public static function positiveNumber($n)
+    {
+        if ($n < 0) {
+            return sprintf(_("%s must not be negative") , $n);
+        }
+        return '';
+    }
+    public static function strictPositiveNumber($n)
+    {
+        if ($n <= 0) {
+            return sprintf(_("%s must be positive") , $n);
+        }
+        return '';
     }
     /**
      * @begin-method-ignore

@@ -200,7 +200,7 @@ Class _ZOO_ANIMAL extends Doc
         include_once ("FDL/Class.SearchDoc.php");
         
         $s = new SearchDoc($this->dbaccess, "ZOO_CARNETSANTE");
-        $s->addFilter("ca_idnom =" . $this->initid);
+        $s->addFilter("ca_idnom = '%s'", $this->initid);
         $s->overrideViewControl(); // no test view acl
         $s->slice = 3;
         $tdoc = $s->search();
@@ -225,6 +225,7 @@ Class _ZOO_ANIMAL extends Doc
     }
     /**
      * view to notify veterinary
+     * @templateController view to email notify veterinary
      */
     public function de_mail_sick($target = "_self", $ulink = true, $abstract = false)
     {
