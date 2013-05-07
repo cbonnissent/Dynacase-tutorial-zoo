@@ -1,21 +1,29 @@
 
 .ui-widget-header {
   /*  background: none repeat-x scroll 50% 50% green;*/
-    border: 1px solid #99BBE8;
+    border: 1px solid yellow !important;
     color: black;
     font-weight: bold;
-    background: url("STYLE/ZOO/Images/white-top-bottom.gif") #DFE8F6 !important;
+    background: url("STYLE/ZOO/Images/white-top-bottom.gif") [COLOR_A0] !important;
 }
 
 .ui-state-hover {
-    background: #DFE8F6 !important;
+    background: [COLOR_A0] !important;
 
 }
 .ui-state-active {
-    background: #99BBE8 !important;
+    background: [COLOR_A3] !important;
 
 }
 .ui-state-focus {
-    background: #DFE8F6 !important;
+    background: [COLOR_A0] !important;
 
+}
+
+
+div.frame .content {
+    border-color: [COLOR_B0];
+    border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px;
 }

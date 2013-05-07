@@ -1,0 +1,5 @@
+.document th ,
+.barmenu td{
+    background-image: url(STYLE/ZOO/Images/top-bottom.gif);
+    border-color: #f7f942 !important;
+}

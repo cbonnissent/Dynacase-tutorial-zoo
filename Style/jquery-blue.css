@@ -1,38 +1,38 @@
 
 .ui-widget-header {
   /*  background: none repeat-x scroll 50% 50% green;*/
-    border: 1px solid #99BBE8;
+    border: 1px solid yellow;
     color: black;
     font-weight: bold;
-    background: url("../../STYLE/ZOO/Images/white-top-bottom.gif") #DFE8F6;
+    background: url("../../STYLE/ZOO/Images/white-top-bottom.gif") #f7f942;
 }
 .ui-state-default {
    /* background: url("images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% #E6E6E6;*/
-    background: #DFE8F6 ! important;
+    background: #f7f942 ! important;
     color: black;
 }
 .appHeader {
-    background: url("../../STYLE/ZOO/Images/white-top-bottom.gif") #DFE8F6;
+    background: url("../../STYLE/ZOO/Images/white-top-bottom.gif") #f7f942;
 
 }
 
 .header-title {
   /*  background: none repeat-x scroll 50% 50% green;*/
-    border: 1px solid #99BBE8;
+    border: 1px solid yellow;
     color : #222;
-    background: url("../../STYLE/ZOO/Images/white-top-bottom.gif") #DFE8F6;
+    background: url("../../STYLE/ZOO/Images/white-top-bottom.gif") #f7f942;
 }
 
 
 .ui-state-hover {
-    background: #CFD8FF !important;
+    background: #f7f942 !important;
 
 }
 .ui-state-active, .ui-state-highlight {
-    background: #99BBE8 !important;
+    background: #f7f942 !important;
 
 }
 .ui-state-focus {
-    background: #DFE8F6 !important;
+    background: #f7f942 !important;
 
 }
