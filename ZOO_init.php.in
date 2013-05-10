@@ -22,9 +22,11 @@ br-er : document range number "20-29"
 t : tabulation
 */
 $familyConfiguration=array(
+        "*"=>array("paginationType"=>"pageNumber"),
         "ZOO_ANIMAL"=>array("paginationType"=>""),
         "ZOO_ESPECE"=>array("paginationType"=>N_("%p%n%tview cards %br to %er of %nd species")),
-        "ZOO_CLASSE"=>array("paginationType"=>"pageNumber"),
+        "ZOO_CLASSE"=>array("paginationType"=>"basic"),
+        "ZOO_ENTREE"=>array("paginationType"=>"pageNumber"),
         "ZOO_ENCLOS"=>array("paginationType"=>""), // default
         "ZOO_CONTACT"=>array("paginationType"=>"documentNumber")
 );

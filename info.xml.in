@@ -26,6 +26,9 @@
     <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-initcontacts.ods">
       <label lang="en">Importing zoo somes contacts</label>
     </process>
+    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-inittickets.ods --policy=add">
+      <label lang="en">Importing zoo somes cash tickets</label>
+    </process>
   </post-install>
 
   <post-upgrade>
