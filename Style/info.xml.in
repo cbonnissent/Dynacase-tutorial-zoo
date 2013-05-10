@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <module name="@PACKAGE@-style" disabled="no" version="@VERSION@" release="@RELEASE@">
 
-  <description>Zoo blue style.</description>
+  <description>Zoo yellow style.</description>
 
   <requires>
     <module name="dynacase-core" version="3.2.6" comp="ge"/>
@@ -10,13 +10,13 @@
   <post-install>
 
     <process command="./wsh.php --api=setStyle --style=STYLE/@APPNAME@/@APPNAME@.sty">
-      <label lang="en">Set blue style</label>
+      <label lang="en">Set yellow style</label>
     </process>
   </post-install>
 
   <post-upgrade>
       <process command="./wsh.php --api=setStyle --style=STYLE/@APPNAME@/@APPNAME@.sty">
-        <label lang="en">Reset blue style</label>
+        <label lang="en">Reset yellow style</label>
       </process>
   </post-upgrade>
 

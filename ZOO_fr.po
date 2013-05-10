@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZOO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-26 16:44+0200\n"
-"PO-Revision-Date: 2013-04-26 16:45+0200\n"
+"POT-Creation-Date: 2013-05-10 11:58+0200\n"
+"PO-Revision-Date: 2013-05-10 11:59+0200\n"
 "Last-Translator: Eric Brison <eric.brison@anakeen.com>\n"
 "Language-Team: French <distrib@anakeen.com>\n"
 "Language: fr\n"
@@ -13,8 +13,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ZOO_init.php:26
-msgid "%p%n%t%br-%er species of %nd"
-msgstr "%p%n%t%br-%er espèces sur %nd"
+msgid "%p%n%tview cards %br to %er of %nd species"
+msgstr "%p%n%tFiches %br à %er sur %nd espèces"
+
+#: Families/Method.Entree.php:87
+#, c-format
+msgid "%s must be positive"
+msgstr ""
+
+#: Families/Method.Entree.php:80
+#, c-format
+msgid "%s must not be negative"
+msgstr ""
 
 #: tempCatalog.php:9
 msgid "A tatoo"
@@ -24,7 +34,7 @@ msgstr ""
 msgid "Access to ticket sales"
 msgstr ""
 
-#: Families/Method.Entree.php:59
+#: Families/Method.Entree.php:60
 msgid "Adult"
 msgstr "Adulte"
 
@@ -33,7 +43,7 @@ msgstr "Adulte"
 msgid "All childs of [ADOC %d]"
 msgstr ""
 
-#: Families/Method.Entree.php:65
+#: Families/Method.Entree.php:66
 msgid "Child"
 msgstr "Enfant"
 
@@ -93,7 +103,7 @@ msgstr ""
 msgid "Insert into list !"
 msgstr "Insérer dans la liste !"
 
-#: ZOO_init.php:103
+#: ZOO_init.php:102
 msgid "Name of the zoo"
 msgstr ""
 
@@ -635,18 +645,6 @@ msgid "ZOO_ENTREE#ent_enfant"
 msgstr "nombre enfant"
 
 #, fuzzy
-msgid "ZOO_ENTREE#ent_enum1"
-msgstr "énum un"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_enum1#1"
-msgstr "Un"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_enum1#2"
-msgstr "deux"
-
-#, fuzzy
 msgid "ZOO_ENTREE#ent_fr_entrees"
 msgstr "Entrées"
 
@@ -657,10 +655,6 @@ msgstr "Identification"
 #, fuzzy
 msgid "ZOO_ENTREE#ent_fr_prix"
 msgstr "Prix"
-
-#, fuzzy
-msgid "ZOO_ENTREE#ent_idcaissiere"
-msgstr "idcaissiere"
 
 #, fuzzy
 msgid "ZOO_ENTREE#ent_ncaisse"
@@ -1212,6 +1206,9 @@ msgstr "Refusé"
 msgid "zoo_transmited"
 msgstr "Transmis"
 
+#~ msgid "%p%n%t%br-%er species of %nd"
+#~ msgstr "%p%n%t%br-%er espèces sur %nd"
+
 #, fuzzy
 #~ msgid "ZOO_ANIMAL#an_friend"
 #~ msgstr "copains"
@@ -1263,6 +1260,22 @@ msgstr "Transmis"
 #, fuzzy
 #~ msgid "ZOO_DEMANDEADOPTION#de_val"
 #~ msgstr "Valideur"
+
+#, fuzzy
+#~ msgid "ZOO_ENTREE#ent_enum1"
+#~ msgstr "énum un"
+
+#, fuzzy
+#~ msgid "ZOO_ENTREE#ent_enum1#1"
+#~ msgstr "Un"
+
+#, fuzzy
+#~ msgid "ZOO_ENTREE#ent_enum1#2"
+#~ msgstr "deux"
+
+#, fuzzy
+#~ msgid "ZOO_ENTREE#ent_idcaissiere"
+#~ msgstr "idcaissiere"
 
 #, fuzzy
 #~ msgid "ZOO_WDEMANDEADOPTION#wad_dmul"

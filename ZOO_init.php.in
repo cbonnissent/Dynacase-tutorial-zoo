@@ -23,7 +23,7 @@ t : tabulation
 */
 $familyConfiguration=array(
         "ZOO_ANIMAL"=>array("paginationType"=>""),
-        "ZOO_ESPECE"=>array("paginationType"=>N_("%p%n%t%br-%er species of %nd")),
+        "ZOO_ESPECE"=>array("paginationType"=>N_("%p%n%tview cards %br to %er of %nd species")),
         "ZOO_CLASSE"=>array("paginationType"=>"pageNumber"),
         "ZOO_ENCLOS"=>array("paginationType"=>""), // default
         "ZOO_CONTACT"=>array("paginationType"=>"documentNumber")
