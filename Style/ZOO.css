@@ -3,3 +3,41 @@
     background-image: url(STYLE/ZOO/Images/top-bottom.gif);
     border-color: #f7f942 !important;
 }
+.document div.frame {
+    background-color: transparent!important;
+}
+.document div.frame div.content {
+    background-color: white !important;
+    border-radius: 0 0 0 0;
+    margin-top: 0;
+}
+body .tablesimple {
+    background-color: transparent;
+}
+
+.document .normal {
+    background-color: transparent !important;
+}
+.document legend {
+    background: white;
+}
+
+.barmenu a {
+    background-color: transparent;
+}
+#selected-search-text, div.hblock {
+    color: [COLOR_BLACK]!important;
+}
+.document div.legend {
+    background-color: white;
+    border: solid 1px #67DB4C;
+    border-bottom: solid 2px white;
+    border-radius: 0px 8px 0 0;
+}
+TABLE.tablehead TR.FREEDOMBack1, DIV.tablefoot {
+    background-color: #FFFFA1; /* Old browsers */
+}
+body {
+    background: #FFFFA1; /* Old browsers */
+
+}
