@@ -52,7 +52,7 @@ Class _ZOO_ENCLOS extends Doc
     /**
      * default view for enclos to see animal's photo
      * @templateController
-     * @return string warning message
+     * @return void
      */
     function viewenclos($target = "_self", $ulink = true, $abstract = false)
     {
