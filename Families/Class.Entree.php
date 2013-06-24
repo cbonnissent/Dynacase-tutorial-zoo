@@ -2,32 +2,23 @@
 /*
  * @author Anakeen
  * @license http://www.fsf.org/licensing/licenses/agpl-3.0.html GNU Affero General Public License
- * @package FDL
+ * @package ZOO
 */
 /**
  * Ticket comportment
  *
- * @author Anakeen 2010
- * @version $Id: Method.Entree.php,v 1.4 2010-04-30 13:44:07 eric Exp $
- * @license http://opensource.org/licenses/gpl-license.php GNU Public License
- * @package freedom-zoo
  */
-/**
- */
-/**
- * @begin-method-ignore
- * this part will be deleted when construct document class until end-method-ignore
- */
-Class _ZOO__ENTREE extends Doc
+namespace Zoo;
+use \Dcp\AttributeIdentifiers as Da;
+use \Dcp\AttributeIdentifiers\Zoo_entree as Aself;
+use \Dcp\Family as Df;
+class Entree extends Df\Document
 {
-    /*
-     * @end-method-ignore
-    */
     
     public function postStore()
     {
         $err = parent::postStore();
-        if ($err == "") $err = $this->setValue("ent_prix", $this->getCost());
+        if ($err == "") $err = $this->setValue(Aself::ent_prix, $this->getCost());
         return $err;
     }
     /**
@@ -36,10 +27,10 @@ Class _ZOO__ENTREE extends Doc
      */
     public function getCost()
     {
-        $nb_adulte = intval($this->getRawValue("ent_adulte"));
-        $nb_enfant = intval($this->getRawValue("ent_enfant"));
-        $prix_adulte = floatval($this->getFamilyParameterValue("ent_prixadulte"));
-        $prix_enfant = floatval($this->getFamilyParameterValue("ent_prixenfant"));
+        $nb_adulte = intval($this->getRawValue(Aself::ent_adulte));
+        $nb_enfant = intval($this->getRawValue(Aself::ent_enfant));
+        $prix_adulte = floatval($this->getFamilyParameterValue(Aself::ent_prixadulte));
+        $prix_enfant = floatval($this->getFamilyParameterValue(Aself::ent_prixenfant));
         
         $resultat = ($nb_adulte * $prix_adulte) + ($nb_enfant * $prix_enfant);
         
@@ -49,11 +40,11 @@ Class _ZOO__ENTREE extends Doc
      * view tickets one by personn
      * @templateController view tickets one by personn
      */
-    function viewtickets($target = "_self", $ulink = true, $abstract = false)
+    public function viewtickets($target = "_self", $ulink = true, $abstract = false)
     {
         
-        $nb_adulte = intval($this->getRawValue("ent_adulte"));
-        $nb_enfant = intval($this->getRawValue("ent_enfant"));
+        $nb_adulte = intval($this->getRawValue(Aself::ent_adulte));
+        $nb_enfant = intval($this->getRawValue(Aself::ent_enfant));
         $t = array();
         for ($i = 0; $i < $nb_adulte; $i++) {
             $t[] = array(
@@ -68,7 +59,7 @@ Class _ZOO__ENTREE extends Doc
             );
         }
         
-        $this->lay->set("today", $this->getRawValue("ent_date", $this->getDate()));
+        $this->lay->set("today", $this->getRawValue(Aself::ent_date, $this->getDate()));
         
         $this->lay->set("n", $nb_adulte + $nb_enfant);
         $this->lay->setBlockData("TICKET", $t);
@@ -88,12 +79,4 @@ Class _ZOO__ENTREE extends Doc
         }
         return '';
     }
-    /**
-     * @begin-method-ignore
-     * this part will be deleted when construct document class until end-method-ignore
-     */
 }
-/*
- * @end-method-ignore
-*/
-?>

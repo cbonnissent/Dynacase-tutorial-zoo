@@ -7,22 +7,18 @@
 /**
  * Gate comportment
  *
- * @author Anakeen 2010
- * @version $Id: Method.Enclos.php,v 1.5 2011-02-01 16:40:08 eric Exp $
+ * @author Anakeen
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
- * @package freedom-zoo
+ * @package ZOO
  */
-/**
- */
-/**
- * @begin-method-ignore
- * this part will be deleted when construct document class until end-method-ignore
- */
-Class _ZOO_ENCLOS extends Doc
+
+
+namespace Zoo;
+use \Dcp\AttributeIdentifiers as Da;
+use \Dcp\AttributeIdentifiers\Zoo_enclos as Aself;
+use \Dcp\Family as Df;
+class Enclos extends Df\Document
 {
-    /*
-     * @end-method-ignore
-    */
     public $defaultview = "ZOO:VIEWENCLOS";
     
     public function preRefresh()
@@ -37,8 +33,8 @@ Class _ZOO_ENCLOS extends Doc
     public function detectMaxCapacity()
     {
         $nb = $this->getNbreAnimaux();
-        if ($nb == intval($this->getRawValue("en_capacite"))) return _("zoo:Full Area");
-        elseif ($nb > intval($this->getRawValue("en_capacite"))) return (sprintf(_("zoo:Maximum Capacity reached %d > %d") , $nb, intval($this->getRawValue("en_capacite"))));
+        if ($nb == intval($this->getRawValue(Aself::en_capacite))) return _("zoo:Full Area");
+        elseif ($nb > intval($this->getRawValue(Aself::en_capacite))) return (sprintf(_("zoo:Maximum Capacity reached %d > %d") , $nb, intval($this->getRawValue(Aself::en_capacite))));
         return '';
     }
     /**
@@ -47,7 +43,7 @@ Class _ZOO_ENCLOS extends Doc
      */
     public function getNbreAnimaux()
     {
-        return count($this->getMultipleRawValues("en_animaux"));
+        return count($this->getMultipleRawValues(Aself::en_animaux));
     }
     /**
      * default view for enclos to see animal's photo
@@ -58,7 +54,7 @@ Class _ZOO_ENCLOS extends Doc
     {
         $this->viewdefaultcard($target, $ulink, $abstract);
         
-        $anidT = $this->getMultipleRawValues("en_animaux");
+        $anidT = $this->getMultipleRawValues(Aself::en_animaux);
         $anid = array();
         foreach ($anidT as $cle => $val) {
             $anid[] = array(
@@ -68,7 +64,13 @@ Class _ZOO_ENCLOS extends Doc
         
         $this->lay->setBlockData("PHOTO", $anid);
     }
-    
+
+    /**
+     * @templateController
+     * @param string $target
+     * @param bool $ulink
+     * @param bool $abstract
+     */
     function enclos($target = "_self", $ulink = true, $abstract = false)
     {
         //$this->viewdefaultcard($target,$ulink,$abstract);
@@ -83,12 +85,5 @@ Class _ZOO_ENCLOS extends Doc
         $this->lay->set("TODAY", $this->getDate());
         $this->lay->setBlockData("", $t);
     }
-    /**
-     * @begin-method-ignore
-     * this part will be deleted when construct document class until end-method-ignore
-     */
+
 }
-/*
- * @end-method-ignore
-*/
-?>

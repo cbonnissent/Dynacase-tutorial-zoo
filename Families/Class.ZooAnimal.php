@@ -2,27 +2,16 @@
 /*
  * @author Anakeen
  * @license http://www.fsf.org/licensing/licenses/agpl-3.0.html GNU Affero General Public License
- * @package FDL
+ * @package ZOO
 */
-/**
- * Animal comportment
- *
- * @author Anakeen 2010
- * @version $Id: Method.Animal.php,v 1.9 2011-02-01 16:40:08 eric Exp $
- * @license http://opensource.org/licenses/gpl-license.php GNU Public License
- * @package freedom-zoo
- */
-/**
- */
-/**
- * @begin-method-ignore
- * this part will be deleted when construct document class until end-method-ignore
- */
-Class _ZOO_ANIMAL extends Doc
+
+namespace Zoo;
+use \Dcp\AttributeIdentifiers as Da;
+use \Dcp\AttributeIdentifiers\Zoo_animal as Aself;
+use \Dcp\Family as Df;
+class Animal extends Df\Document
 {
-    /*
-     * @end-method-ignore
-    */
+
     /**
      * return document identificator of ascendant
      * @param string $sexeVar the sexe of ascendant M or F
@@ -32,13 +21,13 @@ Class _ZOO_ANIMAL extends Doc
     {
         include_once ("FDL/Class.SearchDoc.php");
         $resultat = " ";
-        $s = new SearchDoc($this->dbaccess, $this->getPropertyValue('fromid'));
+        $s = new \SearchDoc($this->dbaccess, $this->getPropertyValue('fromid'));
         $s->addFilter("an_enfant ~ E'\\\\y%d\\\\y'", $this->getPropertyValue('initid'));
         $s->slice = 3;
         $tdoc = $s->search();
         if (count($tdoc) == 0) return " ";
         foreach ($tdoc as $k => $v) {
-            $sexe = getv($v, "an_sexe");
+            $sexe = getv($v, Aself::an_sexe);
             if ($sexe == $sexeVar) $resultat = $v["initid"];
         }
         
@@ -47,11 +36,10 @@ Class _ZOO_ANIMAL extends Doc
     
     public function getAscendant2($sexeVar)
     {
-        include_once ("FDL/Class.SearchDoc.php");
         
-        $s = new SearchDoc($this->dbaccess, $this->getPropertyValue('fromid'));
-        $s->addFilter("an_enfant ~ E'\\\\y%d\\\\y'", $this->getPropertyValue('initid'));
-        $s->addFilter("an_sexe = '%s'", $sexeVar);
+        $s = new \SearchDoc($this->dbaccess, $this->getPropertyValue('fromid'));
+        $s->addFilter("%s ~ E'\\\\y%d\\\\y'", Aself::an_enfant, $this->getPropertyValue('initid'));
+        $s->addFilter("%s = '%s'", Aself::an_sexe, $sexeVar);
         $s->setObjectReturn();
         $s->slice = 1;
         $s->search();
@@ -85,9 +73,9 @@ Class _ZOO_ANIMAL extends Doc
             $enclos = new_doc($this->dbaccess, $enclosId);
             if ($enclos->isAlive()) {
                 $enclos->disableEditControl();
-                $animals = $enclos->getMultipleRawValues("en_animaux");
+                $animals = $enclos->getMultipleRawValues(Da\Zoo_enclos::en_animaux);
                 array_push($animals, $this->id);
-                $err = $enclos->setValue("en_animaux", $animals);
+                $err = $enclos->setValue(Da\Zoo_enclos::en_animaux, $animals);
                 if ($err == "") $err = $enclos->store();
             }
         }
@@ -115,12 +103,11 @@ Class _ZOO_ANIMAL extends Doc
      */
     public function getFreeEnclos()
     {
-        include_once ("FDL/Class.SearchDoc.php");
         
-        $s = new SearchDoc($this->dbaccess, "ZOO_ENCLOS");
-        $idespece = $this->getRawValue("an_espece");
-        $s->addFilter("en_espece ~ E'\\\\y%d\\\\y'", $idespece);
-        $s->addFilter("en_nbre < en_capacite");
+        $s = new \SearchDoc($this->dbaccess, Df\Zoo_enclos::familyName);
+        $idespece = $this->getRawValue(Aself::an_espece);
+        $s->addFilter("%s ~ E'\\\\y%d\\\\y'", Da\Zoo_enclos::en_espece, $idespece);
+        $s->addFilter("%s < %s", Da\Zoo_enclos::en_nbre,Da\Zoo_enclos::en_capacite );
         $s->overrideViewControl(); // no test view acl
         $s->setObjectReturn();
         $s->search();
@@ -139,11 +126,10 @@ Class _ZOO_ANIMAL extends Doc
     
     public function verifyCapacity()
     {
-        include_once ("FDL/Class.SearchDoc.php");
         
         $err = "";
-        $s = new SearchDoc($this->dbaccess, "ZOO_ENCLOS");
-        $s->addFilter("en_espece ~ E'\\\\y%d\\\\y'", $this->getRawValue("an_espece"));
+        $s = new \SearchDoc($this->dbaccess, Df\Zoo_enclos::familyName);
+        $s->addFilter("%s ~ E'\\\\y%d\\\\y'", Da\Zoo_enclos::en_espece,$this->getRawValue(Aself::an_espece));
         $s->overrideViewControl(); // no test view acl
         $s->setObjectReturn();
         $s->search();
@@ -152,7 +138,7 @@ Class _ZOO_ANIMAL extends Doc
         if ($nbdoc == 0) $err = _("zoo:no enclos for this species");
         else {
             /**
-             * @var _ZOO_ENCLOS $enclos
+             * @var \Zoo\Enclos $enclos
              */
             while ($enclos = $s->getNextDoc()) {
                 $err = $enclos->detectMaxCapacity();
@@ -171,19 +157,18 @@ Class _ZOO_ANIMAL extends Doc
     public function refreshChilds()
     {
         $err = "";
-        $idchild = $this->getMultipleRawValues("an_enfant");
-        $oldidchild = $this->_val2array($this->getOldRawValue("an_enfant"));
+        $idchild = $this->getMultipleRawValues(Aself::an_enfant);
+        $oldidchild = $this->rawValueToArray($this->getOldRawValue(Aself::an_enfant));
         // union unique of old and new values
         $childs = array();
         foreach ($idchild as $child) if ($child) $childs[$child] = $child;
         foreach ($oldidchild as $child) if ($child) $childs[$child] = $child;
         
         if (count($childs) > 0) {
-            include_once ("FDL/Class.SearchDoc.php");
-            $it = new DocumentList();
+            $it = new \DocumentList();
             $it->addDocumentIdentifiers($childs);
             /**
-             * @var Doc $doc
+             * @var \Doc $doc
              */
             foreach ($it as $doc) {
                 $doc->refresh();
@@ -197,10 +182,9 @@ Class _ZOO_ANIMAL extends Doc
      */
     function getHealthCardId()
     {
-        include_once ("FDL/Class.SearchDoc.php");
         
-        $s = new SearchDoc($this->dbaccess, "ZOO_CARNETSANTE");
-        $s->addFilter("ca_idnom = '%s'", $this->initid);
+        $s = new \SearchDoc($this->dbaccess, Df\Zoo_carnetsante::familyName);
+        $s->addFilter("%s = '%s'", Da\Zoo_carnetsante::ca_idnom, $this->initid);
         $s->overrideViewControl(); // no test view acl
         $s->slice = 3;
         $tdoc = $s->search();
@@ -214,9 +198,9 @@ Class _ZOO_ANIMAL extends Doc
     function createHealthCard()
     {
         $err = '';
-        $hc = createDoc($this->dbaccess, "ZOO_CARNETSANTE");
+        $hc = createDoc($this->dbaccess, Df\Zoo_carnetsante::familyName);
         if ($hc) {
-            $hc->setValue("ca_idnom", $this->initid);
+            $hc->setValue(Da\Zoo_carnetsante::ca_idnom, $this->initid);
             $err = $hc->Add();
             $hc->refresh();
         }
@@ -233,14 +217,6 @@ Class _ZOO_ANIMAL extends Doc
         $idcarnet = $this->getHealthCardId();
         $this->lay->set("idcarnet", $idcarnet);
     }
-    /**
-     * @begin-method-ignore
-     * this part will be deleted when construct document class until end-method-ignore
-     */
 }
-/*
- * @end-method-ignore
-*/
-?>
 
 

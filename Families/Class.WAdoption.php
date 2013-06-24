@@ -5,9 +5,8 @@
  * @package FDL
 */
 
-include_once ("FDL/Class.WDoc.php");
-
-class WAdoption extends WDoc
+namespace Zoo;
+class WAdoption extends \Dcp\Family\WDoc
 {
     public $attrPrefix = "WAD";
     const initialised = "zoo_initialised"; # _("zoo_initialised")
@@ -86,7 +85,7 @@ class WAdoption extends WDoc
     ); # _("zoo_adoption writting") _("zoo_adoption verification")
     
     /**
-     * @var _ZOO_ANIMAL $nouvelAnimal
+     * @var \Zoo\Animal $nouvelAnimal
      */
     protected $nouvelAnimal = null;
     
@@ -119,7 +118,7 @@ class WAdoption extends WDoc
         if ($this->doc->getRValue("de_idespece:es_protegee") == "1") {
             // get others animals
             include_once ("FDL/Class.SearchDoc.php");
-            $s = new SearchDoc($this->dbaccess, "ZOO_ANIMAL");
+            $s = new \SearchDoc($this->dbaccess, "ZOO_ANIMAL");
             $s->addFilter("an_espece ='%d'", $this->doc->getRawValue("de_idespece"));
             $t = $s->search();
             $tanimal = array();
@@ -133,7 +132,7 @@ class WAdoption extends WDoc
         }
         if ($mt->isAlive()) {
             /**
-             * @var _MAILTEMPLATE $mt
+             * @var \Dcp\Family\MailTemplate $mt
              */
             $err = $mt->sendDocument($this->doc, $tkeys);
         } else $err = _("no mail template");
@@ -215,7 +214,7 @@ class WAdoption extends WDoc
     public function verifyEnclosDispo()
     {
         /**
-         * @var _ZOO_ANIMAL $nAnimal
+         * @var \Zoo\Animal $nAnimal
          */
         $nAnimal = createDoc($this->dbaccess, "ZOO_ANIMAL", false);
         $this->nouvelAnimal = $nAnimal;
@@ -237,10 +236,8 @@ class WAdoption extends WDoc
             $ani->setValue("an_espece", $this->doc->getRawValue("de_idespece"));
             $ani->setValue("an_naissance", $this->doc->getRawValue("de_naissance"));
             $ani->setValue("an_photo", $this->doc->getRawValue("de_photo"));
-            $err = $ani->add();
+            $err = $ani->store();
             if ($err == "") {
-                $ani->postModify();
-                $ani->refresh();
                 $ani->addHistoryEntry(sprintf(_("Creation from adoption %s [%d]") , $this->doc->getTitle() , $this->doc->id));
                 
                 SetHttpVar("redirect_app", "FDL");
