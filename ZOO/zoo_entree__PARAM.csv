@@ -1,0 +1,13 @@
+//FAM;dossier(DIR);<specid>;<fldid>;titre;;;;;;;;;;
+ORDER;DIR;;;ba_title;;;;;;;;;;
+DOC;DIR;FLD_ZOO_ENTREE;;FLD_ZOO_ENTREE;;;;;;;;;;
+;;;;;;;;;;;;;;
+//;Father ;Title;Id;Classe;Logical Name;;;;;;;;;
+BEGIN;;Entrée;;;ZOO_ENTREE;;;;;;;;;
+ICON;entree.gif;;;;;;;;;;;;;
+DFLDID;FLD_ZOO_ENTREE;;;;;;;;;;;;;
+DEFAULT;ENT_CAISSIERE;::getUserId();;;;;;;;;;;;_ZOO_ENTREE::positiveNumber(ENT_PRIXADULTE)
+DEFAULT;ENT_DATE;::getDate();;;;;;;;;;;;
+INITIAL;ENT_PRIXENFANT;2.5;;;;;;;;;;;;
+INITIAL;ENT_PRIXADULTE;4;;;;;;;;;;;;
+END;;;;;;;;;;;;;;

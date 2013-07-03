@@ -1,0 +1,10 @@
+//FAM;dossier(DIR);<specid>;<fldid>;titre;
+ORDER;DIR;;;ba_title;
+DOC;DIR;FLD_ZOO_CONTACT;;FLD_ZOO_CONTACT;
+;;;;;
+//;Father ;Title;Id;Classe;Logical Name
+BEGIN;;Contact;;;ZOO_CONTACT
+ICON;zoo_contact.png;;;;
+DFLDID;FLD_ZOO_CONTACT;;;;
+TAG;MAILRECIPIENT;;;;
+END;;;;;

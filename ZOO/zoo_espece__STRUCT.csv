@@ -1,0 +1,21 @@
+//;Father ;Title;Id;Classe;Logical Name;;;;;;;;;;;
+BEGIN;;;;;ZOO_ESPECE;;;;;;;;;;;
+CLASS;ZOO\Zoo_espece;;;;;;;;;;;;;;;
+//;idattr;idframe;label;T;A;type;ord;vis;need;link;phpfile;phpfunc;elink ;constraint ;option;Commentaires
+ATTR;es_identification;;Identification;N;N;frame;0;W;;;;;;;;
+ATTR;es_nom;es_identification;nom;Y;N;text;10;W;Y;;;::getTitle(ES_IDCLASSE):ES_CLASSE;;;;
+ATTR;es_classe;es_identification;classe;N;N;docid("ZOO_CLASSE");20;W;Y;;;;%S%app=GENERIC&action=GENERIC_EDIT&id=%ES_CLASSE%&classid=ZOO_CLASSE&CL_NOM=%CT%;;doctitle=auto;
+ATTR;es_ordre;es_identification;ordre;N;N;text;30;W;;;zoo.php;getOrdre(D,ES_CLASSE,ES_ORDRE):ES_ORDRE;;;;
+ATTR;es_photo;es_identification;photo;N;N;image;35;W;;;;;;;;
+ATTR;es_protegee;es_identification;protégée;N;N;enum;40;W;;;;0|Non,1|Oui;;;eformat=bool|system=yes;
+ATTR;es_caracteristique;;caractéristique;N;N;frame;100;W;;;;;;;;
+ATTR;es_continent;es_caracteristique;continents;N;N;enum;110;W;;;;Asia|Asie,Europa|Europe,Africa|Afrique,SouthAmerica|Amérique du sud,NorthAmerica|Amérique du nord,Oceania|Océanie,Antartica|Antartique;;;system=yes|multiple=yes;
+ATTR;es_poids;es_caracteristique;poids;N;N;double;120;W;;;;;;;;
+ATTR;es_repartition;es_caracteristique;Informations et répartition;N;N;htmltext;130;W;;;;;;;;
+ATTR;es_alimentation;es_caracteristique;alimentation;N;N;text;140;W;;;;;;;;
+ATTR;es_reproduction;es_caracteristique;reproduction;N;N;longtext;150;W;;;;;;;;
+ATTR;es_habitat;es_caracteristique;habitat;N;N;text;160;W;;;;;;;;
+ATTR;es_comportement;es_caracteristique;comportement;N;N;longtext;170;W;;;;;;;;
+;;;;;;;;;;;;;;;;
+ATTR;es_editcontinent;;continents;N;N;menu;10;W;;%S%app=GENERIC&action=GENERIC_EDIT&id=%I%&zone=ZOO:EDITCONTINENT;;::canEditMenu();;;ltarget=_self;
+END;;;;;;;;;;;;;;;;

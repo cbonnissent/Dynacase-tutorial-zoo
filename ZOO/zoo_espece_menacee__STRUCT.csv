@@ -1,0 +1,21 @@
+//;Father ;Title;Id;Classe;Logical Name;;;;;;;;;;;
+BEGIN;ZOO_ESPECE;;;;ZOO_ESPECE_MENACEE;;;;;;;;;;;
+CLASS;ZOO\Zoo_espece_menacee;
+//;idattr;idframe;label;T;A;type;ord;vis;need;link;phpfile;phpfunc;elink ;constraint ;option;Commentaires
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+END;;;;;;;;;;;;;;;;

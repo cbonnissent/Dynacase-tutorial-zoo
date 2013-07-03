@@ -1,0 +1,25 @@
+//;Father ;Title;Id;Classe;Logical Name;;;;;;;;;;;
+BEGIN;;;;;ZOO_ANIMAL;;;;;;;;;;;
+CLASS;ZOO\Zoo_animal;;;;;;;;;;;;;;;
+//;idattr;idframe;label;T;A;type;ord;vis;need;link;phpfile;phpfunc;elink ;constraint ;option;Commentaires
+ATTR;an_identification;;Identification;N;N;frame;0;W;;;;;;;;
+ATTR;an_nom;an_identification;nom;Y;N;text;10;W;Y;;;;;;edittemplate=ZOO:ANIMALNAME:U|viewtemplate=ZOO:ANIMALNAME:S;
+ATTR;an_tatouage;an_identification;tatouage;N;N;int;20;W;;;;;;;edittemplate=ZOO:ANIMALTATOO:S|viewtemplate=ZOO:ANIMALTATOO|sortable=asc;
+ATTR;an_espece;an_identification;espèce;N;N;docid('ZOO_ESPECE');40;W;Y;;;;;;creation={es_nom:CT}|doctitle=an_espece_title|sortable=asc;
+ATTR;an_espece_title;an_identification;espèce (titre);Y;N;text;41;H;;;;::getTitle(an_espece);;;;
+ATTR;an_ordre;an_identification;ordre;N;N;text;50;R;;;;::getdocvalue(an_espece,es_ordre);;;;
+ATTR;an_classe;an_identification;classe;N;N;docid("ZOO_CLASSE");60;R;;;;::getdocvalue( an_espece , es_classe);;;doctitle=auto;
+ATTR;an_sexe;an_identification;sexe;N;N;enum;80;W;;;;M|Masculin,F|Féminin,H|Hermaphrodite;;;bmenu=no;
+ATTR;an_photo;an_identification;photo;N;N;image;90;W;;;;;;;iwidth=200|showempty=noanimalphoto.png;
+ATTR;an_gardien;an_identification;gardien responsable;N;N;account("ZOO_GARDIEN");92;W;;;;;;;role=surveillant;
+ATTR;an_naissance;an_identification;date de naissance;N;N;date;100;W;;;;;;::validatePastDate(AN_NAISSANCE);;
+ATTR;an_entree;an_identification;date d'entrée;N;N;date;110;W;;;;;;::validatePastDate(AN_ENTREE);;
+ATTR;an_enfant_t;an_identification;liste enfant;N;N;array;120;W;;;;;;;;
+ATTR;an_enfant;an_enfant_t;enfant;N;N;docid("ZOO_ANIMAL");130;W;;;;;;;creation={an_nom:CT,an_espece:an_espece};
+ATTR;an_carnetsante;an_identification;Carnet Santé;N;N;menu;150;W;;%S%app=GENERIC&action=GENERIC_ISEARCH&id=%I%&famid=ZOO_CARNETSANTE&viewone=Y;;;;;;
+ATTR;an_enclos;an_identification;Enclos;N;N;menu;160;W;;%S%app=GENERIC&action=GENERIC_ISEARCH&id=%I%&famid=ZOO_ENCLOS&viewone=Y;;;;;;
+ATTR;an_parent;an_identification;Parents;N;N;menu;170;W;;%S%app=GENERIC&action=GENERIC_ISEARCH&generic=Y&id=%I%&famid=ZOO_ANIMAL;;;;;;
+ATTR;an_pere;an_identification;père;N;Y;docid('ZOO_ANIMAL');190;R;;;;::getAscendant(M);;;doctitle=auto;
+ATTR;an_mere;an_identification;mère;N;Y;docid('ZOO_ANIMAL');210;R;;;;::getAscendant(F);;;doctitle=auto;
+ATTR;an_folder;;Dossier;N;N;menu;10;W;;%S%app=ZOO&action=ZOO_ANIMALFOLDER&id=%I%;;;;;;
+END;;;;;;;;;;;;;;;;

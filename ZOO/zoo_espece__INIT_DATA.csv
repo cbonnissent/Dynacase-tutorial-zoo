@@ -1,0 +1,145 @@
+//FAM;classe(56744);<specid>;<fldid>;nom scientifique;nom;caracteristique;;;;;;
+ORDER;ZOO_CLASSE;;;cl_nomscientifique;cl_nom;cl_caracteristique;;;;;;
+DOC;ZOO_CLASSE;Actinopterygii;-;Actinopterygii;Poissons;;;;;;;
+DOC;ZOO_CLASSE;Reptilia;-;Reptilia;Reptiles;;;;;;;
+DOC;ZOO_CLASSE;Aves;-;Aves;Oiseaux;;;;;;;
+DOC;ZOO_CLASSE;Mammalia;-;Mammalia;Mammifères;;;;;;;
+DOC;ZOO_CLASSE;Lissamphibia;-;Lissamphibia;Amphibiens;;;;;;;
+ORDER;ZOO_ESPECE;0;0;es_nom;es_classe;es_ordre;es_poids;es_repartition;es_alimentation;es_reproduction;es_habitat;es_comportement
+#DOC;ZOO_ESPECE;0;;nom;classe;ordre;poids;repartition;alimentation;reproduction;habitat;comportement
+;;;;;;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_ALLI;-;Alligator;Reptilia;Crocodiliens;350;<p>Sud Est des Etats-Unis, Am&eacute;rique centrale.</p> <p>Les <b>alligators</b> sont un <a href="http://fr.wikipedia.org/wiki/Genre_%28biologie%29" title="Genre (biologie)">genre</a> de <a href="http://fr.wikipedia.org/wiki/Reptile" title="Reptile">reptiles</a> <a href="http://fr.wikipedia.org/wiki/Crocodilien" title="Crocodilien" class="mw-redirect">crocodiliens</a> de la <a href="http://fr.wikipedia.org/wiki/Famille_%28biologie%29" title="Famille (biologie)">famille</a> des <a href="http://fr.wikipedia.org/wiki/Alligatoridae" title="Alligatoridae">alligatorid&eacute;s</a>. Ils diff&egrave;rent des <a href="http://fr.wikipedia.org/wiki/Crocodile" title="Crocodile">crocodiles</a>  par une t&ecirc;te plus large, courte, au museau arrondi. De m&ecirc;me que,  lorsqu'ils referment leurs m&acirc;choires, les quatri&egrave;mes dents du bas ne  sont pas apparentes contrairement aux <a href="http://fr.wikipedia.org/wiki/Crocodiles" title="Crocodiles" class="mw-redirect">crocodiles</a>. Ils sont moins dangereux pour l'homme.</p> <p>Le genre <i>Alligator</i> comporte deux <a href="http://fr.wikipedia.org/wiki/Esp%C3%A8ce" title="Esp&egrave;ce">esp&egrave;ces</a>&nbsp;:</p> <ul>     <li><i><a href="http://fr.wikipedia.org/wiki/Alligator_mississippiensis" title="Alligator mississippiensis" class="mw-redirect">Alligator mississippiensis</a></i> (Daudin, 1801) &mdash; <a href="http://fr.wikipedia.org/wiki/Alligator_d%27Am%C3%A9rique" title="Alligator d'Am&eacute;rique">Alligator d'Am&eacute;rique</a>, qui se rencontre dans le sud des <a href="http://fr.wikipedia.org/wiki/%C3%89tats-Unis" title="&Eacute;tats-Unis">&Eacute;tats-Unis</a>, principalement en <a href="http://fr.wikipedia.org/wiki/Floride" title="Floride">Floride</a> et en <a href="http://fr.wikipedia.org/wiki/Louisiane" title="Louisiane">Louisiane</a>.</li>     <li><i><a href="http://fr.wikipedia.org/wiki/Alligator_sinensis" title="Alligator sinensis" class="mw-redirect">Alligator sinensis</a></i> Fauvel, 1879 &mdash; <a href="http://fr.wikipedia.org/wiki/Alligator_de_Chine" title="Alligator de Chine">Alligator de Chine</a>, des provinces orientales de la <a href="http://fr.wikipedia.org/wiki/R%C3%A9publique_populaire_de_Chine" title="R&eacute;publique populaire de Chine">Chine</a>.</li> </ul> <p>Les <a href="http://fr.wikipedia.org/wiki/Ca%C3%AFman_%28animal%29" title="Ca&iuml;man (animal)">ca&iuml;mans</a> vivent en <a href="http://fr.wikipedia.org/wiki/Am%C3%A9rique_centrale" title="Am&eacute;rique centrale">Am&eacute;rique centrale</a> et du sud, et diff&egrave;rent par l'absence d'un <a href="http://fr.wikipedia.org/wiki/Septum_nasal" title="Septum nasal">septum</a> osseux entre les narines.</p>;Les jeunes s’alimentent de petits crustacés et insectes, puis de grenouilles, serpents et poissons. A l’âge adulte, ils se nourrissent surtout de poissons et de petits mammifères.;L’accouplement a lieu de nuit et dans l’eau. Puis la femelle construit un monticule de vase, terre et branchages dans lequel elle pond 20 à 80 œufs. Durant 2 à 3 mois, La femelle reste à proximité du nid jusqu’à l’éclosion des œufs ; Puis elle prend soins d’eux. Ils atteignent leur maturité a 6 ans.;Bordures de rivières, mangroves et estuaires.;Peu actifs, en journée, ils passent du temps à se faire chauffer au soleil. La nuit, ils s’immergent en bord de rive et attendent leur proie.
+DOC;ZOO_ESPECE;;-;Agouti;Mammalia;Rongeur;5;Amérique centrale et méridionale.;Surtout végétarien, ils se nourrissent de feuilles, fruits, racines et parfois œufs et coquillages. ;2 ou 3 petits par portée ; parfois 2 portées par an. La gestation est de 3 mois. Les petits naissent très développés : poilus, yeux ouverts, ils sont capables de se déplacer.;Forêts et zones boisées.;Nocturnes, ils vivent en petits groupe pour aller se nourrir, sinon ils vivent dans des terriers, seuls ou en famille lors de l’éducation des jeunes. Ils sont de très bons sauteurs et peuvent effectuer des bonds de 6 m. Comme les écureuils, ils mangent en position assise et enterrent parfois leurs provisions dans le sol.
+DOC;ZOO_ESPECE;;-;Belette;Mammalia;Carnivores;0.12;Europe, Asie, Sibérie, Afghanistan, Chine, Japon, Afrique du Nord. La belette peut adopter un pelage blanc en automne et hiver comme l’hermine qui appartient à la même famille (Mustélidés). Cependant ce changement de couleur n’intervient que dans les régions au climat rigoureux.
+La famille des mustélidés regroupent aussi les martres, fouines, loutres, visons, furet, …Ce sont tous des carnivores au corps longilignes et souples sauf quelques exception comme le blaireau ou la mouffette qui sont plus trapus.;Elles se nourrissent principalement de petits rongeurs : campagnols, mulots, souris mais parfois aussi d’œufs, d’oiseaux, de batraciens ou même de poissons.;La période des amours s’étend d’avril à mai. La femelle peut avoir 2 portées dans la même saison de reproduction. Elle met bas 3 à 8 petits dans un trou d’arbre ou dans un nid qu’elle construit de feuille et de brindilles. La gestation dure 1 mois et demi. Les petits sont sevrés vers 5 semaines et atteignent leur maturité dans l’année.;Zones boisées, broussailleuses et rocheuses et parfois vieilles habitations;Elles sont principalement nocturnes, elles se déplacent souvent en famille ou en couple et chassent ensembles des proies parfois bien plus grosses qu’elles, telles que les rats ou les poules.
+DOC;ZOO_ESPECE;;-;Baleine à  bosse ou jubarte;Mammalia;Cétaces;50000;Pacifique Nord, Atlantiques Nord et Hémisphères sud.Elles sont appelées aussi mégaptères, elles sont très étudiées par les chercheurs, elles se divisent en 3 populations : 2 vivants dans l’hémisphère Nord et 1 dans l’hémisphère Sud. Il semblerait que ces population ne rentrent jamais en contact les unes avec les autres. Elles ont chacune leurs zones de nourrissage situées dans les eaux arctiques ou antarctiques et leurs zones d’accouplements et de mises bas sont situées en mers chaudes ou tropicales : îles polynésiennes, côtes Australiennes, golfe de Californie, mers des caraïbes, zones des îles Galápagos, côte Est de l’Afrique et côtes de Madagascar…..
+Elles se différencie des autres baleines par des nageoires immenses (environ 6 m de long ce qui correspond à 1/3 de leur taille). Les baleines sont noire avec souvent des tâches blanches sur le ventre, les nageoires peuvent elles aussi être blanches partiellement ou totalement.
+Elles sont appelées baleines à bosses à causes de toutes les petites callosités qu’elles ont sur la tête.
+Elles sont capables de plonger à plus de 200 m de profondeur pendant plus d’1/2 h.;Elles sont carnivores, elles se nourrissent de petits crustacés et de poissons qu’elles concentrent en cercle grâce à un rideau de bulles qu’elles émettent lors de leurs plongées.;1 petit naît après une gestation de 9 à 10 mois. La mère l’allaite pendant environ 1 an et ils restent ensemble pendant 2-3 ans. La maturité sexuelle est à 5 ans. le baleineau mesure environ 4.50 m et pèse plus d’1 tonne.;Les eaux froides à proximité des côtes et eaux tropicales.;Elles sont très agiles et se déplacent avec rapidité et facilité. On peut les voir en bordures de cours d’eau où elles savent pêcher des poissons. Elles savent aussi très bien nager.
+DOC;ZOO_ESPECE;;-;Antilope;Mammalia;Artiodactyles;25;Inde au sud de l'Himalaya.
+;Herbivore.;Non saisonnière. La femelle donne naissance à 1 petit. La gestation est de 6 mois.;Des semi-déserts aux bois clairs;Harems composés d'1 mâle adulte et de plusieurs femelles: 10 à 20. avec leur jeune. Des groupes de jeunes mâles vivent à la périphérie des harems.
+DOC;ZOO_ESPECE;ZOO_ESP_CETA1;-;baleine blanche;Mammalia;Cétaces;300;Mers arctiques et subarctiques.
+Le prédateur naturel le plus dangereux pour les bélougas sont les épaulard ou orques.
+Les bélougas sont aussi appelés par les pêcheurs « canaris des mers « en raison de leurs chants sous-marins qui ressemble en surface à celui de ces oiseaux.
+
+Les bélougas appartiennent aux groupe des cétacés à dents (odontocètes ), ils en possèdent environ 40, cependant elles ne servent qu’à attraper les proies, celles-ci sont ensuite avaler sans être mâcher.
+Le bélouga se distingue aisément de tous les autres cétacés d’abord par sa couleur blanche unique et aussi par l’absence de nageoire dorsale.
+Ils appartiennent à la même famille que les narvals.;Ils se nourrissent de calmars, seiches, crevettes et petits poissons.;La fécondation et la reproduction ont lieu dans des eaux peu profondes. Les femelles mettent bas après 10 mois de gestation. Lorsqu’il naît le petit mesure 1.5 m et est de couleur grise il ne deviendra blanc comme les adultes qu’à sa 6ème année. Le jeune unique est allaité durant presque 2 ans.;Eaux froides en bordures de côtes et eaux peu profondes;Ils vivent en grandes communautés ( réunissant une centaine d’individus ). Ces groupes se rassemblent encore en colonies de plusieurs milliers d’individus pour effectuer les migrations. Les mâles et les femelles ne vivent pas dans les mêmes groupes, ils ne se rejoignent qu’à la période des amours qui a lieu en été dans les eaux de l’hémisphère Nord.
+Ils sont capables de restés ½ heures sous l’eau à la recherche de nourriture. Comme ils chassent sous la banquise, ils leur arrivent de se trouver coincés dessous, mais leur puissance leur permet de briser une épaisseur de glace d’un mètre ce qui souvent leur permet de s’en tirer ou bien ils nagent vers un autre lieu plus accessible. Le record d’apnée est de 70 min.
+Les bélougas sont des cétacés lents, se déplaçants rarement à plus de 7 km/h.
+DOC;ZOO_ESPECE;ZOO_ESP_CETA2;-;Cachalot;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_CETA3;-;Cachalot pygmé;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Castor européen;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Cerf axis;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Chameau;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Civette d’afrique;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Coati brun;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Cobe de lechwe;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Couscous tacheté;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Dasyure;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_CETA4;-;Dauphin à bosse du pacifique;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_CETA5;-;Dauphin à long bec;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_CETA6;-;Dauphin commun;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_CETA7;-;Dauphin d’electre;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_CETA8;-;Dauphin de commerson;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_CETA9;-;Dauphin de risso;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_CETA10;-;Dauphin du nord;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_CETA11;-;Dauphins tachetés de l’atlantique;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;ZOO_ESP_CETA12;-;Dauphins tachetés pantropical;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Dendrolague;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Diable de tasmanie ;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Ecureuil volant;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Eland du cap;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Eléphant d’afrique;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Eléphant d’asie;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Fouine;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Fourmilier ou tamanoir;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Genette commune;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Genette tigrine;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Gibbon lar - Video;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Girafe;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Globycephale noir;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Globycéphale tropical;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Gorille occidental des plaines;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Hermine;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Hippotrague noir;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Jaguar;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Jaguarondi ou chat-loutre;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Kangourou gris - Video;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Koala;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lagénorhynque à bec blanc;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lagénorhynque à menton noir;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lagénorhynque flancs blancs de l’atlantique;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lagénorhynque obscur;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lagénorhynque sablier;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lama - Video;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lamantin ou vache marine;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lapin de garenne;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lièvre d'europe;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lissodelphis austral;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Loup à crinière;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Loups gris;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Loutre de mer;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Loutre d’europe;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Loutre géante du brésil;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Loutre tachetée;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Lynx roux ou bobcat;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Mangouste du cap;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Mangouste jaune;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Mangouste naine;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Mangouste rayée;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Mangouste rouge;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Marsouins de dall;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Martre;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Microcèbe;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Morse;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Mouffette commune ou rayée;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Mouflons d’europe;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Musaraigne carrelet;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Myrmécobie fascié ou fourmilier zébré;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Narval ou licorne;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Nilgault;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Opossum commun;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Orang-outan;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Ornithorynque;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Orque naine;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Orque ou épaulard;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Oryx gemsbok;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Ours polaire;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Pacarana;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Pangolin à petites écailles;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Patas;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Péramèle lapin;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Pétauriste géant;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Phalanger pygmée;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Phalanger vulpin;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Pseudorque;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Puma ou cougar;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Quokka;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Ratel;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Renard;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Rorqual commun;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Rorqual de bryde;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Rorqual de minke;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Rorqual de rudolphi;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Saïmiri;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Souris marsupiales à pieds larges;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Sténo;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Suricate;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Taupe;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Taupe aveugle;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Taupe marsupiale;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Taupe romaine;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Thylacine ou loup marsupial;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Thylogale à ventre rouge;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Tigre;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Tursiop;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Vison d’europe;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Wallaby de bennet;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Wallaby des roches à queue annelée;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Watussi;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Wombat;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Yack;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Zèbre de burchell;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Zibeline;Mammalia;;;;;;;
+DOC;ZOO_ESPECE;;-;Zorille;Mammalia;;;;;;;

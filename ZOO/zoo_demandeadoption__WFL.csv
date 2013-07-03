@@ -1,0 +1,14 @@
+//;fromid;title;special id;classname;name;;;;;;;;;;
+BEGIN;WDOC;ZOO_DEMANDEADOPTION_WFL;;--;ZOO_DEMANDEADOPTION_WFL;;;;;;;;;;
+USEFOR;SW;;;;;;;;;;;;;;
+CLASS;ZOO\Zoo_demandeadoption_wfl;;;;;;;;;;;;;;
+//;idattr;idframe;label;T;A;type;ord;vis;needed;link;phpfile;phpfunc;elink;constraint;option
+PARAM;wad_fr_transition;;Paramètre de transition;N;N;frame;10;W;;;;;;;
+PARAM;wad_refus;wad_fr_transition;Motif de Refus;N;N;longtext;20;W;Y;;;;;;
+PARAM;wad_fr_mail;;Modèle de courriels;N;N;frame;30;W;;;;;;;
+PARAM;wad_mailsecure;wad_fr_mail;Espèce protégée;N;N;docid("MAILTEMPLATE");40;W;;;;;;;
+PARAM;wad_mailcurrent;wad_fr_mail;Espèce commune;N;N;docid("MAILTEMPLATE");50;W;;;;;;;
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+END;;;;;;;;;;;;;;;

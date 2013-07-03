@@ -1,0 +1,21 @@
+//;Father ;Title;Id;Classe;Logical Name;;;;;;;;;;;
+BEGIN;;;;;ZOO_CARNETSANTE;;;;;;;;;;;
+CLASS;ZOO\Zoo_carnetsante;;;;;;;;;;;;;;;
+//;idattr;idframe;label;T;A;type;ord;vis;need;link;phpfile;phpfunc;elink ;constraint ;option;Commentaires
+ATTR;ca_identification;;Identification;N;N;frame;0;W;;;;;;;;
+ATTR;ca_nom;ca_identification;nom de l'animal;Y;N;text;10;W;;%S%&app=FDL&action=FDL_CARD&latest=Y&id=%CA_IDNOM%;fdl.php;lfamilyvalues(D, ZOO_ANIMAL, CA_NOM , 'INITID',"TITLE"):CA_IDNOM, CA_NOM;%S%app=GENERIC&action=GENERIC_EDIT&id=%CA_IDNOM%&classid=ZOO_ANIMAL&AN_NOM=%CA_NOM%;;;
+ATTR;ca_idnom;ca_identification;identifiant de l'animal;N;N;docid("ZOO_ANIMAL");20;H;;;;::getTitle(ca_idnom):ca_nom;;;;
+ATTR;ca_intervention;;Intervention;N;N;frame;0;W;;;;;;;;
+ATTR;ca_intervention_t;ca_intervention;liste intervention;N;N;array;30;W;;;;;;;;
+ATTR;ca_date;ca_intervention_t;date;N;N;date;40;W;;;;;;;;
+ATTR;ca_description;ca_intervention_t;description;N;N;text;50;W;;;;;;;;
+ATTR;ca_idveterinaire;ca_intervention_t;vétérinaire;N;N;account;59;W;;;;;;;doctitle=auto;
+ATTR;ca_maladie;;maladie;N;N;menu;10;W;;%S%&app=FDL&action=IMPCARD&zone=ZOO:MALADIE&id=%I%;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+END;;;;;;;;;;;;;;;;

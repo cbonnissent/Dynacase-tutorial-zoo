@@ -6,7 +6,7 @@
 #   as published by the Free Software Foundation; either version
 #   2 of the License, or (at your option) any later version.
 #
-AC_REVISION($Id: configure.in,v 1.2 2011-02-01 16:40:07 eric Exp $)
+AC_REVISION($Id: configure.in,v 1.1 2010-01-13 10:47:16 eric Exp $)
 dnl
 dnl Process this file with autoconf to produce a configure script.
 dnl
@@ -20,8 +20,7 @@ AC_SUBST(PACKAGE)
 PACKAGE=dynacase-zoo
 AC_SUBST(APPNAME)
 APPNAME=ZOO
-
-ac_default_prefix=/usr/share/what
+ac_default_prefix=/var/www/dynacase/dynacase
 AC_SUBST(PUBRULE)
 PUBRULE="$(pwd)/buildTools"
 AC_ARG_WITH(pubrule, [  --with-pubrule=dir	Path to PubRule], PUBRULE=$withval)
@@ -37,5 +36,8 @@ fi
 for file in `find . \( -name '*.in' -a -not -name configure.in \) -print`; do
     AC_CONFIG_FILES(${file%.in})
 done
+
+AC_SUBST(LOCAL_BUILD_RULE)
+LOCAL_BUILD_RULE="$(pwd)"
 
 AC_OUTPUT

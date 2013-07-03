@@ -1,46 +1,86 @@
 <?xml version="1.0"?>
 <module name="@PACKAGE@" disabled="no" version="@VERSION@" release="@RELEASE@">
 
-  <description>Zoo application sample.</description>
+    <description>@PACKAGE@</description>
 
-  <requires>
-    <module name="dynacase-core" version="3.2.10" comp="ge"/>
-    <module name="dynacase-onefam-ext" version="3.2.5" comp="ge"/>
-  </requires>
+    <requires>
+        <module comp='ge' version='3.2.10' name='dynacase-core'/>
+        <module name="dynacase-onefam" version="3.2.5" comp="ge"/>
+        <module name="dynacase-app-switcher" version="1.0.0" comp="ge"/>
+    </requires>
 
-  <post-install>
-    <process command="programs/record_application @APPNAME@" />
-    <process command="programs/update_catalog" />
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-families.ods">
-      <label lang="en">Importing zoo families</label>
-    </process>
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-profiling.ods">
-      <label lang="en">Record family security profiling</label>
-    </process>
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-init.ods">
-      <label lang="en">Importing zoo somes species</label>
-    </process>
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/Layout/zoo-initanimals.xml">
-      <label lang="en">Importing zoo somes animals</label>
-    </process>
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-initcontacts.ods">
-      <label lang="en">Importing zoo somes contacts</label>
-    </process>
-    <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo-inittickets.ods --policy=add">
-      <label lang="en">Importing zoo somes cash tickets</label>
-    </process>
-  </post-install>
+    <post-install>
+        <process command="programs/record_application ZOO" />
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_classe__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_classe__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_espece__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_espece_menacee__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_espece_menacee__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_espece__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_enclos__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_enclos__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_animal__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_animal__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_carnetsante__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_carnetsante__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_entree__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_entree__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_contact__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_contact__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_demandeadoption__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_demandeadoption__WFL.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_demandeadoption__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_wanimal__WFL.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_gardien__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_gardien__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_veterinaire__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_veterinaire__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_cuisinier__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_cuisinier__PARAM.csv"/>
 
-  <post-upgrade>
-    <process command="programs/pre_migration @APPNAME@" />
-    <process command="programs/record_application @APPNAME@" />
-    <process command="programs/update_catalog" />
-    <process command="./wsh.php --api=importDocuments --reinitattr=no --file=./@APPNAME@/zoo-families.ods">
-      <label lang="en">Update zoo families</label>
-    </process>
 
-    <process command="programs/post_migration @APPNAME@" />
-  </post-upgrade>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_role__INIT_DATA.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_pdoc__INIT_DATA.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_contact__INIT_DATA.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_entree__INIT_DATA.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_espece__INIT_DATA.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_enclos__INIT_DATA.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_animal__INIT_DATA.xml"/>
 
+        <process command="programs/update_catalog" />
+    </post-install>
+
+    <post-upgrade>
+        <process command="programs/pre_migration ZOO" />
+        <process command="programs/record_application ZOO" />
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_classe__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_classe__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_espece__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_espece_menacee__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_espece_menacee__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_espece__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_enclos__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_enclos__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_animal__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_animal__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_carnetsante__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_carnetsante__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_entree__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_entree__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_contact__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_contact__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_demandeadoption__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_demandeadoption__WFL.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_demandeadoption__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_wanimal__WFL.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_gardien__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_gardien__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_veterinaire__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_veterinaire__PARAM.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_cuisinier__STRUCT.csv"/>
+        <process command="./wsh.php --api=importDocuments --file=./@APPNAME@/zoo_cuisinier__PARAM.csv"/>
+        <process command="programs/post_migration ZOO" />
+        <process command="programs/update_catalog" />
+    </post-upgrade>
 
 </module>

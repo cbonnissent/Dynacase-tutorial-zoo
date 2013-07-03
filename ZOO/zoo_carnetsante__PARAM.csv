@@ -1,0 +1,10 @@
+//FAM;dossier(DIR);<specid>;<fldid>;titre;
+ORDER;DIR;;;ba_title;
+DOC;DIR;FLD_ZOO_CARNETSANTE;;FLD_ZOO_CARNETSANTE;
+;;;;;
+//;Father ;Title;Id;Classe;Logical Name
+BEGIN;;carnet de sante;;;ZOO_CARNETSANTE
+ICON;carnet.gif;;;;
+DFLDID;FLD_ZOO_CARNETSANTE;;;;
+DEFAULT;ca_idveterinaire;::userDocid();;;
+END;;;;;

@@ -1,0 +1,21 @@
+//;Father ;Title;Id;Classe;Logical Name;;;;;;;;;;;
+BEGIN;;;;;ZOO_CONTACT;;;;;;;;;;;
+CLASS;ZOO\Zoo_contact;;;;;;;;;;;;;;;
+//;idattr;idframe;label;T;A;type;ord;vis;need;link;phpfile;phpfunc;elink ;constraint ;option;Commentaires
+ATTR;zct_fr_ident;;État civil;N;N;frame;;W;;;;;;;;
+ATTR;zct_civility;zct_fr_ident;civilité;N;N;enum;15;W;N;;; | ,Monsieur|Monsieur,Madame|Madame,Mademoiselle|Mademoiselle,Docteur|Docteur,Professeur|Professeur;;;;
+ATTR;zct_lname;zct_fr_ident;nom;Y;N;text;30;W;Y;;;;;;;
+ATTR;zct_fname;zct_fr_ident;prénom;Y;N;text;35;W;Y;;;;;;;
+ATTR;zct_mail;zct_fr_ident;mail;N;Y;text;40;W;;mailto:%ZCT_MAIL%;;;;;;
+ATTR;zct_fr_coord;;Informations professionnelles;N;N;frame;45;W;;;;;;;;
+ATTR;zct_photo;zct_fr_coord;photographie;N;N;image;50;W;;;;;;;;
+ATTR;zct_phone;zct_fr_coord;téléphone;N;Y;text;55;W;;;;;;;esize=12;
+ATTR;zct_mobile;zct_fr_coord;mobile;N;N;text;60;W;;;;;;;esize=12;
+ATTR;zct_workaddr;zct_fr_coord;adresse;N;N;longtext;65;W;;;;;;;;
+ATTR;zct_workpostalcode;zct_fr_coord;code postal;N;N;text;70;W;;;;;;;esize=5;
+ATTR;zct_worktown;zct_fr_coord;ville;N;N;text;75;W;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;
+END;;;;;;;;;;;;;;;;

@@ -1,0 +1,20 @@
+ORDER;IGROUP;;;grp_name;grp_hasmail;us_login;;;;;;;;;;;;;;;;;;;;;;
+DOC;IGROUP;ZOO_GRP_SECURITY;GDEFAULT;Surveillants;yes;security;;;;;;;;;;;;;;;;;;;;;;
+DOC;IGROUP;ZOO_GRP_CARE;GDEFAULT;Santé;yes;care;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ORDER;ROLE;;;role_login;role_name;;;;;;;;;;;;;;;;;;;;;;;
+DOC;ROLE;ZOO_ROLE_SURV;;surveillant;Gardien surveillant;;;;;;;;;;;;;;;;;;;;;;;
+DOC;ROLE;ZOO_ROLE_VETO;;veto;Vétérinaire;;;;;;;;;;;;;;;;;;;;;;;
+DOC;ROLE;ZOO_ROLE_CASH;;cash;Responsable de caisses;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ORDER;ZOO_GARDIEN;;;us_lname;us_fname;us_extmail;us_login;us_passwd1;us_passwd2;us_roles;;;;;;;;;;;;;;;;;;
+DOC;ZOO_GARDIEN;ZOO_BIGGARDE;ZOO_GRP_SECURITY;Dogue;Robert;garde@zoo.net;zoo.garde;anakeen;anakeen;ZOO_ROLE_SURV;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ORDER;ZOO_VETERINAIRE;;;us_lname;us_fname;us_extmail;us_login;us_passwd1;us_passwd2;us_roles;;;;;;;;;;;;;;;;;;
+DOC;ZOO_VETERINAIRE;ZOO_BIGVETO;ZOO_GRP_CARE;Santé;Isabelle;veto@zoo.net;zoo.veto;anakeen;anakeen;ZOO_ROLE_VETO;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;grp_idruser
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ORDER;IUSER;;;us_lname;us_fname;us_extmail;us_login;us_passwd1;us_passwd2;us_roles;;;;;;;;;;;;;;;;;;
+DOC;IUSER;ZOO_CASHONE;;Quèsse;Alberte;quesse@zoo.net;zoo.cashone;anakeen;anakeen;ZOO_ROLE_CASH;;;;;;;;;;;;;;;;;;
+DOC;IUSER;ZOO_CASHTWO;;Kaice;Igor;kaisse@zoo.net;zoo.cashtwo;anakeen;anakeen;ZOO_ROLE_CASH;;;;;;;;;;;;;;;;;;
