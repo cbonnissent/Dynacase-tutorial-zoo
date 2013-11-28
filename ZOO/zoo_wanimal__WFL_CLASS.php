@@ -2,7 +2,7 @@
 
 namespace ZOO;
 
-class Zoo_wanimal_wfl extends \Dcp\Family\WDoc
+class Zoo_wanimal extends \Dcp\Family\WDoc
 {
      var $attrPrefix = "WAN";
     

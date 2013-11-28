@@ -1,5 +1,5 @@
 //;fromid;title;special id;classname;name;;;;;;;;;;
-BEGIN;WDOC;ZOO_DEMANDEADOPTION_WFL;;--;ZOO_DEMANDEADOPTION_WFL;;;;;;;;;;
+BEGIN;WDOC;ZOO_WDEMANDEADOPTION;;--;ZOO_WDEMANDEADOPTION;;;;;;;;;;
 USEFOR;SW;;;;;;;;;;;;;;
 CLASS;ZOO\Zoo_demandeadoption_wfl;;;;;;;;;;;;;;
 //;idattr;idframe;label;T;A;type;ord;vis;needed;link;phpfile;phpfunc;elink;constraint;option
